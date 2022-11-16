@@ -1,0 +1,22 @@
+.main_text {
+    width: 70%;
+    margin: 80px auto 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.main_coldwallet, .main_realworldmetaverse, .main_blockchain {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.main_text_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main_text_content {
+    font-size: 1rem;
+}

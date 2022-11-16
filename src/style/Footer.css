@@ -1,3 +1,59 @@
-.foot{
-    background-color: black;
+.background {
+    background-color: #202020;
+}
+.content{
+    margin: 0 5.9% 0 7.2%;
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+}
+.MMAI {
+    justify-content: flex-start;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: left;
+    color: #fff;
+    margin-right: 77%;
+}
+.link {
+
+    justify-content: flex-end;
+}
+.Youtube {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    margin-left: 20%;
+    margin-right: 5.9%;
+}
+.telegram {
+    font-family: Roboto;
+    font-size: 1rem;    
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    margin-left: 20%;
+}
+.twitter {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+.BY-METAMONKY-AI {
+    margin-left: 7.2%;
+    font-family: Roboto;
+    font-size: 0.7rem;
+    text-align: left;
+    color: #909090;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }

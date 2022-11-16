@@ -1,0 +1,21 @@
+.carousel-indicators {
+    margin-bottom: 0px;   
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    width: 15%;
+    opacity: 1;
+}
+
+.carousel-control-next {
+    justify-content: left;
+}
+
+.carousel-control-prev {
+    justify-content: right;
+}
+
+.carousel-inner {
+    height : 880px;
+}

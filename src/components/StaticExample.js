@@ -13,7 +13,7 @@ function StaticExample() {
 
     return(
         <div>
-            <div className="go" onClick={handleShow}>Buy MMAI NOW!</div>
+            <div className='buyBtn' onClick={handleShow}>Buy MMAI NOW!</div>
               <Modal show={show} onHide={handleClose} size='xl'>
                 <img src='./guide.png' alt=''/>
               </Modal>

@@ -3,6 +3,9 @@ import '../style/Solution.css'
 import StaticExample from './StaticExample';
 
 const Solution = () => {
+    const onClickEvent = () => {
+        alert('Comming Soon!');
+    }
     return (
         <div className='solBody'>
             <div className='secL'>
@@ -14,7 +17,7 @@ const Solution = () => {
                             <span class="text1">The MMAI PureWorld is a new exciting way of interacting with other Web3 enthusiasts. Leverage our metaverse to your advantage with a whole new level of immersive experiences, including entertainment, social, business, & educational. PureWorld is focused on utility software that provides multi-functional facilities to every meta-human. Our web-inside-web (WIW) module will include an NFT blockchain with metaverse for user traceability and a smart contract for access permission for meta-humans to travel across metaverse places.</span>
                         </div>
                     </div>
-                    <a className='downLink' href='http://naver.com'><div className='btnSol'>Download Launcher</div></a>
+                    <div className='btnSol' onClick={onClickEvent} style={{cursor:'pointer'}}>Download Launcher</div>
                 </div>
             </div>    
             <div className='secL'>
@@ -25,7 +28,7 @@ const Solution = () => {
                     <div className='wallet'>
                         <span class="text2">PureWallet is an innovation in blockchain technology. It offers secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardware. It is also the only wallet that is capable of peer-to-peer transactions without an internet connection. Download the PureWallet and enter the exciting world of Web3 decentralized crypto banking.</span>
                     </div>
-                    <a className='downLink' href='http://naver.com'><div className='btnSol2'>Watching the Demo Video</div></a>
+                    <a className='downLink' href='https://mmaipure.files.wordpress.com/2022/11/mmai_homepage.mp4'><div className='btnSol2'>Watching the Demo Video</div></a>
                 </div>     
                 <img className='img2' src='./imgSolution/sol2.png' alt='이미지'/>
             </div>

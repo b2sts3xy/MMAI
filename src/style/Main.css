@@ -13,10 +13,14 @@
 }
 
 .main_text_title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    font-family: Roboto;
 }
 
 .main_text_content {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-family: Roboto;
+    color: #767676;
 }
+

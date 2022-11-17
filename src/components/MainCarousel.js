@@ -1,38 +1,86 @@
-import React from 'react';
-import {Carousel} from 'react-bootstrap';
-import ReactPlayer from 'react-player'
+import React, { useState } from 'react';
 import "../style/MainCarousel.css"
 
 const MainCarousel = () => {
+
+    const [eventNum, setEventNum] = useState(0)
+    const [event1id, event2id, event3id] = [0, 1, 2];
+
+    const onArrowLeftClick = () => {
+        if (eventNum == 0) {
+            setEventNum(2)
+        } else {
+            setEventNum(eventNum - 1)
+        }
+    }
+    const onArrowRightClick = () => {
+        if(eventNum == 2) {
+            setEventNum(0)
+        } else {
+            setEventNum(eventNum + 1)
+        }
+    }
+
+    const onAppStore = () => {
+        alert("Coming Soon!")
+    }
+
     return (
-        <div className='maincarousel_container'>
-            <Carousel fade="fade">
-                <Carousel.Item>
-                    <ReactPlayer
-                        className='react-player'
-                        url={process.env.PUBLIC_URL + '/videos/MMAImp4.mp4'}
-                        width='100%'
-                        height='100%'
-                        playing={true}
-                        muted={true}
-                        loop={true}/>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-100" src='/img/MainCarousel2.png' alt="사진2"/>
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-100" src='/img/MainCarousel3.png' alt="사진3"/>
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </div>
+        <section>
+            <div id='first_carousel' className={(eventNum == event1id) ? 'default-view' : 'default-none'}>
+                <div>
+                    <img className='carousel_img' src='./img/MainCarousel1.png'></img>
+                </div>
+                <div className='carousel_content'>
+                    <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.png' /></div>
+                    <div className='carousel_text'>
+                        <spen className='main_carousel_text'>MMAI Metarverse World,<br/> Using Blockchain Technology<br/> has been Released.<br/></spen>
+                        <spen className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world, from creating<br />your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></spen>
+                        <div className='downloadBtn'>Download Launcher</div>
+                    </div>
+                    <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.png' /></div>
+                </div>
+            </div>
+            <div id='second_carousel' className={(eventNum == event2id) ? 'default-view' : 'default-none'}>
+                <div className='carousel_background'>
+                    <img className='carousel_img' src='./img/MainCarousel2.png'></img>
+                </div>
+                <div className='carousel_content'>
+                    <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.png' /></div>
+                    <div className='carousel_text'>
+                        <spen className='header_carousel_text'>Released at End of December 2022</spen>
+                        <spen className='main_carousel_text'><br/>MMAI PUREWALLET<br/>Using the Cold Wallet for Free!<br /></spen>
+                        <spen className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, You can store and buy your Cryptocurrency in your Smart device freely <br /> trande Cryptocurrency with other people.<br /><br /><br /></spen>
+                        <div className='storeBtn'>
+                            <img onClick={onAppStore} className='storeImgA' src='./img/APPLESTORE.png' />
+                            <a href='https://play.google.com/store/apps/details?id=com.nslab.pure_wallet&pli=1'><img className='storeImgG' src='./img/GooglePlay.png' /></a>
+                        </div>
+                    </div>
+                    <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.png' /></div>
+                </div>
+            </div>
+            <div id='third_carousel' className={(eventNum == event3id) ? 'default-view' : 'default-none'}>
+                <div className='carousel_background'>
+                    <img className='carousel_img' src='./img/MainCarousel3.png'></img>
+                </div>
+                <div className='carousel_content'>
+                    <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.png' /></div>
+                    <div className='carousel_text'>
+                        <spen className='main_carousel_text'>Metamonkey AI can intergrate<br/> our real-world technology<br/> into any metaverse<br/></spen>
+                        <spen className='sub_carousel_text'><br/><br/>Metamonkey AI can integrate our real-world AI technology into any metaverse. We offer solutions for companies to enhance user experiences and generate new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></spen>
+                        <div className='third_carouselBtn'>
+                            <div className='buyBtn'>Buy MMAI NOW!</div>
+                            <img className='third_carouselImg' src='./img/coin1.png' />
+                            <img className='third_carouselImg' src='./img/coin2.png' />
+                            <img className='third_carouselImg' src='./img/coin3.png' />
+                            <img className='third_carouselImg' src='./img/coin4.png' />
+                            <img className='third_carouselImg' src='./img/coin5.png' />
+                        </div>
+                    </div>
+                    <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.png' /></div>
+                </div> 
+            </div>
+        </section>
     );
 };
 

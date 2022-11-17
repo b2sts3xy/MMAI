@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Headers from './components/Headers';
@@ -11,21 +12,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
+  const solutionRef = useRef(null);
+  const galleryRef = useRef(null);
+  const partnerRef = useRef(null);
+
+  const onSolutionClick = () => {
+    solutionRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const onGalleryClick = () => {
+    galleryRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const onPartnerClick = () => {
+    partnerRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <div className="App">
       <div className='top'>
-        <Headers/>
+        <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
       </div>
       <Main/>
       <div className='middle'>
-        <span class="MMAI-Solution">MMAI Solution</span>
+        <div ref={solutionRef}><span class="MMAI-Solution">MMAI Solution</span></div>
         <Solution/>
-        <div className='gallText'>MMAI Gallery</div>
+        <div ref={galleryRef} className='gallText'>MMAI Gallery</div>
       </div>
         <Gallery/>
       <div className='middle'>
         <Whitepapers/>
-        <div className="AI-Technology-Partners">
+        <div ref={partnerRef} className="AI-Technology-Partners">
             <span>AI Technology Partners</span>
         </div>
         <Partners/>

@@ -39,6 +39,7 @@
     font-weight: bold;
     color: #000;
     border-bottom: 1px solid black;
+    cursor:default;
 }
 
 .header_categori2 {
@@ -66,4 +67,5 @@
 .header_sns:hover {
     cursor: pointer;
     border-bottom: 1px solid #767676;
+    color: #767676;
 }

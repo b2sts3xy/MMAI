@@ -1,21 +1,109 @@
-.carousel-indicators {
-    margin-bottom: 0px;   
+.default-view {
+    width: 100%;
+    height: 100vh;
 }
 
-.carousel-control-next, 
-.carousel-control-prev {
+.default-none {
+    display: none;
+}
+
+
+.carousel_img{
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: -100vh;
+}
+
+.prevBtn {
     width: 15%;
-    opacity: 1;
+    text-align: end;
+    cursor: pointer;
 }
 
-.carousel-control-next {
-    justify-content: left;
+.nextBtn {
+    width: 15%;
+    cursor: pointer;
 }
 
-.carousel-control-prev {
-    justify-content: right;
+.carousel_text {
+    width: 70%;
+    color: white;
+    font-family: Roboto;
+    margin: 0 140px 0 140px;
 }
 
-.carousel-inner {
-    height : 80vh;
+.main_carousel_text {
+    font-weight: 900;
+    font-size: 4.2rem;
+}
+
+.header_carousel_text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sub_carousel_text {
+    font-size: 1rem;
+}
+
+.downloadBtn {
+    color: white;
+    background-color: #3c65ea;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+    width: 260px;
+    height: 60px;
+}
+
+.downloadBtn:hover {
+    background-color: rgb(30, 65, 182);
+}
+
+.btnImg {
+    width: 30px;
+}
+
+.storeImgA,  .storeImgG{
+    width: 14.344rem;
+    height: 4.469rem;
+    cursor: pointer;
+}
+
+.storeImgA {
+    margin-right: 2.437rem;
+}
+
+.third_carouselBtn {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buyBtn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+    width: 260px;
+    height: 60px;
+    cursor: pointer;
+    background-image: linear-gradient(129deg, #25d3d6 -43%, #ec6df7 112%, #000 112%);
+}
+
+.third_carouselImg {
+    width: 3rem;
+    height: 3rem;
 }

@@ -68,7 +68,7 @@ const MainCarousel = () => {
                     <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.png' alt=''/></div>
                     <div className='carousel_text'>
                         <spen className='main_carousel_text'>Metamonkey AI can intergrate<br/> our real-world technology<br/> into any metaverse<br/></spen>
-                        <spen className='sub_carousel_text'><br/><br/>Metamonkey AI can integrate our real-world AI technology into any metaverse. We offer solutions for companies to enhance user experiences and generate new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></spen>
+                        <spen className='sub_carousel_text'><br/><br/>Metamonkey AI can integrate our real-world AI technology into any metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></spen>
                         <div className='third_carouselBtn'>
                             <StaticExample/>
                             <img className='third_carouselImg' src='./img/coin1.png' alt=''/>

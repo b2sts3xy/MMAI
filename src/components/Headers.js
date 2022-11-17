@@ -7,10 +7,14 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
         alert("Coming Soon!")
     }
 
+    const reload = () => {
+        window.location.replace('/');
+    }
+
     return (
         <section className='header_container'>
             <div className='header_left'>
-                <spen className='header_name'>MMAI</spen>
+                <spen onClick={reload} className='header_name'>MMAI</spen>
             </div>
             <div className='header_center'>
                 <spen className='header_categori1'>Home</spen>

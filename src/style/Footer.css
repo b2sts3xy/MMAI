@@ -7,6 +7,7 @@
     background-color: #202020;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .MMAI {
     justify-content: flex-start;

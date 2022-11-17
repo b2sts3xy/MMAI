@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/Solution.css'
+import StaticExample from './StaticExample';
 
 const Solution = () => {
     return (
@@ -22,9 +23,9 @@ const Solution = () => {
                     </div>
                     <span class="MMAI-PUREWALLET">MMAI PUREWALLET</span>
                     <div className='wallet'>
-                        <a className='downLink' href='http://naver.com'><div className='btnSol2'>Watching the Demo Video</div></a>
                         <span class="text2">PureWallet is an innovation in blockchain technology. It offers secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardware. It is also the only wallet that is capable of peer-to-peer transactions without an internet connection. Download the PureWallet and enter the exciting world of Web3 decentralized crypto banking.</span>
                     </div>
+                    <a className='downLink' href='http://naver.com'><div className='btnSol2'>Watching the Demo Video</div></a>
                 </div>     
                 <img className='img2' src='./imgSolution/sol2.png' alt='이미지'/>
             </div>
@@ -43,6 +44,10 @@ const Solution = () => {
                     <div className='borderUp'></div>
                     <span class="MMAI-Token">MMAI Token</span>
                     <span class="text4">The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</span>
+                    <div className='click'>
+                        <StaticExample/>
+                        <a href='https://www.certik.com/'><img className='certik' src='./imgSolution/btn.png' alt=''/></a>
+                    </div>
                 </div>
                 <img className='img4' src='./imgSolution/sol4.png' alt='이미지'/>
             </div>

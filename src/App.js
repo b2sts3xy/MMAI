@@ -7,9 +7,10 @@ import Solution from './components/Solution';
 import Main from './components/Main';
 import 'bootstrap/dist/css/bootstrap.css'
 import Gallery from './components/Gallery';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
   return (
     <div className="App">
       <div className='top'>

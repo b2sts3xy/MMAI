@@ -1,43 +1,43 @@
 .solBody {
-    margin-top: 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 7% 15% 0 15%;
 }
 
 .secL {
     display: flex;
     flex-direction: row;
     margin-bottom: 10%;
+    justify-content: flex-end;
 }
 .secR {
     display: flex;
     flex-direction: column;
-    width: 35rem;
 }
 .img1 {
-    margin-right: 7%;
-    width: 40rem;
+    margin-right: 10%;
+    width: 48%;
 }
 .img2 {
     margin-left: 5%;
-    width: 40rem;
+    width: 48%;
 }
 .img3 {
     margin-right: 12%;
-    width: 28rem;
+    width: 38%;
 }
 .img4 {
-    width: 40rem;
+    width: 48%;
     margin-left: 5%;
 }
 .text {
     font-family: Roboto;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #000;
-    margin-top: 70%;
+    margin-top: 66%;
 }
 .text1 {
     font-family: Roboto;
@@ -46,12 +46,13 @@
     width: 20rem;
 }
 .text2 {
-    margin-left: 4.5rem;
+    margin-left: 49%;
     font-family: Roboto;
     font-size: 1rem;
     color: #767676;
 }
 .text3 {
+    margin-top: 1%;
     font-family: Roboto;
     font-size: 1rem;
     color: #767676;
@@ -71,7 +72,7 @@
 }
 .MMAI-PUREWALLET {
     margin-bottom: 7%;
-    margin-left: 44%;
+    margin-left: 49%;
     font-family: Roboto;
     font-size: 1.8rem;
     font-weight: bold;
@@ -98,12 +99,14 @@
     border-top: 6px solid #000;
 }
 .borderL{
+    display: flex;
+    flex-direction: column;
     padding-left: 5%;
     border-left: 6px solid black;
 }
 .borderR{
     height: 80%;
-    width: 23rem;
+    margin-left: -6%;
     border-right: 6px solid black;
 }
 .wallet{
@@ -111,22 +114,20 @@
     flex-direction: row;
 }
 .btnSol{
-    margin-top: 7%;
-    width: 12rem;
-    height: 3rem;
-    padding: 0.5rem 1.75rem 0.5rem;
+    margin-top: 12%;
+    width: 60%;
+    padding: 1rem 1.75rem 1rem;
     background-color: #3c65ea;
     color: white;
     font-size: 15px;
     display: flex;
     align-items: center;
+    margin-left: -7%;
 }
 
 .btnSol2{
-    margin-top: 120%;
-    width: 9.594rem;
-    height: 4rem;
-    padding: 0.5rem 1.75rem 0.5rem;
+    width: 38%;
+    padding: 1rem;
     background-color: #3c65ea;
     color: white;
     font-size: 15px;
@@ -137,4 +138,14 @@
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+.click{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25%;
+
+}
+.certik{
+    width: 50%;
 }

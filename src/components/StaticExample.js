@@ -15,7 +15,9 @@ function StaticExample() {
         <div>
             <div className='buyBtn' onClick={handleShow}>Buy MMAI NOW!</div>
               <Modal show={show} onHide={handleClose} size='xl'>
-                <img src='./guide.png' alt=''/>
+                <div>
+                  하이
+                </div>
               </Modal>
         </div>
     )

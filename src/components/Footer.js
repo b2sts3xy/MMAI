@@ -7,9 +7,9 @@ const Footer = () => {
             <div className='content'>
                 <span className="MMAI">MMAI</span>
                 <div className='link'>
-                    <span className="twitter"><a href='https://twitter.com/metamonkey_ai'>twitter</a></span>
-                    <span className="telegram"><a href='https://t.me/MMAI_Official'>telegram</a></span>
-                    <span className="Youtube"><a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>Youtube</a></span>
+                    <span className="twitter"><a className='sns' href='https://twitter.com/metamonkey_ai'>twitter</a></span>
+                    <span className="telegram"><a className='sns' href='https://t.me/MMAI_Official'>telegram</a></span>
+                    <span className="Youtube"><a  className='sns' href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>Youtube</a></span>
                 </div>
             </div>
             <div>

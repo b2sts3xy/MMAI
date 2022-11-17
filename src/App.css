@@ -3,11 +3,7 @@
     min-height: 100%;
     padding-bottom: 117px;
 }
-.bottom {
-    height: 117px;
-    position: relative;
-    transform: translateY(-100%);
-}
+
 .AI-Technology-Partners {
     margin-top: 5%;
     text-align: center;
@@ -25,7 +21,12 @@
     margin-bottom: 20%;
     margin-left: 15%;
 }
-.middle{
-    width: 80%;
-    margin: 0 auto;
+
+.gallText {
+    margin-left: 15%;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
 }

@@ -15,6 +15,7 @@ function StaticExample() {
         <div>
             <div className='buyBtn' onClick={handleShow}>Buy MMAI NOW!</div>
               <Modal show={show} onHide={handleClose} size='xl'>
+<<<<<<< HEAD
                 <div data-layer="b6781107-2437-4b8f-9953-ea2f863db2d8" class="x1">
             <div data-layer="25a7284c-2622-4f60-9554-363f59d2829d" class="x19061">
                 <div data-layer="28701330-5049-4643-9205-521122e23d9c" class="x19057">
@@ -123,6 +124,11 @@ function StaticExample() {
                 </div>
             </div>
         </div>
+=======
+                <div>
+                  하이
+                </div>
+>>>>>>> 219129f921610e5d6fb5d62ec165d4ea3d938353
               </Modal>
         </div>
     )

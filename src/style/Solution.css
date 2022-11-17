@@ -124,6 +124,9 @@
     align-items: center;
     margin-left: -7%;
 }
+.btnSol:hover{
+    background-color: rgb(30, 65, 182);
+}
 
 .btnSol2{
     width: 38%;
@@ -133,7 +136,9 @@
     font-size: 15px;
     text-align: center;
 }
-
+.btnSol2:hover{
+    background-color: rgb(30, 65, 182);
+}
 .downLink{
     text-decoration: none;
     color: white;

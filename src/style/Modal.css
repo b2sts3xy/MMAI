@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 .modal-content, .x19061{
   background-image: url('../../public/assets/buyMmaiToken7ae4c83d.png');
   border-right: 1px solid black;
+=======
+.modal-content{
+  /* background-image: url('../../public/back.png'); */
+>>>>>>> 219129f921610e5d6fb5d62ec165d4ea3d938353
 }
 
 .modal .show .modal-dialog{

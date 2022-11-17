@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Headers from './components/Headers';
@@ -7,8 +7,11 @@ import Whitepapers from './components/Whitepapers';
 import Solution from './components/Solution';
 import Main from './components/Main';
 import 'bootstrap/dist/css/bootstrap.css'
-import Gallery from './components/Gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/style/Gallery.css';
+import AutoPlaySecond from './components/AutoPlaySecond';
+import AutoPlay from './components/AutoPlay'
+
 
 function App() {
 
@@ -26,6 +29,8 @@ function App() {
     partnerRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const [rendNum, setRendNum] = useState(false);
+
 
   return (
     <div className="App">
@@ -36,9 +41,17 @@ function App() {
       <div className='middle'>
         <div ref={solutionRef}><span class="MMAI-Solution">MMAI Solution</span></div>
         <Solution/>
-        <div ref={galleryRef} className='gallText'>MMAI Gallery</div>
       </div>
-        <Gallery/>
+      <div className='gallBody'>
+          <div className='gallBox'>
+              <div ref={galleryRef} className='gallText'>MMAI Gallery</div>
+              <div className='but'>
+                <button className={rendNum ? 'gallBtn' : 'gallBtn_active'} onClick={() => {setRendNum(false)}}>MMAI WORLD</button>
+                <button className={rendNum ? 'gallBtn_active' : 'gallBtn'} onClick={() => {setRendNum (true)}}>MMAI PUREWALLET</button>
+              </div>
+          </div>
+          {rendNum ? <AutoPlaySecond/> : <AutoPlay/>}
+      </div>
       <div className='middle'>
         <Whitepapers/>
         <div ref={partnerRef} className="AI-Technology-Partners">

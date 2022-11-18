@@ -37,7 +37,7 @@
     font-size: 2rem;
     font-weight: bold;
     color: #000;
-    margin-top: 66%;
+    margin-top: 62%;
 }
 .text1 {
     font-family: Roboto;
@@ -147,10 +147,74 @@
 .click{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 25%;
-
+    margin-top: 19%;
 }
 .certik{
-    width: 65%;;
+    width: 100%;
+}
+.certikA{
+    width: 50%;
+}
+
+.go{
+    font-weight: 600;
+    color: white;
+    padding: 0.5rem;
+    height: 80%;
+    margin-top: 0.5%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(134deg, #25d3d6 -1%, #ec6df7 80%);
+}
+
+@media (min-width: 900px) and (max-width: 1280px) {
+
+    .text {
+        font-family: Roboto;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        margin-top: 14%;
+    }
+    .click {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    .text2 {
+        margin-left: 49%;
+        font-family: Roboto;
+        font-size: 1rem;
+        color: #767676;
+        overflow: scroll;
+        height: 70px;
+    }
+    .text1 {
+        font-family: Roboto;
+        font-size: 1rem;
+        color: #767676;
+        width: 20rem;
+        overflow: scroll;
+        height: 116px;
+    }
+    .btnSol {
+        margin-top: -1%;
+        width: 60%;
+        padding: 1rem 1.75rem 1rem;
+        background-color: #3c65ea;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        margin-left: -7%;
+    }
+    .btnSol2 {
+        width: 51%;
+        padding: 1rem;
+        background-color: #3c65ea;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 8%;
+    }
 }

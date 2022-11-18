@@ -38,12 +38,12 @@
     width: 70%;
     color: white;
     font-family: Roboto;
-    margin: 0 140px 0 140px;
+    margin: 70rem 5rem ;
 }
 
 .main_carousel_text {
     font-weight: 900;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
 }
 
 .header_carousel_text {
@@ -94,10 +94,10 @@
 }
 
 .buyBtn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    line-height: 60px;
+    padding: 1rem 0;
     width: 260px;
     height: 60px;
     cursor: pointer;

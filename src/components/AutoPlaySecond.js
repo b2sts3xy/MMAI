@@ -12,7 +12,7 @@ export default class AutoPlaySecond extends Component {
             slidesToScroll: 1,
             autoplay: true,
             speed: 20000,
-            autoplaySpeed: 20000,
+            autoplaySpeed: 10,
             cssEase: "linear",
             draggable : false,
             arrows : false,
@@ -25,16 +25,16 @@ export default class AutoPlaySecond extends Component {
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/1.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_1.png" alt=""/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/2.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_2.png" alt=""/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/3.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt=""/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/4.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_4.png" alt=""/>
                     </div>
                 </Slider>
             </div>

@@ -58,3 +58,24 @@
     color: white;
     cursor: pointer;
 }
+
+
+@media (min-width: 900px) and (max-width: 1280px) {
+
+    .MMAI {
+        justify-content: flex-start;
+        font-family: Roboto;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: left;
+        color: #fff;
+        margin-right: 66%;
+    }
+    .BY-METAMONKY-AI {
+        margin-left: 9.2%;
+        font-family: Roboto;
+        font-size: 0.7rem;
+        text-align: left;
+        color: #909090;
+    }
+}

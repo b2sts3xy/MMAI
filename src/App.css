@@ -1,9 +1,9 @@
-#wrapper {
-    height: auto;
-    min-height: 100%;
-    padding-bottom: 117px;
+.App{
+    font-family: Roboto;
 }
-
+/* html{
+    font-size: 80%;
+} */
 .AI-Technology-Partners {
     margin-top: 5%;
     text-align: center;

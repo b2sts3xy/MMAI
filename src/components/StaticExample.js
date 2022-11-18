@@ -11,8 +11,8 @@ function StaticExample() {
     const handleShow = () => setShow(true);
 
     return (
-        <div>
-            <div className='buyBtn' onClick={handleShow}>Buy MMAI NOW!</div>
+        <div className='go'>
+            <div onClick={handleShow}>Buy MMAI NOW!</div>
             <Modal show={show} onHide={handleClose} size='xl'>
                 <div data-layer="b6781107-2437-4b8f-9953-ea2f863db2d8" class="x1">
                     <div data-layer="25a7284c-2622-4f60-9554-363f59d2829d" class="x19061">

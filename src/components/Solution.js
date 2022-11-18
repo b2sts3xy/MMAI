@@ -28,7 +28,7 @@ const Solution = () => {
                     <div className='wallet'>
                         <span class="text2">PureWallet is an innovation in blockchain technology. It offers secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardware. It is also the only wallet that is capable of peer-to-peer transactions without an internet connection. Download the PureWallet and enter the exciting world of Web3 decentralized crypto banking.</span>
                     </div>
-                    <a className='downLink' href='https://mmaipure.files.wordpress.com/2022/11/mmai_homepage.mp4'><div className='btnSol2'>Watching the Demo Video</div></a>
+                    <a className='downLink' href='https://mmaipure.files.wordpress.com/2022/11/puprewallet_vido.mp4'><div className='btnSol2'>Watching the Demo Video</div></a>
                 </div>     
                 <img className='img2' src='./imgSolution/sol2.png' alt='이미지'/>
             </div>

@@ -31,7 +31,8 @@ export default class AutoPlaySecond extends Component {
                         <img className="slideImg"  src="./imgGallery/wallet_2.png" alt=""/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt=""/> 
+                        {/* 여백 있는 사진 받으면 파일 바꾸면 됩니다 !! */}
                     </div>
                     <div className="slideBox">
                         <img className="slideImg"  src="./imgGallery/wallet_4.png" alt=""/>

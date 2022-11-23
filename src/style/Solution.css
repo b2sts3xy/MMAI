@@ -153,15 +153,15 @@
     width: 100%;
 }
 .certikA{
-    width: 50%;
+    width: 40%;
 }
 
 .go{
     font-weight: 600;
     color: white;
-    padding: 0.5rem;
-    height: 80%;
-    margin-top: 0.5%;
+    padding: 1.5rem 2.5rem;
+    height: 79%;
+    margin-top: 0.4%;
     display: flex;
     align-items: center;
     background-image: linear-gradient(134deg, #25d3d6 -1%, #ec6df7 80%);
@@ -216,5 +216,20 @@
         font-size: 15px;
         text-align: center;
         margin-top: 8%;
+    }
+    .go{
+        font-weight: 600;
+        color: white;
+        padding: 1.5rem;
+        height: 73%;
+        margin-top: 0.5%;
+        display: flex;
+        align-items: center;
+        width: 49%;
+        justify-content: center;
+        background-image: linear-gradient(134deg, #25d3d6 -1%, #ec6df7 80%);
+    }
+    .certikA{
+        width: 50%;
     }
 }

@@ -4,7 +4,7 @@ import '../style/Main.css'
 
 const Main = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
-        <section>
+        <section className='Main'>
             <div className='main_carousel'>
                 <MainCarousel onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
             </div>

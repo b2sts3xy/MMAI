@@ -1,3 +1,7 @@
+.Main {
+    min-width : 768px;
+}
+
 .main_text {
     width: 70%;
     margin: 80px auto 80px auto;

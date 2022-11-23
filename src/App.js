@@ -35,9 +35,9 @@ function App() {
   return (
     <div className="App">
       <div className='top'>
-        <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
+        {/* <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/> */}
       </div>
-      <Main/>
+      <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
       <div className='middle'>
         <div ref={solutionRef}><span class="MMAI-Solution">MMAI Solution</span></div>
         <Solution/>

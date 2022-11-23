@@ -1,13 +1,14 @@
 .header_container {
-    height: 150px;
+    height: 16vh;
     display: flex;
     flex-direction: row;
     text-align: center;
+    z-index: 1;
 }
 
 .header_left {
     width: 20%;
-    line-height: 150px;
+    line-height: 16vh;
     text-align: right;
 }
 
@@ -15,18 +16,18 @@
     font-family: Roboto;
     font-size: 2rem;
     font-weight: 900;
-    color: #000;
+    color: white;
     cursor: pointer;
 }
 
 .header_center {
     width: 50%;
-    line-height: 150px;
+    line-height: 16vh;
 }
 
 .header_right {
     width: 30%;
-    line-height: 150px;
+    line-height: 16vh;
 }
 
 .header_categori1, .header_categori2 {
@@ -37,19 +38,19 @@
     font-family: Roboto;
     font-size: 1rem;
     font-weight: bold;
-    color: #000;
-    border-bottom: 1px solid black;
+    color: white;
+    border-bottom: 1px solid white;
     cursor:default;
 }
 
 .header_categori2 {
     font-family: Roboto;
     font-size: 1rem;
-    color: #7c7c7c;
+    color: white;
 }
 
 .header_categori2:hover {
-    color: #7c7c7c;
+    color: white;
     font-size: 0.95rem;
     font-weight: bold;
     cursor: pointer;
@@ -60,12 +61,12 @@
     font-size: 0.95rem;
     font-weight: bold;
     font-family: Roboto;
-    color: #767676;
+    color: white;
     text-decoration: none;
 }
 
 .header_sns:hover {
     cursor: pointer;
     border-bottom: 1px solid #767676;
-    color: #767676;
+    color: white;
 }

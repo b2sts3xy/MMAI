@@ -2,11 +2,11 @@ import React from 'react';
 import MainCarousel from './MainCarousel';
 import '../style/Main.css'
 
-const Main = () => {
+const Main = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
         <section>
             <div className='main_carousel'>
-                <MainCarousel/>
+                <MainCarousel onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
             </div>
             <div className='main_text'>
                 <div className='main_coldwallet'>

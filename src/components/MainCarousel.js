@@ -5,7 +5,7 @@ import StaticExampleMain from './StaticExampleMain';
 
 const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
 
-    const [eventNum, setEventNum] = useState(1)
+    const [eventNum, setEventNum] = useState(0)
     const [event1id, event2id, event3id] = [0, 1, 2];
 
     const onArrowLeftClick = () => {

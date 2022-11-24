@@ -52,3 +52,9 @@
 .Logo-Dark {
     height: 100%;
 }
+
+@media (max-width : 822px) {
+    .box1, .box2, .box3, .box4 {
+        width: 40%;
+    }
+}

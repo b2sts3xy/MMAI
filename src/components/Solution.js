@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/Solution.css'
 import StaticExample from './StaticExample';
+import StaticExampleVideo from './StaticExampleVideo';
 
 const Solution = () => {
     const onClickEvent = () => {
@@ -9,7 +10,7 @@ const Solution = () => {
     return (
         <div className='solBody'>
             <div className='secL'>
-                <img className='img1' src='./imgSolution/sol1.png' alt='이미지'/>
+                <img className='img1' src='./imgSolution/sol1.png' alt='MMAI PUREWORLD_METAVERSE_MAIN STREET_3'/>
                 <div>
                     <div className='borderR'>
                         <div className='secR'>
@@ -28,12 +29,12 @@ const Solution = () => {
                     <div className='wallet'>
                         <span class="text2">PureWallet is an innovation in blockchain technology. It offers secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardware. It is also the only wallet that is capable of peer-to-peer transactions without an internet connection. Download the PureWallet and enter the exciting world of Web3 decentralized crypto banking.</span>
                     </div>
-                    <a className='downLink' href='https://mmaipure.files.wordpress.com/2022/11/puprewallet_vido.mp4'><div className='btnSol2'>Watching the Demo Video</div></a>
+                    <StaticExampleVideo/>
                 </div>     
-                <img className='img2' src='./imgSolution/sol2.png' alt='이미지'/>
+                <img className='img2' src='./imgSolution/sol2.png' alt='MMAI PUREWALLET_2'/>
             </div>
             <div className='secL'>
-                <img className='img3' src='./imgSolution/sol3.png' alt='이미지'/>
+                <img className='img3' src='./imgSolution/sol3.png' alt='NFT TOKEN_1'/>
                 <div className='secR'>
                     <div className='borderL'>
                         <span class="Functional-NFTs">Functional NFTs</span>
@@ -52,7 +53,7 @@ const Solution = () => {
                         <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/btn.png' alt=''/></a>
                     </div>
                 </div>
-                <img className='img4' src='./imgSolution/sol4.png' alt='이미지'/>
+                <img className='img4' src='./imgSolution/sol4.png' alt='METAMONEKY TOKEN'/>
             </div>
         </div>
     );

@@ -25,19 +25,19 @@ export default class AutoPlay extends Component {
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_1.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/world_1.png" alt="MMAI PUREWORLD_METAVERSE_RACING"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_2.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/world_2.png" alt="MMAI PUREWORLD_METAVERSE_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_3.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/world_3.png" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_4.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/world_4.png" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_5.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/world_5.png" alt="MMAI PUREWORLD_METAVERSE_1"/>
                     </div>
                 </Slider>
             </div>

@@ -135,6 +135,7 @@
     color: white;
     font-size: 15px;
     text-align: center;
+    cursor: pointer;
 }
 .btnSol2:hover{
     background-color: rgb(30, 65, 182);

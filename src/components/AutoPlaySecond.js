@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,26 +22,20 @@ export default class AutoPlaySecond extends Component {
             waitForAnimate: true,
         };
 
-        // styled(Slider) `
-        //     .slideImg {
-        //         overflow-x : hidden;
-        //     }
-        // `;
-
         return (
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_1.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_1.png" alt="MMAI_PUREWALLET_1"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_2.jpg" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_2.jpg" alt="MMAI_PUREWALLET_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt=""/> 
+                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt="MMAI_PUREWALLET_3"/> 
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_4.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_4.png" alt="MMAI_PUREWALLET_4"/>
                     </div>
                 </Slider>
             </div>

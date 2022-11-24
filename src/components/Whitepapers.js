@@ -16,32 +16,32 @@ const Whitepapers = () => {
             </div>
             <div className='paperbox'>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/1-1.png' alt=''/>
+                    <a href='https://doi.org/10.1049/cmu2.12465'><img className='paperImg' src='./imgWhitePaper/1-1.png' alt=''/></a>
                     <span className='mtitle'>Smart auto mining (SAM) for</span>
                     <span className='mtitle'>industrial IoT Blockchain Network</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_blockchain_mining_network_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/1-2.png' alt=''/>
+                    <a href='https://doi.org/10.1016/j.icte.2021.08.004'><img className='paperImg' src='./imgWhitePaper/1-2.png' alt=''/></a>
                     <span className='mtitle'>Blockchain side Implementation :</span>
                     <span className='mtitle'>An offline Transaction Architecture</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_blockchain_purewallet_transaction_architecture_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/1-3.png' alt=''/>
+                    <a href='https://doi.org/10.8080/1020200056181?urlappend=en'><img className='paperImg' src='./imgWhitePaper/1-3.png' alt=''/></a>
                     <span className='mtitle'>Block chain-based</span>
                     <span className='mtitle'>Data Sharing Method</span>
                     <span className='stitle'>International Patent Registration Completed</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_datasharing_security_reliability_systems_patent_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/1-4.png' alt=''/>
+                    <a href='https://doi.org/10.1109/JIOT.2022.3176310'><img className='paperImg' src='./imgWhitePaper/1-4.png' alt=''/></a>
                     <span className='mtitle'>Unauthorized</span>
                     <span className='mtitle'>UAV Localization</span>
                     <span className='stitle'>PATENT</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_blockchain_neuralnetwork_military_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
             </div>
             <div className="smaltitle">
@@ -49,32 +49,31 @@ const Whitepapers = () => {
             </div>
             <div className='paperbox'>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/2-1.png' alt=''/>
+                    <a href='https://doi.org/10.1049/itr2.12252'><img className='paperImg' src='./imgWhitePaper/2-1.png' alt=''/></a>
                     <span className='mtitle'>Intelligent</span>
                     <span className='mtitle'>Transportation Systems</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_pureworld_metarverse_transportation_system_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/2-2.png' alt=''/>
+                    <a href='https://doi.org/10.48550/arXiv.2202.10336'><img className='paperImg' src='./imgWhitePaper/2-2.png' alt=''/></a>
                     <span className='mtitle'>Artificial</span>
                     <span className='mtitle'>Intelligence</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_-white_paper-_pureworld_metarverse_artificial_intelligence_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/2-3.png' alt=''/>
+                    <a href='https://journal-home.s3.ap-northeast-2.amazonaws.com/site/2022s/abs/0985.pdf'><img className='paperImg' src='./imgWhitePaper/2-3.png' alt=''/></a>
                     <span className='mtitle'>Applications and</span>
                     <span className='mtitle'>Limitations</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_pureworld_metarverse_manufacturing_automation_vr_detail.pdf'><div className='downbtn'>Download</div></a>
+                    
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/2-4.png' alt=''/>
+                    <a href='https://www.researchgate.net/publication/358948232_Real-time_Deep_Learning-based_Scene_Recognition_Model_For_Metaverse_Applications'><img className='paperImg' src='./imgWhitePaper/2-4.png' alt=''/></a>
                     <span className='mtitle'>Recognition</span>
                     <span className='mtitle'>Model</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_-white_paper_pureworld_metarverse_deeplearning_application.pdf'><div className='downbtn'>Download</div></a>
                 </div>
             </div>
             <div className="smaltitle">
@@ -82,32 +81,28 @@ const Whitepapers = () => {
             </div>
             <div className='paperbox'>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/3-1.png' alt=''/>
+                    <a href='https://doi.org/10.1109/JIOT.2022.3152929'><img className='paperImg' src='./imgWhitePaper/3-1.png' alt=''/></a>
                     <span className='mtitle'>Low-power and </span>
                     <span className='mtitle'>Lossy</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_-white_paper_ai_iot_network_learning_management_detail.pdf'><div className='downbtn'>Download</div></a>
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/3-2.png' alt=''/>
+                    <a href='https://doi.org/10.1109/JIOT.2020.3013272'><img className='paperImg' src='./imgWhitePaper/3-2.png' alt=''/></a>
                     <span className='mtitle'>Smart </span>
                     <span className='mtitle'>Health</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_ai_data_smarthealth_deeplearning_detail.pdf'><div className='downbtn'>Download</div></a>
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/3-3.png' alt=''/>
+                    <a href='https://doi.org/10.1109/LWC.2021.3126821'><img className='paperImg' src='./imgWhitePaper/3-3.png' alt=''/></a>
                     <span className='mtitle'>Automatic Modulation</span>
                     <span className='mtitle'>Classification</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_ai_hybrid_deeplearning_automaticmodulation_detail.pdf'><div className='downbtn'>Download</div></a>
                 </div>
                 <div className='imgcontent'>
-                    <img className='paperImg' src='./imgWhitePaper/3-4.png' alt=''/>
+                    <a href='https://doi.org/10.1109/LWC.2021.3075880'><img className='paperImg' src='./imgWhitePaper/3-4.png' alt=''/></a>
                     <span className='mtitle'>Accurate LPI Radar</span>
                     <span className='mtitle'>Waveform Recognition</span>
                     <span className='stitle'>THESIS</span>
-                    <a href='https://mmaipure.files.wordpress.com/2022/11/mmai_white_paper_ai_network_-deeplearning_data-detail.pdf'><div className='downbtn'>Download</div></a>
                 </div>
             </div>
         </div>

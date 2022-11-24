@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
+import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -21,6 +22,13 @@ export default class AutoPlaySecond extends Component {
             pauseOnDotsHover: false,
             waitForAnimate: true,
         };
+
+        // styled(Slider) `
+        //     .slideImg {
+        //         overflow-x : hidden;
+        //     }
+        // `;
+
         return (
             <div className="slide">
                 <Slider {...settings}>
@@ -28,11 +36,10 @@ export default class AutoPlaySecond extends Component {
                         <img className="slideImg"  src="./imgGallery/wallet_1.png" alt=""/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_2.png" alt=""/>
+                        <img className="slideImg"  src="./imgGallery/wallet_2.jpg" alt=""/>
                     </div>
                     <div className="slideBox">
                         <img className="slideImg"  src="./imgGallery/wallet_3.png" alt=""/> 
-                        {/* 여백 있는 사진 받으면 파일 바꾸면 됩니다 !! */}
                     </div>
                     <div className="slideBox">
                         <img className="slideImg"  src="./imgGallery/wallet_4.png" alt=""/>

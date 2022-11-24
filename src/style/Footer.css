@@ -10,18 +10,38 @@
     margin: 0 auto;
 }
 
-.mmaititle, .mmaisns {
-    width: 50%;
-}
-
-.mmaisns {
-    text-align: right;
-}
-
 .firstline {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.mmaititle {
+    width: 75%;
+    margin-top: 1%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.footer_mmai:hover {
+    cursor: pointer;
+}
+
+.mmaisns {
+    width: 25%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.twitter, .telegram, .Youtube {
+    width: 30%;
+    min-width: 100px;
+    text-align: center;
 }
 
 .sns {
@@ -30,6 +50,12 @@
     text-decoration: none;
 }
 
+.sns:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
 .secondline {
+    margin-top: 1.5%;
     color : #909090;
 }

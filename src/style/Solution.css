@@ -152,6 +152,7 @@
 }
 .certik{
     width: 100%;
+    min-width: 155px;
 }
 .certikA{
     width: 40%;

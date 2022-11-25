@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import styled from "styled-components";
+import '../style/slick-theme.css'
+import '../style/slick.css'
 
 export default class AutoPlay extends Component {
     render() {
@@ -21,6 +22,13 @@ export default class AutoPlay extends Component {
             pauseOnDotsHover: false,
             waitForAnimate: true,
         };
+
+        styled(Slider)`
+            .slick-slider {
+                min-width : 1300px;
+            }
+        `;
+
         return (
             <div className="slide">
                 <Slider {...settings}>

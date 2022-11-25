@@ -10,11 +10,11 @@ const Main = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
             </div>
             <div className='main_text'>
                 <div className='main_coldwallet'>
-                    <p className='main_text_title'>Cold Wallet</p>
+                    <p className='main_text_title'>MMAI PUREWALLET</p>
                     <p className='main_text_content'>No additional hardware for cold storage. Download our PureWallet for free and get cold wallet storage without the purchase of any additional hardware. </p>
                 </div>
                 <div className='main_realworldmetaverse'>
-                    <p className='main_text_title'>Real World Metaverse</p>
+                    <p className='main_text_title'>MMAI PUREWORLD</p>
                     <p className='main_text_content'>The MMAI PureWorld is based on bringing real world technology and business into the metaverse. </p>
                 </div>
                 <div className='main_blockchain'>

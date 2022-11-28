@@ -10,6 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/style/Gallery.css';
 import AutoPlaySecond from './components/AutoPlaySecond';
 import AutoPlay from './components/AutoPlay'
+import MobileMain from './mobile/MobileMain';
+import MoblieWorld from './mobile/MobileWorld';
+import MoblieWallet from './mobile/MobileWallet';
+import MobileFunc from './mobile/MobileFunc';
+import MoblieToken from './mobile/MobileToken';
+import MobileWhitePapers from './mobile/MobileWhitePapers';
+import MobilePartners from './mobile/MobilePartners';
+import MobileFooter from './mobile/MobileFooter';
 
 
 function App() {
@@ -66,7 +74,14 @@ function App() {
 
 
       <div className='mobile'>
-        <p>모바일 버전 입니다.</p>
+        <MobileMain />
+        <MoblieWorld />
+        <MoblieWallet />
+        <MobileFunc />
+        <MoblieToken />
+        <MobileWhitePapers />
+        <MobilePartners />
+        <MobileFooter />
       </div>
     </section>
   );

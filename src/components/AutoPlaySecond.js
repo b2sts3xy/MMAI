@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import '../style/slick-theme.css'
+import '../style/slick.css'
 
 export default class AutoPlaySecond extends Component {
     render() {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,

@@ -16,7 +16,6 @@
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-    min-width: 1300px;
 }
 
 .slick-list
@@ -117,4 +116,8 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slideImg {
+    width: 100%;
 }

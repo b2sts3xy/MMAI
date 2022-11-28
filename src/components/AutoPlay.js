@@ -7,7 +7,7 @@ import '../style/slick.css'
 export default class AutoPlay extends Component {
     render() {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -22,12 +22,6 @@ export default class AutoPlay extends Component {
             pauseOnDotsHover: false,
             waitForAnimate: true,
         };
-
-        styled(Slider)`
-            .slick-slider {
-                min-width : 1300px;
-            }
-        `;
 
         return (
             <div className="slide">

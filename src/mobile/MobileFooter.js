@@ -3,9 +3,9 @@ import '../mobileStyle/MobileFooter.css'
 
 const MobileFooter = () => {
     return (
-        <div>
-            <p>footer</p>
-        </div>
+        <>
+            <div className='mobileFooterContainer'></div>
+        </>
     );
 };
 

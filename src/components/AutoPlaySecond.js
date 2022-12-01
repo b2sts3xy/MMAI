@@ -29,7 +29,7 @@ export default class AutoPlaySecond extends Component {
                         <img className="slideImg"  src="./imgGallery/wallet_1.png" alt="MMAI_PUREWALLET_1"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_2.jpg" alt="MMAI_PUREWALLET_2"/>
+                        <img className="slideImg"  src="./imgGallery/wallet_2.png" alt="MMAI_PUREWALLET_2"/>
                     </div>
                     <div className="slideBox">
                         <img className="slideImg"  src="./imgGallery/wallet_3.png" alt="MMAI_PUREWALLET_3"/> 

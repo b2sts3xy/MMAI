@@ -3,9 +3,9 @@ import '../mobileStyle/MobileWorld.css'
 
 const MoblieWorld = () => {
     return (
-        <div>
+        <section>
             <p>world</p>
-        </div>
+        </section>
     );
 };
 

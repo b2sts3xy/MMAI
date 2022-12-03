@@ -3,9 +3,14 @@ import '../mobileStyle/MobileFunc.css'
 
 const MobileFunc = () => {
     return (
-        <div>
-            <p>Func</p>
-        </div>
+        <section>
+            <img className='mobileFunc' src='./imgSolution/sol3.png' />
+            <div className='mobileFuncContents'>
+                <div className='mobileFuncContents1'>You can purchase MMAI land through NFT</div>
+                <div className='mobileFuncContents2'>Functional NFTs</div>
+                <div className='mobileFuncContents3'>Our functional NFT goes beyond digital asset management by enabling the transformation of virtual products into physical Assets. Other real-world products the NFT market will affect are investment instruments, authenticity of products, medical records, intellectual property and patents, identity verification, supply chain, voting, and so much more. In addition, our NFT blockchain will allow metaverse users with traceability and smart contract permission-based access for meta-humans to traverse the multiple metaverses.</div>
+            </div>
+        </section>
     );
 };
 

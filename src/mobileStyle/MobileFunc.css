@@ -1,0 +1,27 @@
+.mobileFunc {
+    width: 100%;
+}
+
+.mobileFuncContents {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mobileFuncContents1 {
+    font-size: 0.85rem;
+    color: #191919;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.mobileFuncContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileFuncContents3 {
+    font-size: 0.9rem;
+    color: #767676;
+    margin-bottom: 5%;
+}

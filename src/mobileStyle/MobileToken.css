@@ -1,0 +1,23 @@
+.mobileTokenContents {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mobileTokenContents1 {
+    font-size: 0.85rem;
+    color: #191919;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.mobileTokenContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileTokenContents3 {
+    font-size: 0.9rem;
+    color: #767676;
+    margin-bottom: 5%;
+}

@@ -1,3 +1,22 @@
+.mobileTokenPhoto {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../public/imgMobile/mobile_token.png')
+}
+
+.mobileTokenBtn {
+    padding: 85% 0 15% 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mobileTokenBtnImg {
+    width: 35%;
+}
+
 .mobileTokenContents {
     width: 90%;
     margin: 0 auto;
@@ -19,5 +38,38 @@
 .mobileTokenContents3 {
     font-size: 0.9rem;
     color: #767676;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.mobileCoinphoto {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileCoinOne, .mobileCoinTwo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mobileCoinOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobileCoinOne a {
+    text-align: center;
+}
+
+.mobileCoinTwo {
+    margin-bottom: 10%;
+}
+
+.mobileCoinOneImg {
+    width: 80%;
+}
+
+.mobileCoinTwoImg {
+    margin-top: 3%;
+    width: 100%;
 }

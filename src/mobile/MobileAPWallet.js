@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
 import '../style/slick-theme.css'
-import '../mobileStyle/mobileSlick.css'
+import '../style/slick.css'
 
 export default class MobileAPWallet extends Component {
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -26,16 +26,16 @@ export default class MobileAPWallet extends Component {
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_1.png" alt="MMAI_PUREWALLET_1"/>
+                        <img className="slideImg"  src="./imgMobile/mobilewallet1.png" alt="MMAI PUREWORLD_METAVERSE_RACING"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_2.png" alt="MMAI_PUREWALLET_2"/>
+                        <img className="slideImg"  src="./imgMobile/mobilewallet2.png" alt="MMAI PUREWORLD_METAVERSE_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt="MMAI_PUREWALLET_3"/> 
+                        <img className="slideImg"  src="./imgMobile/mobilewallet3.png" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_4.png" alt="MMAI_PUREWALLET_4"/>
+                        <img className="slideImg"  src="./imgMobile/mobilewallet4.png" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>
                     </div>
                 </Slider>
             </div>

@@ -6,7 +6,7 @@ import '../style/slick.css'
 export default class AutoPlaySecond extends Component {
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,

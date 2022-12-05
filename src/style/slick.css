@@ -120,6 +120,11 @@
 }
 
 .slideImg {
+    width: 100%;
+    height: auto;
+}
+
+.MslideImg {
     width: 95%;
     height: auto;
 }

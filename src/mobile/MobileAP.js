@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
 import '../style/slick-theme.css'
-import '../mobileStyle/mobileSlick.css'
+import '../style/slick.css'
 
 export default class MobileAP extends Component {
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -26,19 +26,16 @@ export default class MobileAP extends Component {
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_1.png" alt="MMAI PUREWORLD_METAVERSE_RACING"/>
+                        <img className="slideImg"  src="./imgMobile/mobileworld1.png" alt="MMAI PUREWORLD_METAVERSE_RACING"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_2.png" alt="MMAI PUREWORLD_METAVERSE_2"/>
+                        <img className="slideImg"  src="./imgMobile/mobileworld2.png" alt="MMAI PUREWORLD_METAVERSE_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_3.png" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
+                        <img className="slideImg"  src="./imgMobile/mobileworld3.png" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_4.png" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>
-                    </div>
-                    <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/world_5.png" alt="MMAI PUREWORLD_METAVERSE_1"/>
+                        <img className="slideImg"  src="./imgMobile/mobileworld4.png" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>
                     </div>
                 </Slider>
             </div>

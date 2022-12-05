@@ -1,6 +1,5 @@
 import React from 'react';
 import '../mobileStyle/MobileWorld.css'
-import AutoPlay from './../components/AutoPlay';
 import MobileAP from './MobileAP';
 
 const MoblieWorld = () => {

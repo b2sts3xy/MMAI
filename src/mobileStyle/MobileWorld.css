@@ -19,5 +19,15 @@
 .mobileWorldContents3 {
     font-size: 0.9rem;
     color: #767676;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.mobileWorldVideo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+#mobileWorldVideoImg {
+    width: 100%;
 }

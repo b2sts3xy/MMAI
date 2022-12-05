@@ -1,3 +1,22 @@
+.mobileWalletPhoto {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../public/imgMobile/mobile_wallet.png')
+}
+
+.mobileStore {
+    padding: 85% 0 15% 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mobileStoreImgA,  .mobileStoreImgG{
+    width: 50%;
+    cursor: pointer;
+}
+
 .mobileWalletContents {
     width: 90%;
     margin: 0 auto;
@@ -19,5 +38,15 @@
 .mobileWalletContents3 {
     font-size: 0.9rem;
     color: #767676;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.mobileWalletVideo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+#mobileWalletVideoImg {
+    width: 100%;
 }

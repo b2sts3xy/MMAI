@@ -47,9 +47,9 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 </div>
             </div>
             <div id='second_carousel' className={(eventNum === event2id) ? 'default-view' : 'default-none'}>
-                <div className='carousel_background'>
+                {/* <div className='carousel_background'>
                     <img className='carousel_img' src='./img/MainCarousel1.png' alt=''></img>
-                </div>
+                </div> */}
                 <div className='carousel_container'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
                     <div className='carousel_content'>
@@ -68,9 +68,9 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 </div>
             </div>
             <div id='third_carousel' className={(eventNum === event3id) ? 'default-view' : 'default-none'}>
-                <div className='carousel_background'>
+                {/* <div className='carousel_background'>
                     <img className='carousel_img' src='./img/MainCarousel3.png'alt=''></img>
-                </div>
+                </div> */}
                 <div className='carousel_container'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
                     <div className='carousel_content'>

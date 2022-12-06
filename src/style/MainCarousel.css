@@ -6,10 +6,25 @@
     display: none;
 }
 
-
-.carousel_img{
+#first_carousel {
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-image: url('../../public/img/mmai_homepage.mp4')
+}
+
+#second_carousel {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('../../public/img/MainCarousel2.png')
+}
+
+#third_carousel {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('../../public/img/MainCarousel3.png')
 }
 
 .carousel_mp4 {
@@ -17,13 +32,13 @@
     height: 100%;
 }
 
-.carousel_container {
+/* .carousel_container {
     width: 100%;
     height: 100%;
     margin-top: -95vh;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .carousel_content {
     width: 100%;
@@ -89,8 +104,8 @@
 }
 
 .storeImgA,  .storeImgG{
-    width: 14.344rem;
-    height: 4.469rem;
+    width: 20%;
+    min-width: 190px;
     cursor: pointer;
 }
 

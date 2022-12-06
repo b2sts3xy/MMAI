@@ -22,7 +22,7 @@
 }
 
 .mobileTitle {
-    width: 55%;
+    width: 45%;
     font-size: 1.8rem;
     color: white;
     font-weight: 900;
@@ -30,8 +30,8 @@
 }
 
 .mobilesns {
-    font-size: 0.5rem;
-    width: 45%;
+    font-size: 0.8rem;
+    width: 55%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

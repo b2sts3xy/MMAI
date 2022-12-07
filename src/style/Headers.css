@@ -22,12 +22,18 @@
 
 .header_center {
     width: 50%;
-    line-height: 16vh;
+    min-width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 16vh; */
 }
 
 .header_right {
     width: 30%;
-    line-height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header_categori1, .header_categori2 {

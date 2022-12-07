@@ -30,10 +30,10 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
         <section>
             <div id='first_carousel' className={(eventNum === event1id) ? 'default-view' : 'default-none'}>
-                <div>
-                    <video className='carousel_mp4' src="./img/mmai_homepage.mp4" poster="true" autoPlay muted loop playsInline preload='none'></video>
+                <div className='first_carousel_video_container'>
+                    <video className='carousel_mp4' src="./img/mmai_homepage.mp4" height='1840px' poster="true" autoPlay muted loop playsInline preload='none'></video>
                 </div>
-                <div className='carousel_container'>
+                <div className='carousel_container_video'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.png' alt=''/></div>

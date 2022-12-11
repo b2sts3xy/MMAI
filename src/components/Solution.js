@@ -10,7 +10,7 @@ const Solution = () => {
     return (
         <div className='solBody'>
             <div className='secL'>
-                <img className='img1' src='./imgSolution/sol1.png' alt='MMAI PUREWORLD_METAVERSE_MAIN STREET_3'/>
+                <img className='img1' src='./imgSolution/sol1.webp' alt='MMAI PUREWORLD_METAVERSE_MAIN STREET_3'/>
                 <div>
                     <div className='borderR'>
                         <div className='secR'>
@@ -31,10 +31,10 @@ const Solution = () => {
                     </div>
                     <StaticExampleVideo/>
                 </div>     
-                <img className='img2' src='./imgSolution/sol2.png' alt='MMAI PUREWALLET_2'/>
+                <img className='img2' src='./imgSolution/sol2.webp' alt='MMAI PUREWALLET_2'/>
             </div>
             <div className='secL'>
-                <img className='img3' src='./imgSolution/sol3.png' alt='NFT TOKEN_1'/>
+                <img className='img3' src='./imgSolution/sol3.webp' alt='NFT TOKEN_1'/>
                 <div className='secR'>
                     <div className='borderL'>
                         <span class="Functional-NFTs">Functional NFTs</span>
@@ -50,10 +50,10 @@ const Solution = () => {
                     <span class="text4">The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</span>
                     <div className='click'>
                         <StaticExample/>
-                        <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/btn.png' alt=''/></a>
+                        <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/btn.webp' alt=''/></a>
                     </div>
                 </div>
-                <img className='img4' src='./imgSolution/sol4.png' alt='METAMONEKY TOKEN'/>
+                <img className='img4' src='./imgSolution/sol4.webp' alt='METAMONEKY TOKEN'/>
             </div>
         </div>
     );

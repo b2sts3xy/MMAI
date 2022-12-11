@@ -26,16 +26,16 @@ export default class MobileAP extends Component {
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="MslideImg"  src="./imgMobile/mobileworld1.png" alt="MMAI PUREWORLD_METAVERSE_RACING"/>
+                        <img className="MslideImg"  src="./imgMobile/mobileworld1.webp" alt="MMAI PUREWORLD_METAVERSE_RACING"/>
                     </div>
                     <div className="slideBox">
-                        <img className="MslideImg"  src="./imgMobile/mobileworld2.png" alt="MMAI PUREWORLD_METAVERSE_2"/>
+                        <img className="MslideImg"  src="./imgMobile/mobileworld2.webp" alt="MMAI PUREWORLD_METAVERSE_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="MslideImg"  src="./imgMobile/mobileworld3.png" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
+                        <img className="MslideImg"  src="./imgMobile/mobileworld3.webp" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
                     </div>
                     <div className="slideBox">
-                        <img className="MslideImg"  src="./imgMobile/mobileworld4.png" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>
+                        <img className="MslideImg"  src="./imgMobile/mobileworld4.webp" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>
                     </div>
                 </Slider>
             </div>

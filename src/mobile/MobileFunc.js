@@ -4,7 +4,7 @@ import '../mobileStyle/MobileFunc.css'
 const MobileFunc = () => {
     return (
         <section>
-            <img className='mobileFunc' src='./imgSolution/sol3.png' />
+            <img className='mobileFunc' src='./imgSolution/sol3.webp' />
             <div className='mobileFuncContents'>
                 <div className='mobileFuncContents1'>You can purchase MMAI land through NFT</div>
                 <div className='mobileFuncContents2'>Functional NFTs</div>

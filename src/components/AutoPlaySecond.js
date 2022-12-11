@@ -26,16 +26,16 @@ export default class AutoPlaySecond extends Component {
             <div className="slide">
                 <Slider {...settings}>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_1.png" alt="MMAI_PUREWALLET_1"/>
+                        <img className="slideImg"  src="./imgGallery/wallet_1.webp" alt="MMAI_PUREWALLET_1"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_2.png" alt="MMAI_PUREWALLET_2"/>
+                        <img className="slideImg"  src="./imgGallery/wallet_2.webp" alt="MMAI_PUREWALLET_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_3.png" alt="MMAI_PUREWALLET_3"/> 
+                        <img className="slideImg"  src="./imgGallery/wallet_3.webp" alt="MMAI_PUREWALLET_3"/> 
                     </div>
                     <div className="slideBox">
-                        <img className="slideImg"  src="./imgGallery/wallet_4.png" alt="MMAI_PUREWALLET_4"/>
+                        <img className="slideImg"  src="./imgGallery/wallet_4.webp" alt="MMAI_PUREWALLET_4"/>
                     </div>
                 </Slider>
             </div>

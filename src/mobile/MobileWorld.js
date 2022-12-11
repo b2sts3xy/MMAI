@@ -12,7 +12,7 @@ const MoblieWorld = () => {
             </div>
             <MobileAP />
             <div className='mobileWorldVideo'>
-                <a href='./imgMobile/mmaiworld.mp4'><img id='mobileWorldVideoImg' src='./imgMobile/mobile_world_video.png' /></a>
+                <a href='./imgMobile/mmaiworld.mp4'><img id='mobileWorldVideoImg' src='./imgMobile/mobile_world_video.webp' /></a>
             </div>
         </section>
     );

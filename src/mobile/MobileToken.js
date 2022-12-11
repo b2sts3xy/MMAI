@@ -6,7 +6,7 @@ const MoblieToken = () => {
         <section>
             <div className='mobileTokenPhoto'>
                 <div className='mobileTokenBtn'>
-                    <a href='https://www.metamonkey.ai/buynow'><img className='mobileTokenBtnImg' src='./imgMobile/mobile_tokenbtn.png' /></a>
+                    <a href='https://www.metamonkey.ai/buynow'><img className='mobileTokenBtnImg' src='./imgMobile/mobile_tokenbtn.webp' /></a>
                 </div>
             </div>
             <div className='mobileTokenContents'>
@@ -16,14 +16,14 @@ const MoblieToken = () => {
             </div>
             <div className='mobileCoinphoto'>
                 <div className='mobileCoinOne'>
-                    <a href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img className='mobileCoinOneImg' src='./imgMobile/mobile_probit.png'/></a>
-                    <a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img className='mobileCoinOneImg' src='./imgMobile/mobile_bitmart.png'/></a>
-                    <a href='https://uniswap.org/'><img className='mobileCoinOneImg' src='./imgMobile/mobile_Uniswap.png'/></a>
-                    <a href='https://www.bkex.com/trade/MMAI_USDT'><img className='mobileCoinOneImg' src='./imgMobile/mobile_bkex.png'/></a>
-                    <a href='https://www.lbank.info/exchange/mmai/usdt'><img className='mobileCoinOneImg' src='./imgMobile/mobile_lbank.png'/></a>
+                    <a href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img className='mobileCoinOneImg' src='./imgMobile/mobile_probit.webp'/></a>
+                    <a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img className='mobileCoinOneImg' src='./imgMobile/mobile_bitmart.webp'/></a>
+                    <a href='https://uniswap.org/'><img className='mobileCoinOneImg' src='./imgMobile/mobile_Uniswap.webp'/></a>
+                    <a href='https://www.bkex.com/trade/MMAI_USDT'><img className='mobileCoinOneImg' src='./imgMobile/mobile_bkex.webp'/></a>
+                    <a href='https://www.lbank.info/exchange/mmai/usdt'><img className='mobileCoinOneImg' src='./imgMobile/mobile_lbank.webp'/></a>
                 </div>
                 <div className='mobileCoinTwo'>
-                    <a href='https://www.certik.com/projects/metamonkey-ai'><img className='mobileCoinTwoImg' src='./imgMobile/mobile_certik.png'/></a>
+                    <a href='https://www.certik.com/projects/metamonkey-ai'><img className='mobileCoinTwoImg' src='./imgMobile/mobile_certik.webp'/></a>
                 </div>
             </div>
         </section>

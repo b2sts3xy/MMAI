@@ -4,7 +4,7 @@ import '../mobileStyle/MobileWhitePapers.css'
 const MobileWhitePapers = () => {
     return (
         <section className='mobileWhitePapersContainer'>
-            <div className='mobileWhitePapersTitle'>MMAI White Papers</div>
+            <div className='mobileWhitePapersTitle'>MMAI WHITE PAPERS</div>
             <div className='mobileWhitePapersText'>MMAI core belief is Research and then Development is more important than people think. R&D is the key component of innovation that will drive the broader adoption of Web3 technologies. The research labs are what drives our ability to obtain new knowledge that is placing MMAI tech on the cutting edge of tomorrow’s internet</div>
 
             <div className='mobileBlockChain'>

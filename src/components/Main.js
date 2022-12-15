@@ -18,7 +18,7 @@ const Main = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <p className='main_text_content'>The MMAI PureWorld is based on research and development with a major focus on a great experience. Whether you are looking to have fun, looking for an investment opportunity, or looking to create your Ecommerce business on tomorrow's internet today. </p>
                 </div>
                 <div className='main_blockchain'>
-                    <p className='main_text_title'>Payment Processing</p>
+                    <p className='main_text_title'>PAYMENT PROCESSING</p>
                     <p className='main_text_content'>Our blockchain based payment processing system is aimed at bridging Web2 & Web3 Ecommerce business. Plus it will drive Ecommerce in our PureWorld.</p>
                 </div>
             </div>

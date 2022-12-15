@@ -37,7 +37,7 @@ const Solution = () => {
                 <img className='img3' src='./imgSolution/sol3.webp' alt='NFT TOKEN_1'/>
                 <div className='secR'>
                     <div className='borderL'>
-                        <span class="Functional-NFTs">Functional NFTs</span>
+                        <span class="Functional-NFTs">FUNCTIONAL NFTs</span>
                         <span class="text3">Our functional NFT goes beyond digital asset management by enabling the transformation of virtual products into physical assets. Other real-world products the NFT market will affect are investment instruments, authenticity of products, medical records, intellectual property and patents, identity verification, supply chain, voting, and so much more. In addition, our NFT blockchain will allow metaverse users with traceability and smart contract permission-based access for meta-humans to traverse the multiple metaverses.</span>            
                     </div>  
                     <span class="text">We Bring Real World AI Technology To The Metaverse.</span>
@@ -46,7 +46,7 @@ const Solution = () => {
             <div className='secL'>
                 <div className='secR'>
                     <div className='borderUp'></div>
-                    <span class="MMAI-Token">MMAI Token</span>
+                    <span class="MMAI-Token">MMAI TOKEN</span>
                     <span class="text4">The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</span>
                     <div className='click'>
                         <StaticExample/>

@@ -12,7 +12,7 @@ function StaticExampleVideo() {
 
     return (
         <div className='btnSol2'>
-            <div onClick={handleShow}>Watching the Demo Video</div>
+            <div onClick={handleShow}>PureWallet Demo Video</div>
             <Modal show={show} onHide={handleClose} size='xl'>
                 <video autoplay='autoplay' muted='muted' src='https://mmaipure.files.wordpress.com/2022/11/puprewallet_vido.mp4'></video>
             </Modal>

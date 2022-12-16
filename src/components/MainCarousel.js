@@ -38,7 +38,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
                         <div className='carousel_text'>
-                            <spen className='main_carousel_text'>MMAI Metaverse World,<br/> Using Blockchain Technology<br/> Has Been Released.<br/></spen>
+                            <spen className='main_carousel_text'>MMAI Metaverse World-<br/> Using Blockchain Technology<br/> Has Been Released.<br/></spen>
                             <spen className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world,<br />from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></spen>
                             <div className='downloadBtn' onClick={onAppStore}>Download Launcher</div>
                         </div>
@@ -56,7 +56,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
                         <div className='carousel_text'>
                             <spen className='header_carousel_text'>Released at End of December 2022</spen>
-                            <spen className='main_carousel_text'><br/>MMAI PUREWALLET<br/>Using The Cold Wallet For Free!<br /></spen>
+                            <spen className='main_carousel_text'><br/>MMAI PUREWALLET<br/>Using The Cold Wallet in your Device!<br /></spen>
                             <spen className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, you can store and buy your Cryptocurrency in your Smart device freely <br /> trade Cryptocurrency with other people.<br /><br /><br /></spen>
                             <div className='storeBtn'>
                                 <img onClick={onAppStore} className='storeImgA' src='./img/APPLESTORE.webp' alt=''/>

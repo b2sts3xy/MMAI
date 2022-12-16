@@ -40,7 +40,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                         <div className='carousel_text'>
                             <spen className='main_carousel_text'>MMAI Metaverse World-<br/> Using Blockchain Technology<br/> Has Been Released.<br/></spen>
                             <spen className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world,<br />from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></spen>
-                            <div className='downloadBtn' onClick={onAppStore}>Download Launcher</div>
+                            <div className='downloadBtn' onClick="location.href='https://creativia.kr/files/MMAIPUREWORLDv011.zip';">Download Launcher</div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>
                     </div>

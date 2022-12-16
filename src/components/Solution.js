@@ -18,7 +18,7 @@ const Solution = () => {
                             <span class="text1">The MMAI PureWorld is a new exciting way of interacting with other Web3 enthusiasts. Leverage our metaverse to your advantage with a whole new level of immersive experiences, including entertainment, social, business, and educational. PureWorld is focused on utility software that provides multi-functional facilities to every meta-human. Our web-inside-web (WIW) module will include an NFT blockchain with metaverse for user traceability and a smart contract for access permission for meta-humans to travel across metaverse places.</span>
                         </div>
                     </div>
-                    <div className='btnSol' onClick={onClickEvent} style={{cursor:'pointer'}}>Download Launcher</div>
+                    <div className='btnSol' onClick="location.href='https://creativia.kr/files/MMAIPUREWORLDv011.zip';" style={{cursor:'pointer'}}>Download Launcher</div>
                 </div>
             </div>    
             <div className='secL'>

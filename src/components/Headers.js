@@ -14,13 +14,13 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
         <section className='header_container'>
             <div className='header_left'>
-                <spen onClick={reload} className='header_name'>MMAI</spen>
+                <span onClick={reload} className='header_name'>MMAI</span>
             </div>
             <div className='header_center'>
-                <spen className='header_categori1'>Home</spen>
-                <spen onClick={onSolutionClick} className='header_categori2'>MMAI SOLUTIONS</spen>
-                <spen onClick={onGalleryClick} className='header_categori2'>MMAI GALLERY</spen>
-                <spen onClick={onPartnerClick} className='header_categori2'>PARTNERS</spen>
+                <span className='header_categori1'>Home</span>
+                <span onClick={onSolutionClick} className='header_categori2'>MMAI SOLUTIONS</span>
+                <span onClick={onGalleryClick} className='header_categori2'>MMAI GALLERY</span>
+                <span onClick={onPartnerClick} className='header_categori2'>PARTNERS</span>
                 <a href='https://blog.mmaipure.com/' className='header_categori2'>MMAI BLOG</a>
             </div>
             <div className='header_right'>

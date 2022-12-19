@@ -42,8 +42,8 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
                         <div className='carousel_text'>
-                            <spen className='main_carousel_text'>MMAI Metaverse World-<br/> Using Blockchain Technology<br/> Has Been Released.<br/></spen>
-                            <spen className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world,<br />from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></spen>
+                            <span className='main_carousel_text'>MMAI Metaverse World-<br/> Using Blockchain Technology<br/> Has Been Released.<br/></span>
+                            <span className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world,<br />from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></span>
                             <div className='downloadBtn' onClick={onMetaverseClinet}>Download Launcher</div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>
@@ -59,9 +59,9 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
                         <div className='carousel_text'>
-                            <spen className='header_carousel_text'>Released at End of December 2022</spen>
-                            <spen className='main_carousel_text'><br/>MMAI PUREWALLET<br/>Using The Cold Wallet in your Device!<br /></spen>
-                            <spen className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, you can store and buy your Cryptocurrency in your Smart device freely <br /> trade Cryptocurrency with other people.<br /><br /><br /></spen>
+                            <span className='header_carousel_text'>Released at End of December 2022</span>
+                            <span className='main_carousel_text'><br/>MMAI PUREWALLET<br/>Using The Cold Wallet in your Device!<br /></span>
+                            <span className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, you can store and buy your Cryptocurrency in your Smart device freely <br /> trade Cryptocurrency with other people.<br /><br /><br /></span>
                             <div className='storeBtn'>
                                 <img onClick={onAppStore} className='storeImgA' src='./img/APPLESTORE.webp' alt=''/>
                                 <a href='https://play.google.com/store/apps/details?id=com.nslab.pure_wallet&pli=1'><img className='storeImgG' src='./img/GooglePlay.webp' alt=''/></a>
@@ -80,8 +80,8 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
                         <div className='carousel_text'>
-                            <spen className='main_carousel_text'>Metamonkey AI can integrate<br/> our real-world technology<br/> into any metaverse<br/></spen>
-                            <spen className='sub_carousel_text'><br/><br/>Metamonkey AI can integrate our real-world AI technology into any metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></spen>
+                            <span className='main_carousel_text'>Metamonkey AI can integrate<br/> our real-world technology<br/> into any metaverse<br/></span>
+                            <span className='sub_carousel_text'><br/><br/>Metamonkey AI can integrate our real-world AI technology into any metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
                             <div className='third_carouselBtn'>
                                 <StaticExampleMain/>
                                 <a href='https://uniswap.org/'><img className='third_carouselImg' src='./img/coin1.webp' alt=''/> </a>

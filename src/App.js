@@ -47,7 +47,7 @@ function App() {
         </div>
         <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
         <div className='middle'>
-          <div ref={solutionRef}><span class="MMAI-Solution">MMAI SOLUTION</span></div>
+          <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>
           <Solution/>
         </div>
         <div className='gallBody'>

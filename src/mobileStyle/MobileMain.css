@@ -12,6 +12,10 @@
     padding-bottom: 85%;
 }
 
+.mmimg {
+    display: none !important;
+}
+
 .mobileHeader {
     width: 80%;
     display: flex;

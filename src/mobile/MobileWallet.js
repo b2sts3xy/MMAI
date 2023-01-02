@@ -23,7 +23,7 @@ const MoblieWallet = () => {
             </div>
             <MobileAPWallet />
             <div className='mobileWalletVideo'>
-                <a href='./imgMobile/mmaiwallet.mp4'><img id='mobileWalletVideoImg' src='./imgMobile/mobile_wallet_video.webp' /></a>
+                <a href='./imgMobile/mmaiwallet.mp4'><img id='mobileWalletVideoImg' src='./imgMobile/mobile_wallet_video.png' /></a>
             </div>
         </section>
     );

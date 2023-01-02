@@ -32,7 +32,7 @@ export default class MobileAPWallet extends Component {
                         <img className="MslideImg"  src="./imgMobile/mobilewallet2.webp" alt="MMAI PUREWORLD_METAVERSE_2"/>
                     </div>
                     <div className="slideBox">
-                        <img className="MslideImg"  src="./imgMobile/mobilewallet3.webp" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
+                        <img className="MslideImg"  src="./imgMobile/mobilewallet3.png" alt="MMAI PUREWORLD_MAIN STREET__METAVERSE_AIRVIEW"/>
                     </div>
                     <div className="slideBox">
                         <img className="MslideImg"  src="./imgMobile/mobilewallet4.webp" alt="MMAI PUREWORLD_METAVERSE_COFFEE_INSIDE"/>

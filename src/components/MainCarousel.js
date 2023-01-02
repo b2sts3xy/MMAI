@@ -80,8 +80,8 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
                         <div className='carousel_text'>
-                            <span className='main_carousel_text'>Metamonkey AI can integrate<br/> our real-world technology<br/> into any metaverse<br/></span>
-                            <span className='sub_carousel_text'><br/><br/>Metamonkey AI can integrate our real-world AI technology into any metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
+                            <span className='main_carousel_text'>MetaMonkey AI can integrate<br/> our real-world technology<br/> into any metaverse<br/></span>
+                            <span className='sub_carousel_text'><br/><br/>MetaMonkey AI can integrate our real-world AI technology into any metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
                             <div className='third_carouselBtn'>
                                 <StaticExampleMain/>
                                 <a href='https://uniswap.org/'><img className='third_carouselImg' src='./img/coin1.webp' alt=''/> </a>

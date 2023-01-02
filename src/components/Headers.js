@@ -24,9 +24,9 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 <a href='https://blog.mmaipure.com/' className='header_categori2'>MMAI BLOG</a>
             </div>
             <div className='header_right'>
-                <a href='https://twitter.com/metamonkey_ai' className='header_sns'>twitter</a>
-                <a href='https://t.me/MMAI_Official' className='header_sns'>telegram</a>
-                <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ' className='header_sns'>Youtube</a>
+                <a href='https://twitter.com/metamonkey_ai' className='header_sns'>Twitter</a>
+                <a href='https://t.me/MMAI_Official' className='header_sns'>Telegram</a>
+                <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ' className='header_sns'>YouTube</a>
                 </div>
         </section>
     );

@@ -23,16 +23,16 @@ const MobileMain = () => {
                         <div className='mobileTitle' onClick={mobileReload}>MMAI</div>
                         <div className='mobilesns'>
                             <div className="msns">
-                                <a href='https://blog.mmaipure.com'>blog</a>
+                                <a href='https://blog.mmaipure.com'>Blog</a>
                             </div>
                             <div className="msns">
-                                <a href='https://twitter.com/metamonkey_ai'>twitter</a>
+                                <a href='https://twitter.com/metamonkey_ai'>Twitter</a>
                             </div>
                             <div className="msns">
-                                <a href='https://t.me/MMAI_Official'>telegram</a>
+                                <a href='https://t.me/MMAI_Official'>Telegram</a>
                             </div>
                             <div className="msns">
-                                <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>Youtube</a>
+                                <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>YouTube</a>
                             </div>
                         </div>
                     </div>

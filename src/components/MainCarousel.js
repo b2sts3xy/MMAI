@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../style/MainCarousel.css"
 import Headers from './Headers';
-import StaticExampleMain from './StaticExampleMain';
+import StaticExample from './StaticExample';
 
 const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
 
@@ -83,7 +83,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                             <span className='main_carousel_text'>MetaMonkey AI can integrate<br/> our real-world technology<br/> into any Metaverse<br/></span>
                             <span className='sub_carousel_text'><br/><br/>MetaMonkey AI can integrate our real-world AI technology into any Metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
                             <div className='third_carouselBtn'>
-                                <StaticExampleMain/>
+                                <StaticExample/>
                                 <a href='https://uniswap.org/'><img className='third_carouselImg' src='./img/coin1.webp' alt=''/> </a>
                                 <a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img className='third_carouselImg' src='./img/coin2.webp' alt=''/> </a>
                                 <a href='https://www.bkex.com/trade/MMAI_USDT'><img className='third_carouselImg' src='./img/coin3.webp' alt=''/> </a>

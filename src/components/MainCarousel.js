@@ -35,7 +35,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
         <section>
             <div id='first_carousel' className={(eventNum === event1id) ? 'default-view' : 'default-none'}>
                 <div className='first_carousel_video_container'>
-                    <video className='carousel_mp4' src="./img/mmai_homepage.mp4" height='1840px' poster="true" autoPlay muted loop playsInline preload='none'></video>
+                    <video className='carousel_mp4' src="./img/mmai_homepage.mp4" height='1840px' poster="./img/MainCarousel2.webp" autoPlay muted loop playsInline preload='none'></video>
                 </div>
                 <div className='carousel_container_video'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />

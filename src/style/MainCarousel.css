@@ -33,14 +33,6 @@
     height: 100%;
 }
 
-/* .carousel_container {
-    width: 100%;
-    height: 100%;
-    margin-top: -95vh;
-    display: flex;
-    flex-direction: column;
-} */
-
 .first_carousel_video_container {
     min-width: 1900px;
 }
@@ -48,8 +40,7 @@
 .carousel_container_video {
     position: absolute;
     width: 100%;
-    /* margin-top: -918px; */
-    margin-top: -98vh;
+    margin-top: -96vh;
     display: flex;
     flex-direction: column;
 }

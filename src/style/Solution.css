@@ -146,15 +146,14 @@
     cursor: pointer;
 }
 .click{
+    width: 70%;
+    min-width: 350px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 19%;
 }
-.certik{
-    width: 100%;
-    min-width: 155px;
-    margin-top: -3px;
-}
+
 .certikA{
     width: 40%;
 }
@@ -170,7 +169,7 @@
     background-image: linear-gradient(134deg, #25d3d6 -1%, #ec6df7 80%);
 }
 
-@media (min-width: 900px) and (max-width: 1280px) {
+/* @media (min-width: 900px) and (max-width: 1280px) {
 
     .text {
         font-family: Roboto;
@@ -235,4 +234,4 @@
     .certikA{
         width: 50%;
     }
-}
+} */

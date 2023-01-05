@@ -12,7 +12,7 @@ function StaticExample() {
 
     return (
         <div className='buyBtn'>
-            <div onClick={handleShow}>Buy MMAI NOW!</div>
+            <div onClick={handleShow}><img className='buyBtnImg' src='./imgSolution/buyBtn.png' /></div>
             <Modal show={show} onHide={handleClose} size='xl'>
                 <div data-layer="b6781107-2437-4b8f-9953-ea2f863db2d8" className="x1">
                     <div data-layer="25a7284c-2622-4f60-9554-363f59d2829d" className="x19061">

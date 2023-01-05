@@ -51,7 +51,7 @@ const Solution = () => {
                     <span className="text4">The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</span>
                     <div className='click'>
                         <StaticExample/>
-                        <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/btn.webp' alt=''/></a>
+                        <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/certik.png' alt=''/></a>
                     </div>
                 </div>
                 <img className='img4' src='./imgSolution/sol4.webp' alt='METAMONEKY TOKEN'/>

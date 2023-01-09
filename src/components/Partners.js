@@ -5,7 +5,7 @@ const Partners = () => {
     return (
         <div className='part'>
             <div className="box1">
-                <a href='http://creativia.tech/'><img className="new_logo" src='./imgPartners/part1.webp' alt='이미지'/></a>
+                <a href='http://creativia.kr/'><img className="new_logo" src='./imgPartners/part1.webp' alt='이미지'/></a>
             </div>
             <div className="box2">
                 <a href='https://www.ictcrc.org/'><img className="ictcrec4x" src='./imgPartners/part2.webp' alt='이미지'/></a>

@@ -58,22 +58,21 @@
 
 .header_categori2:hover {
     color: white;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 .header_sns {
     margin: 0 15px 0 15px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: bold;
-    font-family: Roboto;
     color: white;
     text-decoration: none;
 }
 
 .header_sns:hover {
     cursor: pointer;
-    border-bottom: 1px solid #767676;
+    border-bottom: 1px solid white;
     color: white;
 }

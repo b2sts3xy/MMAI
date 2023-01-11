@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import "../style/MainCarousel.css"
+import { Link } from "react-router-dom";
 import Headers from './Headers';
-import StaticExample from './StaticExample';
+import Guide from './Guide';
 
 const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
 
@@ -83,12 +84,14 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                             <span className='main_carousel_text'>MetaMonkey AI can integrate<br/> our real-world technology<br/> into any Metaverse<br/></span>
                             <span className='sub_carousel_text'><br/><br/>MetaMonkey AI can integrate our real-world AI technology into any Metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
                             <div className='third_carouselBtn'>
-                                <StaticExample/>
-                                <a href='https://uniswap.org/'><img className='third_carouselImg' src='./img/coin1.webp' alt=''/> </a>
-                                <a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img className='third_carouselImg' src='./img/coin2.webp' alt=''/> </a>
-                                <a href='https://www.bkex.com/trade/MMAI_USDT'><img className='third_carouselImg' src='./img/coin3.webp' alt=''/> </a>
-                                <a href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img className='third_carouselImg' src='./img/coin4.webp' alt=''/> </a>
-                                <a href='https://www.lbank.info/exchange/mmai/usdt'><img className='third_carouselImg' src='./img/coin5.webp' alt=''/> </a>
+                                <Link to="/Guide" target="_blank">
+                                    <img className="img_BtnBuy" src='./imgSolution/buyBtn.png'/>
+                                </Link>
+                                <a href='https://uniswap.org/'><img className='third_carouselImg1' src='./img/coin1.webp' alt='' width={"80vw"}/> </a>
+                                <a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img className='third_carouselImg2' src='./img/coin2.webp' alt='' width={"80vw"}/> </a>
+                                <a href='https://www.bkex.com/trade/MMAI_USDT'><img className='third_carouselImg3' src='./img/coin3.webp' alt='' width={"80vw"}/> </a>
+                                <a href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img className='third_carouselImg4' src='./img/coin4.webp' alt='' width={"80vw"}/> </a>
+                                <a href='https://www.lbank.info/exchange/mmai/usdt'><img className='third_carouselImg5' src='./img/coin5.webp' alt='' width={"80vw"}/> </a>
                             </div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>

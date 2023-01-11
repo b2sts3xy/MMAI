@@ -120,18 +120,49 @@
 .third_carouselBtn {
     width: 50%;
     min-width: 650px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    /* justify-content: space-between;
+    flex-direction: row; */
     align-items: center;
 }
-
+/* 
 .third_carouselBtn a {
     width: 15%;
-}
+} */
 
-
+/* 
 .third_carouselImg {
     width: 90%;
     height: auto;
+} */
+
+.third_carouselImg1 {
+    grid-column: 1;   
+    margin-left: 1vw;
+}
+
+.third_carouselImg2 {
+    grid-column: 2;   
+    margin-left: 1vw;
+
+}
+
+.third_carouselImg3 {
+    grid-column: 3;   
+    margin-left: 1vw;
+
+}
+
+.third_carouselImg4 {
+    grid-column: 4;   
+    margin-left: 1vw;
+
+}
+
+.third_carouselImg5 {
+    grid-column: 5;   
+    margin-left: 1vw;
+
 }

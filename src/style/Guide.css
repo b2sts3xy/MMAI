@@ -1,0 +1,125 @@
+.Window_Guide {
+    display: grid;    
+    grid-template-columns: 0.4fr 0.8fr 0.4fr;
+    width: 100vw;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../public/img/2buyMmaiToken7ae4c83d.webp')
+}
+
+.Guide {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 0.3fr 0.2fr 0.5fr 0.6fr 0.6fr 1.6fr 1.6fr 0.6fr 0.3fr;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Roboto;
+    font-size: 1.3vw;
+}
+
+.Guide_Title {
+    grid-row: 2;
+    color: white;
+}
+
+.GTitle_Big {
+    font-size: 3vw;
+}
+
+/*=============================================*/
+/* coin */
+.CoinLink{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 7vh;
+}
+
+.Coin1{
+    grid-row: 3;
+    grid-column: 2;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+.Coin2{
+    grid-row: 3;
+    grid-column: 3;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+.Coin3{
+    grid-row: 3;
+    grid-column: 4;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+.Coin4{
+    grid-row: 3;
+    grid-column: 5;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+.Coin5{
+    grid-row: 3;
+    grid-column: 6;
+    margin: 1vw;
+    cursor: pointer;
+}
+
+/*=============================================*/
+/* Step 1 */
+.Step1 {
+    grid-row: 4;
+    color: white;
+    margin-bottom: 7vh;
+}
+
+.Step1_Address {
+    cursor: text;
+    text-decoration-line: underline;
+    color: aqua;
+}
+
+.txt_Ether, .txt_Dex {
+    text-decoration-line: underline;
+}
+/*=============================================*/
+/* Step 2 */
+.Step2 {
+    grid-row: 5;
+    color: white;
+    margin-bottom: 7vh;
+
+}
+
+.Step2_url {
+    cursor: pointer;
+}
+
+/*=============================================*/
+/* Step 3 */
+.Step3 {
+    grid-row: 6;
+    color: white;
+}
+
+/*=============================================*/
+/* Step 4 */
+.Step4 {
+    grid-row: 7;
+    color: white;
+    margin-bottom: 7vh;
+}
+
+/*=============================================*/
+/* Step 5 */
+.Step5 {
+    grid-row: 8;
+    color: white;
+}

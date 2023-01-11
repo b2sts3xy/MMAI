@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import './App.css';
 import Footer from './components/Footer';
 import Partners from './components/Partners';
@@ -18,7 +19,8 @@ import MoblieToken from './mobile/MobileToken';
 import MobileWhitePapers from './mobile/MobileWhitePapers';
 import MobilePartners from './mobile/MobilePartners';
 import MobileFooter from './mobile/MobileFooter';
-
+import MainPage from './components/MainPage';
+import Guide from './components/Guide';
 
 function App() {
 
@@ -42,34 +44,12 @@ function App() {
   return (
     <section className="App">
       <div className='pc'>
-        <div className='top'>
-          {/* <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/> */}
-        </div>
-        <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
-        <div className='middle'>
-          <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>
-          <Solution/>
-        </div>
-        <div className='gallBody'>
-            <div className='gallBox'>
-                <div ref={galleryRef} className='gallText'>MMAI Gallery</div>
-                <div className='but'>
-                  <button className={rendNum ? 'gallBtn' : 'gallBtn_active'} onClick={() => {setRendNum(false)}}>MMAI WORLD</button>
-                  <button className={rendNum ? 'gallBtn_active' : 'gallBtn'} onClick={() => {setRendNum (true)}}>MMAI PUREWALLET</button>
-                </div>
-            </div>
-            {rendNum ? <AutoPlaySecond/> : <AutoPlay/>}
-        </div>
-        <div className='middle'>
-          <Whitepapers/>
-          <div ref={partnerRef} className="AI-Technology-Partners">
-              <span>AI Technology Partners</span>
-          </div>
-          <Partners/>
-        </div>
-        <div className='bottom'>
-          <Footer/>
-        </div>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<MainPage/>}></Route>
+            <Route exact path="/Guide" element={<Guide/>}></Route>
+          </Routes>
+        </Router>
       </div>
 
 

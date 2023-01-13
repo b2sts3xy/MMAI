@@ -7,6 +7,7 @@ import Whitepapers from './Whitepapers';
 import Solution from './Solution';
 import Main from './Main';
 import "../style/MainPage.css"
+import MarketPlacePopUp from './MarketPlacePopUp';
 
 const MainPage = () => {
 
@@ -28,12 +29,8 @@ const MainPage = () => {
 
     return (
         <>
-        <div className='top'>
-          {/* <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/> */}
-        </div>
-
         <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
-
+        {/* <MarketPlacePopUp /> MarketPlace 팝업창 구현 중*/}
         <div className='middle'>
             <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>      
             <Solution/> 

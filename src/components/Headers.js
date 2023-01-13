@@ -11,12 +11,14 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
             <div className='header_left'>
                 <span onClick={reload} className='header_name'>MMAI</span>
             </div>
-            <div className='header_center'>
+            <div className='header_center' target="_blank">
                 <span className='header_categori1'>Home</span>
                 <span onClick={onSolutionClick} className='header_categori2'>MMAI SOLUTIONS</span>
                 <span onClick={onGalleryClick} className='header_categori2'>MMAI GALLERY</span>
                 <span onClick={onPartnerClick} className='header_categori2'>PARTNERS</span>
                 <a href='https://blog.mmaipure.com/' className='header_categori2'>MMAI BLOG</a>
+                <a href='/' className='header_categori2'>MMAI MARKETPLACE</a>
+                {/* 추후 링크 추가 */}
             </div>
             <div className='header_right'>
                 <a href='https://twitter.com/metamonkey_ai' className='header_sns'>Twitter</a>

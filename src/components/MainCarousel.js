@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "../style/MainCarousel.css"
 import { Link } from "react-router-dom";
 import Headers from './Headers';
-import Guide from './Guide';
 
 const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
 
@@ -35,10 +34,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
         <section>
             <div id='first_carousel' className={(eventNum === event1id) ? 'default-view' : 'default-none'}>
-                <div className='first_carousel_video_container'>
-                    <video className='carousel_mp4' src="./img/mmai_homepage.mp4" height='1840px' poster="./img/MainCarousel2_Img.jpg" autoPlay muted loop playsInline preload='none'></video>
-                </div>
-                <div className='carousel_container_video'>
+                <div className='carousel_container'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
@@ -52,9 +48,6 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 </div>
             </div>
             <div id='second_carousel' className={(eventNum === event2id) ? 'default-view' : 'default-none'}>
-                {/* <div className='carousel_background'>
-                    <img className='carousel_img' src='./img/MainCarousel1.webp' alt=''></img>
-                </div> */}
                 <div className='carousel_container'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
                     <div className='carousel_content'>
@@ -73,9 +66,6 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 </div>
             </div>
             <div id='third_carousel' className={(eventNum === event3id) ? 'default-view' : 'default-none'}>
-                {/* <div className='carousel_background'>
-                    <img className='carousel_img' src='./img/MainCarousel3.webp'alt=''></img>
-                </div> */}
                 <div className='carousel_container'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
                     <div className='carousel_content'>
@@ -85,7 +75,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                             <span className='sub_carousel_text'><br/><br/>MetaMonkey AI can integrate our real-world AI technology into any Metaverse.<br /> We offer solutions for companies to enhance user experiences and generate<br /> new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
                             <div className='third_carouselBtn'>
                                 <Link to="/Guide" target="_blank">
-                                    <img className="img_BtnBuy" src='./imgSolution/buyBtn.png'/>
+                                    <img className="img_BtnBuy" src='./imgSolution/buyBtn.png' alt='Buy MMAI NOW!'/>
                                 </Link>
                                 <a href='https://uniswap.org/'><img className='third_carouselImg1' src='./img/coin1.webp' alt='' width={"80vw"}/> </a>
                                 <a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img className='third_carouselImg2' src='./img/coin2.webp' alt='' width={"80vw"}/> </a>

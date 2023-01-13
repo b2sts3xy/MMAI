@@ -9,9 +9,8 @@
 #first_carousel {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    /* background-size: cover;
-    background-image: url('../../public/img/mmai_homepage.mp4') */
+    background-size: cover;
+    background-image: url('../../public/img/MainCarousel2.png')
 }
 
 #second_carousel {
@@ -51,7 +50,6 @@
     flex-direction: row;
     align-items: center;
     height: 80vh;
-    /* margin-top: -100vh; */
     z-index: 1;
 }
 
@@ -122,21 +120,8 @@
     min-width: 650px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    
-    /* justify-content: space-between;
-    flex-direction: row; */
     align-items: center;
 }
-/* 
-.third_carouselBtn a {
-    width: 15%;
-} */
-
-/* 
-.third_carouselImg {
-    width: 90%;
-    height: auto;
-} */
 
 .third_carouselImg1 {
     grid-column: 1;   

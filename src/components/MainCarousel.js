@@ -27,9 +27,8 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
         alert("Coming Soon!")
     }
 
-    const onMarketPlace = () => {
-        alert("Coming soon.")
-        // window.open('마켓플레이스 링크', '_blank');
+    const onMetaverseClinet = () => {
+        window.open('https://creativia.kr/files/MMAIPUREWORLDv011.zip', '_blank');
     }
 
     return (
@@ -39,10 +38,10 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
-                        <div className='carousel1_text'>
-                            <span className='main_carousel1_text'>MMAI PUREWORLD <br/> KEYS TO THE CITY  RELEASE!<br/></span>
-                            <span className='sub_carousel1_text'><br/><br/>The Keys To the City are 5000 NFTs that give holders exclusive rights within the MMAI PUREWOROLD!<br/><br/><br/><br/></span>
-                            <div className='downloadBtn' onClick={onMarketPlace}>KEYS TO THE CITY</div>
+                        <div className='carousel_text'>
+                            <span className='main_carousel_text'>MMAI Metaverse World-<br/> Using Blockchain Technology<br/> Has Been Released.<br/></span>
+                            <span className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world,<br />from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></span>
+                            <div className='downloadBtn' onClick={onMetaverseClinet}>Download Launcher</div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>
                     </div>

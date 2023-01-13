@@ -58,7 +58,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                             <span className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, you can store and buy your Cryptocurrency in your Smart device freely <br /> trade Cryptocurrency with other people.<br /><br /><br /></span>
                             <div className='storeBtn'>
                                 <img onClick={onAppStore} className='storeImgA' src='./img/APPLESTORE.webp' alt=''/>
-                                <a href='https://play.google.com/store/apps/details?id=com.nslab.pure_wallet&pli=1'><img className='storeImgG' src='./img/GooglePlay.webp' alt=''/></a>
+                                <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1' target="_blank"><img className='storeImgG' src='./img/GooglePlay.webp' alt=''/></a>
                             </div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>

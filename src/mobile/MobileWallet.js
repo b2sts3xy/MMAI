@@ -13,7 +13,7 @@ const MoblieWallet = () => {
             <div className='mobileWalletPhoto'>
                 <div className='mobileStore'>
                     <img onClick={mobileAPPClick} className='mobileStoreImgA' src='./imgMobile/mobile_APPLESOTRE.webp' />
-                    <a href='https://play.google.com/store/apps/details?id=com.nslab.pure_wallet&pli=1'><img className='mobileStoreImgG' src='./imgMobile/mobile_Google palystore.webp' /></a>
+                    <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1'><img className='mobileStoreImgG' src='./imgMobile/mobile_Google palystore.webp' /></a>
                 </div>
             </div>
             <div className='mobileWalletContents'>

@@ -36,14 +36,6 @@
     min-width: 1900px;
 }
 
-.carousel_container_video {
-    position: absolute;
-    width: 100%;
-    margin-top: -96vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .carousel_content {
     width: 100%;
     display: flex;
@@ -71,29 +63,46 @@
     margin: 70rem 5rem ;
 }
 
+.carousel1_text {
+    width: 70%;
+    color: white;
+    font-family: Roboto;
+    margin: 70rem 5rem ;
+    text-align: center;
+}
+
 .main_carousel_text {
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5vw;
+}
+
+.main_carousel1_text {
+    font-weight: bold;
+    font-size: 3.4vw;
 }
 
 .header_carousel_text {
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: bold;
 }
 
 .sub_carousel_text {
-    font-size: 1rem;
+    font-size: 0.85vw;
+}
+
+.sub_carousel1_text {
+    font-size: 1vw;
 }
 
 .downloadBtn {
     color: white;
     background-color: #3c65ea;
-    font-size: 1.2rem;
+    font-size: 1vw;
     font-weight: 600;
     text-align: center;
+    margin: 0 auto;
     line-height: 60px;
-    width: 260px;
-    height: 60px;
+    width: 25%;
     cursor: pointer;
 }
 

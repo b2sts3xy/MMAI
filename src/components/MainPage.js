@@ -30,7 +30,7 @@ const MainPage = () => {
     return (
         <>
         <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
-        {/* <MarketPlacePopUp /> MarketPlace 팝업창 구현 중*/}
+        {/* <MarketPlacePopUp /> */}
         <div className='middle'>
             <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>      
             <Solution/> 

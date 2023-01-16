@@ -1,12 +1,16 @@
 import React from 'react';
 import '../mobileStyle/MobileToken.css'
+import { Link } from "react-router-dom";
 
 const MoblieToken = () => {
     return (
         <section>
             <div className='mobileTokenPhoto'>
                 <div className='mobileTokenBtn'>
-                    <a href='https://www.metamonkey.ai/buynow'><img className='mobileTokenBtnImg' src='./imgMobile/mobile_tokenbtn.webp' /></a>
+                    <Link to="/Guide" target="_blank">
+                        <img className='mobileTokenBtnImg' src='./imgMobile/mobile_tokenbtn.webp' alt='Buy MMAI NOW!'/>
+                    </Link>
+                    
                 </div>
             </div>
             <div className='mobileTokenContents'>

@@ -9,7 +9,7 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
         <section className='header_container'>
             <div className='header_left'>
-                <span onClick={reload} className='header_name'>MMAI</span>
+                <img className='header_name' onClick={reload} src='./img/mmai_logo.png' alt='MMAI MAIN LOGO' />
             </div>
             <div className='header_center' target="_blank">
                 <span className='header_categori1'>Home</span>
@@ -17,8 +17,7 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 <span onClick={onGalleryClick} className='header_categori2'>MMAI GALLERY</span>
                 <span onClick={onPartnerClick} className='header_categori2'>PARTNERS</span>
                 <a href='https://blog.mmaipure.com/' className='header_categori2'>MMAI BLOG</a>
-                <a href='/' className='header_categori2'>MMAI MARKETPLACE</a>
-                {/* 추후 링크 추가 */}
+                <a href='https://nftworld.tcubemnet.com/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE" className='header_categori2'>MMAI MARKETPLACE</a>
             </div>
             <div className='header_right'>
                 <a href='https://twitter.com/metamonkey_ai' className='header_sns'>Twitter</a>

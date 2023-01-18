@@ -29,32 +29,32 @@ const MainPage = () => {
 
     return (
         <>
-        <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
-        {/* <MarketPlacePopUp /> */}
-        <div className='middle'>
-            <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>      
-            <Solution/> 
-        </div>
-        <div className='gallBody'>
-            <div className='gallBox'>
-                <div ref={galleryRef} className='gallText'>MMAI Gallery</div>
-                <div className='but'>
-                  <button className={rendNum ? 'gallBtn' : 'gallBtn_active'} onClick={() => {setRendNum(false)}}>MMAI WORLD</button>
-                  <button className={rendNum ? 'gallBtn_active' : 'gallBtn'} onClick={() => {setRendNum (true)}}>MMAI PUREWALLET</button>
-                </div>
-            </div>
-            {rendNum ? <AutoPlaySecond/> : <AutoPlay/>}
-        </div>
-        <div className='middle'>
-          <Whitepapers/>
-          <div ref={partnerRef} className="AI-Technology-Partners">
-              <span>AI Technology Partners</span>
+          <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
+          <MarketPlacePopUp />
+          <div className='middle'>
+              <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>      
+              <Solution/> 
           </div>
-          <Partners/>
-        </div>
-        <div className='bottom'>
-          <Footer/>
-        </div>
+          <div className='gallBody'>
+              <div className='gallBox'>
+                  <div ref={galleryRef} className='gallText'>MMAI Gallery</div>
+                  <div className='but'>
+                    <button className={rendNum ? 'gallBtn' : 'gallBtn_active'} onClick={() => {setRendNum(false)}}>MMAI WORLD</button>
+                    <button className={rendNum ? 'gallBtn_active' : 'gallBtn'} onClick={() => {setRendNum (true)}}>MMAI PUREWALLET</button>
+                  </div>
+              </div>
+              {rendNum ? <AutoPlaySecond/> : <AutoPlay/>}
+          </div>
+          <div className='middle'>
+            <Whitepapers/>
+            <div ref={partnerRef} className="AI-Technology-Partners">
+                <span>AI Technology Partners</span>
+            </div>
+            <Partners/>
+          </div>
+          <div className='bottom'>
+            <Footer/>
+          </div>
         </>
     );
 };

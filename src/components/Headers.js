@@ -17,7 +17,7 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 <span onClick={onGalleryClick} className='header_categori2'>MMAI GALLERY</span>
                 <span onClick={onPartnerClick} className='header_categori2'>PARTNERS</span>
                 <a href='https://blog.mmaipure.com/' className='header_categori2'>MMAI BLOG</a>
-                <a href='https://mmaipure.com/marketplace' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE" className='header_categori2'>MMAI MARKETPLACE</a>
+                <a href='https://nftworld.tcubemnet.com/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE" className='header_categori2'>MMAI MARKETPLACE</a>
             </div>
             <div className='header_right'>
                 <a href='https://twitter.com/metamonkey_ai' className='header_sns'>Twitter</a>

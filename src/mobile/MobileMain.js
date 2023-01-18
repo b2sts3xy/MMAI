@@ -29,7 +29,7 @@ const MobileMain = () => {
                                 <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>YouTube</a>
                             </div>
                             <div className='mTab'>
-                                <a href='https://mmaipure.com/marketplace' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE">MMAI MARKETPLACE</a>
+                                <a href='https://nftworld.tcubemnet.com/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE">MMAI MARKETPLACE</a>
                             </div>
                         </div>
                     </div>

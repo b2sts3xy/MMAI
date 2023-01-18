@@ -28,7 +28,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     }
 
     const onMarketPlace = () => {
-        window.open('https://mmaipure.com/marketplace', '_blank');
+        window.open('https://nftworld.tcubemnet.com/', '_blank');
     }
 
     return (

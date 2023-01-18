@@ -12,15 +12,9 @@ const MobileMain = () => {
     return (
         <section>
             <div className='mobileMainContainer'>
-                <img
-                    className='mmimg'
-                    src="./imgMobile/mobileMain.webp"
-                    alt=""
-                    width="0"
-                    height="0"/>
                 <div className='mobileMainContents'>
                     <div className='mobileHeader'>
-                        <div className='mobileTitle' onClick={mobileReload}>MMAI</div>
+                        <div className='mobileTitle' onClick={mobileReload}><img className='mobile_main' src='./img/mmai_logo.png' alt='MMAI MAIN LOGO' /></div>
                         <div className='mobileTab'>
                             <div className="mTab">
                                 <a href='https://blog.mmaipure.com'>Blog</a>
@@ -35,7 +29,7 @@ const MobileMain = () => {
                                 <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>YouTube</a>
                             </div>
                             <div className='mTab'>
-                                <a href='/'>MMAI MARKETPLACE</a>
+                                <a href='https://nftworld.tcubemnet.com/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE">MMAI MARKETPLACE</a>
                             </div>
                         </div>
                     </div>

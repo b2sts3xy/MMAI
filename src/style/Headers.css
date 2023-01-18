@@ -15,10 +15,7 @@
 }
 
 .header_name {
-    font-family: Roboto;
-    font-size: 2rem;
-    font-weight: 900;
-    color: white;
+    width: 35%;
     cursor: pointer;
 }
 

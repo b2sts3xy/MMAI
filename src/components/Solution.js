@@ -1,7 +1,6 @@
 import React from 'react';
 import '../style/Solution.css'
 import { Link } from "react-router-dom";
-import Guide from './Guide';
 import StaticExampleVideo from './StaticExampleVideo';
 
 const Solution = () => {
@@ -51,7 +50,7 @@ const Solution = () => {
                     <span className="text4">The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</span>
                     <div className='click'>
                         <Link to="/Guide" target="_blank">
-                            <img className="img_BtnBuy" src='./imgSolution/buyBtn.png'/>
+                            <img className="img_BtnBuy" src='./imgSolution/buyBtn.png' alt="MMAI GUIDE"/>
                         </Link>
                         <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/certik.png' alt=''/></a>
                     </div>

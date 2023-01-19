@@ -12,8 +12,8 @@ const MoblieWallet = () => {
         <section>
             <div className='mobileWalletPhoto'>
                 <div className='mobileStore'>
-                    <img onClick={mobileAPPClick} className='mobileStoreImgA' src='./imgMobile/mobile_APPLESOTRE.webp' />
-                    <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1'><img className='mobileStoreImgG' src='./imgMobile/mobile_Google palystore.webp' /></a>
+                    <img onClick={mobileAPPClick} className='mobileStoreImgA' src='./imgMobile/mobile_APPLESOTRE.webp' alt='mmaipure appstore' />
+                    <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1'><img className='mobileStoreImgG' src='./imgMobile/mobile_Google palystore.webp' alt='mmaipure google play store'/></a>
                 </div>
             </div>
             <div className='mobileWalletContents'>
@@ -23,7 +23,7 @@ const MoblieWallet = () => {
             </div>
             <MobileAPWallet />
             <div className='mobileWalletVideo'>
-                <a href='./imgMobile/mmaiwallet.mp4'><img id='mobileWalletVideoImg' src='./imgMobile/mobile_wallet_video.png' /></a>
+                <a href='./imgMobile/mmaiwallet.mp4'><img id='mobileWalletVideoImg' src='./imgMobile/mobile_wallet_video.png' alt='mmaipurewallet video'/></a>
             </div>
         </section>
     );

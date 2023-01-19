@@ -14,7 +14,7 @@
 
 
 .App{
-    font-family:  Roboto, 'Apple SD Gothic Neo', sans-serif;
+    font-family:  'Roboto', 'Apple SD Gothic Neo', sans-serif;
 }
 /* html{
     font-size: 80%;
@@ -23,13 +23,11 @@
     margin-top: 5%;
     text-align: center;
     height: 24px;
-    font-family: Roboto, 'Apple SD Gothic Neo', Sans-serif;
     font-size: 2rem;
     font-weight: bold;
     color: #000;
 }
 .MMAI-Solution {
-    font-family: Roboto, 'Apple SD Gothic Neo', Sans-serif;
     font-size: 2.3rem;
     font-weight: bold;
     color: #000;
@@ -40,7 +38,6 @@
 .gallText {
     margin-left: 15%;
     height: 24px;
-    font-family: Roboto, 'Apple SD Gothic Neo', Sans-serif;
     font-size: 2rem;
     font-weight: bold;
     color: #000;

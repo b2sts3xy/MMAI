@@ -33,39 +33,33 @@
     margin-left: 5%;
 }
 .text {
-    font-family: Roboto;
     font-size: 2rem;
     font-weight: bold;
     color: #000;
     margin-top: 62%;
 }
 .text1 {
-    font-family: Roboto;
     font-size: 1rem;
     color: #767676;
     width: 20rem;
 }
 .text2 {
     margin-left: 49%;
-    font-family: Roboto;
     font-size: 1rem;
     color: #767676;
 }
 .text3 {
     margin-top: 1%;
-    font-family: Roboto;
     font-size: 1rem;
     color: #767676;
 }
 .text4 {
     margin-left: 40%;
-    font-family: Roboto;
     font-size: 1rem;
     color: #767676;
 }
 .MMAI-PUREWORLD {
     margin-bottom: 7%;
-    font-family: Roboto;
     font-size: 1.8rem;
     font-weight: bold;
     color: #000;
@@ -73,14 +67,12 @@
 .MMAI-PUREWALLET {
     margin-bottom: 7%;
     margin-left: 49%;
-    font-family: Roboto;
     font-size: 1.8rem;
     font-weight: bold;
     color: #000;
 }
 .Functional-NFTs {
     margin-bottom: 7%;
-    font-family: Roboto;
     font-size: 1.8rem;
     font-weight: bold;
     color: #000;
@@ -88,7 +80,6 @@
 .MMAI-Token {
     margin-left: 40%;
     margin-bottom: 7%;
-    font-family: Roboto;
     font-size: 1.8rem;
     font-weight: bold;
     color: #000;
@@ -172,7 +163,7 @@
 /* @media (min-width: 900px) and (max-width: 1280px) {
 
     .text {
-        font-family: Roboto;
+
         font-size: 2rem;
         font-weight: bold;
         color: #000;
@@ -185,14 +176,14 @@
     }
     .text2 {
         margin-left: 49%;
-        font-family: Roboto;
+
         font-size: 1rem;
         color: #767676;
         overflow: scroll;
         height: 70px;
     }
     .text1 {
-        font-family: Roboto;
+
         font-size: 1rem;
         color: #767676;
         width: 20rem;

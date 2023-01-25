@@ -10,7 +10,6 @@ const MoblieToken = () => {
                     <Link to="/Guide" target="_blank">
                         <img className='mobileTokenBtnImg' src='./imgMobile/mobile_tokenbtn.webp' alt='Buy MMAI NOW!'/>
                     </Link>
-                    
                 </div>
             </div>
             <div className='mobileTokenContents'>

@@ -27,8 +27,8 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
         alert("Coming Soon!")
     }
 
-    const onMetaverseClinet = () => {
-        window.open('https://creativia.kr/files/MMAIPUREWORLDv011.zip', '_blank');
+    const onMarketPlace = () => {
+        window.open('https://mmaipure.com/marketplace/', '_blank');
     }
 
     return (
@@ -38,15 +38,16 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
                     <div className='carousel_content'>
                         <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./img/left.webp' alt=''/></div>
-                        <div className='carousel_text'>
-                            <span className='main_carousel_text'>MMAI Metaverse World-<br/> Using Blockchain Technology<br/> Has Been Released.<br/></span>
-                            <span className='sub_carousel_text'><br/><br/>We offer complete solutions for your business to integrate into the digital world,<br />from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall<br/><br/><br/><br/><br/></span>
-                            <div className='downloadBtn' onClick={onMetaverseClinet}>Download Launcher</div>
+                        <div className='carousel1_text'>
+                            <span className='main_carousel1_text'>MMAI PUREWORLD <br/> KEYS TO THE CITY  RELEASE!<br/></span>
+                            <span className='sub_carousel1_text'><br/><br/>The Keys To The City are 5,002 NFTs that give holders exclusive rights within the MMAI PUREWOROLD!<br/><br/><br/><br/></span>
+                            <div className='downloadBtn' onClick={onMarketPlace}>KEYS TO THE CITY</div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>
                     </div>
                 </div>
             </div>
+            <div></div>
             <div id='second_carousel' className={(eventNum === event2id) ? 'default-view' : 'default-none'}>
                 <div className='carousel_container'>
                     <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
@@ -58,7 +59,7 @@ const MainCarousel = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                             <span className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, you can store and buy your Cryptocurrency in your Smart device freely <br /> trade Cryptocurrency with other people.<br /><br /><br /></span>
                             <div className='storeBtn'>
                                 <img onClick={onAppStore} className='storeImgA' src='./img/APPLESTORE.webp' alt=''/>
-                                <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1' target="_blank"><img className='storeImgG' src='./img/GooglePlay.webp' alt=''/></a>
+                                <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1' target="_blank" rel="noopener noreferrer" aria-label="google play store"><img className='storeImgG' src='./img/GooglePlay.webp' alt=''/></a>
                             </div>
                         </div>
                         <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./img/right.webp' alt=''/></div>

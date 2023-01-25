@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
   margin: 0;
   font-family: 'Roboto';
@@ -6,6 +8,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Roboto, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

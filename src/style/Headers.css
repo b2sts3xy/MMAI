@@ -15,10 +15,7 @@
 }
 
 .header_name {
-    font-family: Roboto;
-    font-size: 2rem;
-    font-weight: 900;
-    color: white;
+    width: 35%;
     cursor: pointer;
 }
 
@@ -42,7 +39,6 @@
 }
 
 .header_categori1 {
-    font-family: Roboto;
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -50,7 +46,6 @@
 }
 
 .header_categori2 {
-    font-family: Roboto;
     font-size: 1rem;
     color: white;
     text-decoration: none;

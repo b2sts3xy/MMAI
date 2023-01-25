@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.6,user-scaleable=yes" />
+	<title>MMAI</title>
+	<link rel="Stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/jquery.lightbox-0.5.css"
+		media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/jquery.bxslider.css"
+		media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/default/base.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/default/index.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/default/member.css" media="screen" />
+	<link rel="icon" href="/favicon.ico">
+
+	<script src="https://nftworld.tcubemnet.com/js/jquery-1.10.2.min.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/index.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/swiper.min.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/jquery-ui.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/jquery.lightbox-0.5.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/jquery.cookie.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/jquery.bxslider.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/index.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/aos.js"></script>
+	<script src="https://nftworld.tcubemnet.com/js/slick.min.js"></script>
+
+	<!-- AOS -->
+	<link rel="stylesheet" type="text/css" href="https://nftworld.tcubemnet.com/css/aos.css" />
+	<script src="https://nftworld.tcubemnet.com/js/aos.js"></script>
+	<script>
+		$(function () { AOS.init(); })
+	</script>
+	<!-- AOS -->
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			const counter = ($counter, max) => {
+				let now = max;
+				const handle = setInterval(() => {
+					$counter.innerHTML = Math.ceil(max - now).toLocaleString();
+					// 목표수치에 도달하면 정지
+					if (now < 1) {
+						clearInterval(handle);
+					}
+					// 증가되는 값이 계속하여 작아짐
+					const step = now / 10;
+					// 값을 적용시키면서 다음 차례에 영향을 끼침
+					now -= step;
+				}, 50);
+			}
+			// 카운트를 적용시킬 요소
+			const $counter = document.querySelector(".count");
+			// 목표 수치
+			const max = 5002;
+			setTimeout(() => counter($counter, max), 200);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1 class="logo"><a href="/"><img src="http://nftworld.tcubemnet.com/images/default/main/logo.png"
+						alt="MMAI PURE WORLD"></a></h1>
+		</div>
+		<div id="container">
+			<div class="visual">
+				<div class="inner">
+					<div class="txt-zone">
+						<h2>MMAI PureWorld<br>
+							Key To The City
+						</h2>
+						<div class="pieces">
+							<span class="count">0</span>Available
+						</div>
+						<a href="https://opensea.io/collection/mmai-pureworld-key-to-the-city">Buy on
+							OpenSea</a>
+						<div class="piece-txt">
+							<span>First Come, First Serve!</span>
+							<!-- <p>5,002 VIP Ticket are <em>available</em> for <em>pre-sale</em></p> -->
+						</div>
+					</div>
+					<div class="img-zone">
+						<img src="http://nftworld.tcubemnet.com/images/default/main/main-img.gif">
+					</div>
+				</div>
+			</div>
+			<div id="cts02">
+				<div class="inner">
+					<div class="tit" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="200"><b>WHY OWN A KEY
+							TO THE CITY ?</b></div>
+					<ul class="cts02-list">
+						<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+							<!-- <img src="/images/default/main/cts-icon01.png" alt=""> -->
+							<h4><b>ACCESS TO 1 FREE MINT OF THE<br>12 EXCLUSIVE PROPERTIES</b></h4>
+							<ul>
+								<li>1 Key To The City NFT allows 1 free mint of an exclusive property NFT</li>
+								<li>The 12 exclusive properties have been randomized by a third party prior to launch
+								</li>
+								<li>Gives ownership rights to property within MMAI PureWorld</li>
+							</ul>
+
+						</li>
+						<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+							<!-- <img src="/images/default/main/cts-icon02.png" alt=""> -->
+							<h4><b>OTHER BENEFITS</b></h4>
+							<ul>
+								<li>$100 in airdropped MMAI coins when PureChain is released.</li>
+								<li>Access to all PureWorld beta releases</li>
+								<li>Voting rights within PureWorld</li>
+								<li>Access to secret locations within PureWorld</li>
+							</ul>
+						</li>
+						<li data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">
+							<!-- <img src="/images/default/main/cts-icon03.png" alt=""> -->
+							<h4><b>AFTER SALE</b></h4>
+							<ul>
+								<li>Any Keys To The City not sold during initial sale will be burned.</li>
+								<li>Any properties not sold during initial sale will be released on OpenSea to be
+									purchased.</li>
+								<li>All owners of the free NFT properties will be required to pay their own gas fees to
+									claim their title or deed.</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="cts02-point">
+						<div class="img-zone">
+							<img src="http://nftworld.tcubemnet.com/images/default/main/point-img.png" alt="">
+						</div>
+						<div class="txt-zone">
+							<h3 data-aos="fade-left" data-aos-duration="800">2 RARE ARENAS<em> TO OWN.</em> WILL YOU
+								MINT ONE?</h3>
+							<p data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+								Minting one of these rare properties will give you exclusive ownership rights to the
+								entire arena. </br>
+								This includes naming rights to the arena and all advertisement rights.</br></br>
+
+								These arenas will be used for any events or games released in the PureWorld
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="cts03">
+				<div class="inner">
+					<div class="cts03-tit">
+						<div class="tit" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+							<h3>12 Exclusive Properties To Own</b></h3>
+							<!-- <p>Introduce 12 kinds of items by type</p> -->
+						</div>
+						<ul>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Arena</p>
+											<span>2Pieces</span>
+										</div>
+										<div class="card-con card-con-ad">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card01-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card01-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Arena</p>
+											<span>2Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card01-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">This building is a large arena. Currently, there are billboards available
+												on the exterior of the building for
+												advertising. In the future, the interior of the arena will be updated
+												with the capability to host various events. MMAI
+												will be your tech partner and create unique areas for engagement with
+												your audience.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>AD Billboard</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-con card-con-ad">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card02-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card02-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>AD Billboard</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card02-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">Interactive Billboard available for high-rise building for your advertising
+												needs. Rent them out for income or use them for your branding needs.
+												MMAI will be your tech partner and create unique interfaces for
+												engagement with your audience.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Stand AD</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card03-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card03-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Stand AD</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card03-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">These billboards are located throughout PureWorld for your advertising needs. Rent them out for income or use them for your branding needs. MMAI will be your tech partner and create unique interfaces for engagement with your audience.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Electronic Building Display</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-con card-con-dis">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card04-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card04-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Electronic Building Display</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card04-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">These electronic displays are on the exterior of various buildings, and are available for your advertising needs. Rent them out for income or use them for your branding needs. MMAI will be your tech partner and create unique interfaces for engagement with your audience.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Store(Large)</p>
+											<span>100Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card05-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card05-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Store(Large)</p>
+											<span>100Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card05-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The holder of this NFT will own a real store/eCommerce, advertise and sell products within the PureWorld. The large store is four times the size of a small store. MMAI will assist with the complete setup to include capabilities like virtual shopping, inventory and content management, shopping cart, payment gateway, AI integration, and much more. 
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Store(Medium)</p>
+											<span>250Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card06-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card06-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Store(Medium)</p>
+											<span>250Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card06-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The holder of this NFT will own a real store/eCommerce, advertise and sell products within PureWorld. The medium store is twice the size of a small store. MMAI will assist with the complete setup to include capabilities like virtual shopping, inventory and content management, shopping cart, payment gateway, AI integration, and much more.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Store(Small)</p>
+											<span>400Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card07-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card07-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Store(Small)</p>
+											<span>400Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card07-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The holder of this NFT will own a real store/business, advertise and sell products within the PureWorld. MMAI will assist with the complete setup to include capabilities like virtual shopping, inventory and content management, shopping cart, payment gateway, AI integration, and much more. 
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Office</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card08-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card08-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Office</p>
+											<span>500Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card08-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The office space can be arranged to your liking as an office or conference room. You’ll have access to design tools to personalize to your liking. MMAI will be your tech partner and create unique tools to help you hold virtual meetings and collaborate on different projects.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Booth(Large)</p>
+											<span>100Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card09-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card09-front02.jpg"
+												alt="">
+
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Booth(Large)</p>
+											<span>100Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card09-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The booth space can be used to showcase your business or products within a convention setting. Hold virtual trade shows or rent the space out to companies that are looking for a virtual trade solution. MMAI will be your tech partner and create unique engagement tools to help you hold virtual shows.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Booth(Medium)</p>
+											<span>250Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card10-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card10-front02.jpg"
+												alt="">
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Booth(Medium)</p>
+											<span>250Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card10-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The booth space can be used to showcase your business or products within a convention setting. Hold virtual trade shows or rent the space out to companies that are looking for a virtual trade solution. MMAI will be your tech partner and create unique engagement tools to help you hold virtual shows.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>Booth(Small)</p>
+											<span>400Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card11-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card11-front02.jpg"
+												alt="">
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>Booth(Small)</p>
+											<span>400Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card11-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">The booth space can be used to showcase your business or products within a convention setting. Hold virtual trade shows or rent the space out to companies that are looking for a virtual trade solution. MMAI will be your tech partner and create unique engagement tools to help you hold virtual shows.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="flip">
+								<div class="card">
+									<!-- 앞면 -->
+									<div class="front">
+										<div class="card-tit">
+											<p>MMAI Mystery Car</p>
+											<span>1500Pieces</span>
+										</div>
+										<div class="card-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card12-front.jpg"
+												alt="">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card12-front02.jpg"
+												alt="">
+										</div>
+									</div>
+									<!-- 뒷면 -->
+									<div class="back">
+										<div class="card-tit">
+											<p>MMAI Mystery Car</p>
+											<span>1500Pieces</span>
+										</div>
+										<div class="card-back-con">
+											<img src="http://nftworld.tcubemnet.com/images/default/main/card12-back.jpg"
+												alt="">
+											<p style="word-break: keep-all">These NFTs are vehicles/supercars of random models. These vehicles can be driven and/or rented in the PureWorld. These vehicles can also be customized with the purchase of accessories, external designs, and parts. In the future, these vehicles will be able to be raced within our exclusive raceway.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<h3>
+				<a href="/">
+					<img src="http://nftworld.tcubemnet.com/images/default/main/logo.png" alt="">
+				</a>
+			</h3>
+			<p class="copy">Ⓒ 2023, BY MMAI PUREWORLD</p>
+		</div>
+	</div>
+</body>
+
+</html>

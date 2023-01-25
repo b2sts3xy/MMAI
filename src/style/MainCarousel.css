@@ -10,7 +10,8 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url('../../public/img/MainCarousel2.png')
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../public/img/MainCarousel2.webp');
+    
 }
 
 #second_carousel {
@@ -59,14 +60,12 @@
 .carousel_text {
     width: 70%;
     color: white;
-    font-family: Roboto;
     margin: 70rem 5rem ;
 }
 
 .carousel1_text {
     width: 70%;
     color: white;
-    font-family: Roboto;
     margin: 70rem 5rem ;
     text-align: center;
 }
@@ -100,6 +99,7 @@
     font-size: 1vw;
     font-weight: 600;
     text-align: center;
+    margin: 0 auto;
     line-height: 60px;
     width: 25%;
     cursor: pointer;
@@ -158,4 +158,9 @@
     grid-column: 5;   
     margin-left: 1vw;
 
+}
+
+.maincarousel_marketplace, .maincarousel_marketplace:hover {
+    color: white;
+    text-decoration: none;
 }

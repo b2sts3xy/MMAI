@@ -29,7 +29,6 @@
 }
 .gallText {
     display: flex;
-    font-family: Roboto;
     justify-content: flex-start;
 }
 .gallBtn_active {

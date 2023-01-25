@@ -19,10 +19,13 @@
 .mmaititle {
     width: 75%;
     margin-top: 1%;
-    font-size: 2.5rem;
     font-weight: bold;
     display: flex;
     align-items: center;
+}
+
+.footer_mmai {
+    width: 18%;
 }
 
 .footer_mmai:hover {

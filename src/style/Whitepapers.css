@@ -7,7 +7,6 @@
 .MMAI-White-Papers {
     text-align: center;
     margin-left: 15%;
-    font-family: Roboto;
     font-size: 2.3rem;
     font-weight: bold;
     text-align: left;
@@ -16,7 +15,6 @@
 .contentbox {
     margin: 0 15% 0 15%;
     margin-top: 1%;
-    font-family: Roboto;
     font-size: 1rem;
     text-align: left;
     color: #767676;
@@ -25,7 +23,6 @@
     width: 80%;
     margin-left: 15%;
     margin-top: 7%;
-    font-family: Roboto;
     font-size: 1.7rem;
     font-weight: bold;
     text-align: left;
@@ -50,14 +47,12 @@
     width: 12rem;
 }
 .mtitle{
-    font-family: Roboto;
     font-size: 0.8rem;
     font-weight: bolder;
     color: #202020;
 }
 .stitle{
     margin-top: 13%;
-    font-family: Roboto;
     font-size: 0.7rem;
     font-weight: bolder;
     color: #909090;

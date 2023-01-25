@@ -12,11 +12,11 @@ function Guide() {
                 </div>
 
                 <div className='CoinLink'>
-                    <div className='Coin1'><a href='https://uniswap.org/'><img src='./img/coin1.webp' style={{width:"6.5vw"}}/></a></div>
-                    <div className='Coin2'><a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img src='./img/coin2.webp' style={{width:"6.5vw"}}/></a></div>
-                    <div className='Coin3'> <a href='https://www.bkex.com/trade/MMAI_USDT'><img src='./img/coin3.webp' style={{width:"6.5vw"}}/></a></div>
-                    <div className='Coin4'><a href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img src='./img/coin4.webp' style={{width:"6.5vw"}}/></a></div>
-                    <div className='Coin5'><a href='https://www.lbank.info/exchange/mmai/usdt'><img src='./img/coin5.webp' style={{width:"6.5vw"}}/></a></div>
+                    <div className='Coin1'><a href='https://uniswap.org/'><img src='./img/coin1.webp' style={{width:"calc(17px + 6.5vw)"}}/></a></div>
+                    <div className='Coin2'><a href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img src='./img/coin2.webp' style={{width:"calc(17px + 6.5vw)"}}/></a></div>
+                    <div className='Coin3'> <a href='https://www.bkex.com/trade/MMAI_USDT'><img src='./img/coin3.webp' style={{width:"calc(17px + 6.5vw)"}}/></a></div>
+                    <div className='Coin4'><a href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img src='./img/coin4.webp' style={{width:"calc(17px + 6.5vw)"}}/></a></div>
+                    <div className='Coin5'><a href='https://www.lbank.info/exchange/mmai/usdt'><img src='./img/coin5.webp' style={{width:"calc(17px + 6.5vw)"}}/></a></div>
                 </div>
 
                 <div className='Step1'>
@@ -36,16 +36,16 @@ function Guide() {
                 <div className='Step3'>
                     <p>Step 3</p>
                     <p>Launch the Uniswap app by clicking the Button on the Right upper corner.</p>
-                    <p><img src='./assets/uniswapProcess3.webp' style={{width:"7vw"}}/ ></p>
+                    <p><img src='./assets/uniswapProcess3.webp' style={{width:"calc(100px + 2vw)"}}/ ></p>
                     <p>It will open the swap window and will automatically pair to ETH</p>
-                    <p><img src='./assets/uniswapProcess2.webp' style={{width:"20vw"}}/></p>
+                    <p><img src='./assets/uniswapProcess2.webp' style={{width:"calc(100px + 20vw)"}}/></p>
                 </div>
                 
                 <div className='Step4'>
                     <p>Step 4</p>
                     <p>Click "Select Token" and Paste the Official MMAI contract address</p>
                     <p>it will automatically load the token information.</p>
-                    <p><img src='./assets/uniswapProcess4.webp' style={{width:"20vw"}}/></p>
+                    <p><img src='./assets/uniswapProcess4.webp' style={{width:"calc(120px + 20vw)"}}/></p>
                 </div>
                 
                 <div className='Step5'>

@@ -1,6 +1,4 @@
 .mobileTokenPhoto {
-    width: 100%;
-    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../../public/imgMobile/mobile_token.webp')

@@ -5,7 +5,7 @@ import StaticExampleVideo from './StaticExampleVideo';
 
 const Solution = () => {
     const onClickEvent = () => {
-        window.open('https://creativia.kr/files/MMAIPUREWORLDv011.zip', '_blank');
+        alert("Coming Soon !");
     }
     return (
         <div className='solBody'>

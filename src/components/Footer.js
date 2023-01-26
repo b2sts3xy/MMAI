@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="Youtube"><a  className='sns' href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ'>YouTube</a></div> 
                     </div>
                 </div>
-                <div className='secondline'>Ⓒ 2022, BY METAMONKEY AI</div>
+                <div className='secondline'>Ⓒ 2022, BY MMAI</div>
             </div>
         </section>
     );

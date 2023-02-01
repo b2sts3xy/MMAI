@@ -11,10 +11,12 @@ import MarketPlacePopUp from './MarketPlacePopUp';
 
 const MainPage = () => {
 
+    // 각 항목 태그에 들어감
     const solutionRef = useRef(null);
     const galleryRef = useRef(null);
     const partnerRef = useRef(null);
   
+    // 헤더에서 각 메뉴 클릭이벤트에 들어감
     const onSolutionClick = () => {
       solutionRef.current?.scrollIntoView({ behavior: 'smooth' });
     };

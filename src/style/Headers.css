@@ -1,5 +1,7 @@
 .header_container {
     height: 16vh;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8,19 +10,19 @@
     z-index: 1;
 }
 
-.header_left {
-    width: 25%;
-    line-height: 16vh;
-    text-align: center;
-}
-
 .header_name {
     width: 35%;
     cursor: pointer;
 }
 
+.header_left {
+    width: 20%;
+    line-height: 16vh;
+    text-align: center;
+}
+
 .header_center {
-    width: 48%;
+    width: 60%;
     min-width: 500px;
     display: flex;
     justify-content: center;
@@ -28,14 +30,14 @@
 }
 
 .header_right {
-    width: 27%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header_categori1, .header_categori2 {
-    margin: 0px 2.5% 0px 2.5%;
+    margin: 0px 3.5% 0px 3.5%;
 }
 
 .header_categori1 {

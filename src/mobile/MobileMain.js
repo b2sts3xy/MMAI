@@ -14,7 +14,7 @@ const MobileMain = () => {
             <div className='mobileMainContainer'>
                 <div className='mobileMainContents'>
                     <div className='mobileHeader'>
-                        <div className='mobileTitle' onClick={mobileReload}><img className='mobile_main' src='./img/mmai_logo.png' alt='MMAI MAIN LOGO' /></div>
+                        <div className='mobileTitle' onClick={mobileReload}><img className='mobile_main' src='./images/img/mmai_logo.png' alt='MMAI MAIN LOGO' /></div>
                         <div className='mobileTab'>
                             <div className="mTab">
                                 <a href='https://blog.mmaipure.com' aria-label='mmaipure blog'>Blog</a>

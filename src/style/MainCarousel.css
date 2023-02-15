@@ -8,9 +8,9 @@
 
 #first_carousel {
     width: 100%;
-    height: 100%;
+    height: 85vh;
     background-size: cover;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../public/img/MainCarousel2.webp');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../public/images/img/MainCarousel2.webp');
     
 }
 
@@ -18,14 +18,14 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url('../../public/img/MainCarousel1.webp')
+    background-image: url('../../public/images/img/MainCarousel1.webp')
 }
 
 #third_carousel {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url('../../public/img/MainCarousel3.webp')
+    background-image: url('../../public/images/img/MainCarousel3.webp')
 }
 
 .carousel_mp4 {
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 80vh;
+    height: 85vh;
     z-index: 1;
 }
 
@@ -72,30 +72,22 @@
 
 .main_carousel_text {
     font-weight: 900;
-    font-size: 2.5vw;
-}
-
-.main_carousel1_text {
-    font-weight: bold;
-    font-size: 3.4vw;
+    font-size: 2.6vw;
 }
 
 .header_carousel_text {
-    font-size: 2vw;
+    font-size: 2.1vw;
     font-weight: bold;
 }
 
 .sub_carousel_text {
-    font-size: 0.85vw;
-}
-
-.sub_carousel1_text {
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .downloadBtn {
-    color: white;
-    background-color: #3c65ea;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 3vw;
     font-size: 1vw;
     font-weight: 600;
     text-align: center;
@@ -106,7 +98,7 @@
 }
 
 .downloadBtn:hover {
-    background-color: rgb(30, 65, 182);
+    background-color: #cccccc;
 }
 
 .btnImg {
@@ -124,40 +116,33 @@
 }
 
 .third_carouselBtn {
-    width: 50%;
-    min-width: 650px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.third_carouselImg1 {
-    grid-column: 1;   
-    margin-left: 1vw;
+.BN_container {
+    width: 20%;
+    display: flex;
 }
 
-.third_carouselImg2 {
-    grid-column: 2;   
-    margin-left: 1vw;
-
+.third_link {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
 }
 
-.third_carouselImg3 {
-    grid-column: 3;   
-    margin-left: 1vw;
-
+.mc_BtnBuy {
+    width: 100%;
 }
 
-.third_carouselImg4 {
-    grid-column: 4;   
-    margin-left: 1vw;
-
+.third_link a {
+    width: 50%;
 }
 
-.third_carouselImg5 {
-    grid-column: 5;   
-    margin-left: 1vw;
-
+.third_carouselImg {
+    width: 80%;
 }
 
 .maincarousel_marketplace, .maincarousel_marketplace:hover {

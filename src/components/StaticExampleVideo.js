@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/Modal.css'
 
 function StaticExampleVideo() {
 
@@ -14,7 +13,7 @@ function StaticExampleVideo() {
         <div className='btnSol2'>
             <div onClick={handleShow}>PureWallet Demo Video</div>
             <Modal show={show} onHide={handleClose} size='xl'>
-                <video autoplay='autoplay' muted='muted' src='./imgMobile/mmaiwallet.mp4'></video>
+                <video autoplay='autoplay' muted='muted' src='./images/imgMobile/mmaiwallet.mp4'></video>
             </Modal>
         </div>
     )

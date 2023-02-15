@@ -10,7 +10,7 @@ const Solution = () => {
     return (
         <div className='solBody'>
             <div className='secL'>
-                <img className='img1' src='./imgSolution/sol1.webp' alt='MMAI PUREWORLD_METAVERSE_MAIN STREET_3'/>
+                <img className='img1' src='./images/imgSolution/sol1.webp' alt='MMAI PUREWORLD_METAVERSE_MAIN STREET_3'/>
                 <div>
                     <div className='borderR'>
                         <div className='secR'>
@@ -31,10 +31,10 @@ const Solution = () => {
                     </div>
                     <StaticExampleVideo/>
                 </div>     
-                <img className='img2' src='./imgSolution/sol2.webp' alt='MMAI PUREWALLET_2'/>
+                <img className='img2' src='./images/imgSolution/sol2.webp' alt='MMAI PUREWALLET_2'/>
             </div>
             <div className='secL'>
-                <img className='img3' src='./imgSolution/sol3.webp' alt='NFT TOKEN_1'/>
+                <img className='img3' src='./images/imgSolution/sol3.webp' alt='NFT TOKEN_1'/>
                 <div className='secR'>
                     <div className='borderL'>
                         <span className="Functional-NFTs">FUNCTIONAL NFTs</span>
@@ -50,12 +50,12 @@ const Solution = () => {
                     <span className="text4">The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</span>
                     <div className='click'>
                         <Link to="/Guide" target="_blank">
-                            <img className="img_BtnBuy" src='./imgSolution/buyBtn.png' alt="MMAI GUIDE"/>
+                            <img className="sol_BtnBuy" src='./images/imgSolution/buyBtn.png' alt="MMAI GUIDE"/>
                         </Link>
-                        <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./imgSolution/certik.png' alt=''/></a>
+                        <a className='certikA' href='https://www.certik.com/projects/metamonkey-ai'><img className='certik' src='./images/imgSolution/certik.png' alt=''/></a>
                     </div>
                 </div>
-                <img className='img4' src='./imgSolution/sol4.webp' alt='METAMONEKY TOKEN'/>
+                <img className='img4' src='./images/imgSolution/sol4.webp' alt='METAMONEKY TOKEN'/>
             </div>
         </div>
     );

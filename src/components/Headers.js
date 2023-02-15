@@ -9,10 +9,10 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
     return (
         <section className='header_container'>
             <div className='header_left'>
-                <img className='header_name' onClick={reload} src='./img/mmai_logo.png' alt='MMAI MAIN LOGO' />
+                <img className='header_name' onClick={reload} src='./images/imgHeader/mmai_logo.png' alt='MMAI MAIN LOGO' />
             </div>
-            <div className='header_center' target="_blank">
-                <span className='header_categori1'>Home</span>
+            <div className='header_center'>
+                <span className='header_categori1' onClick={reload}>Home</span>
                 <a href='https://mmaipure.com/marketplace/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE" className='header_categori2'>MMAI MARKETPLACE</a>
                 <a href='https://go.mmaipure.com/nft-sale' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI NFT SALE" className='header_categori2'>MMAI NFT SALE</a>
                 <a href='https://blog.mmaipure.com/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI BLOG" className='header_categori2'>MMAI BLOG</a>
@@ -21,9 +21,9 @@ const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
                 <span onClick={onPartnerClick} className='header_categori2'>PARTNERS</span> */}
             </div>
             <div className='header_right'>
-                <a href='https://twitter.com/metamonkey_ai' className='header_sns'>Twitter</a>
-                <a href='https://t.me/MMAI_Official' className='header_sns'>Telegram</a>
-                <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ' className='header_sns'>YouTube</a>
+                <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/youtube.png' alt='MMAI YouTube'/></a>
+                <a href='https://t.me/MMAI_Official' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/telegram.png' alt='MMAI Telegram' /></a>
+                <a href='https://twitter.com/metamonkey_ai' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/twitter.png' alt='MMAI Twitter' /></a>
                 </div>
         </section>
     );

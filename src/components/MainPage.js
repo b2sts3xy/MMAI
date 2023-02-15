@@ -1,13 +1,12 @@
 import React, { useState, useRef } from 'react';
-import AutoPlaySecond from './AutoPlaySecond';
-import AutoPlay from './AutoPlay'
 import Footer from './Footer';
 import Partners from './Partners';
 import Whitepapers from './Whitepapers';
 import Solution from './Solution';
-import Main from './Main';
+import MainCarousel from './MainCarousel';
 import "../style/MainPage.css"
 import MarketPlacePopUp from './MarketPlacePopUp';
+import Headers from './Headers';
 
 const MainPage = () => {
 
@@ -31,9 +30,10 @@ const MainPage = () => {
 
     return (
         <>
-          <Main onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick}/>
+          <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
+          <MainCarousel />
           <MarketPlacePopUp />
-          <div className='middle'>
+          {/* <div className='middle'>
               <div ref={solutionRef}><span className="MMAI-Solution">MMAI SOLUTION</span></div>      
               <Solution/> 
           </div>
@@ -56,7 +56,7 @@ const MainPage = () => {
           </div>
           <div className='bottom'>
             <Footer/>
-          </div>
+          </div> */}
         </>
     );
 };

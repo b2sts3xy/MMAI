@@ -1,7 +1,7 @@
 .mobileWalletPhoto {
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../public/imgMobile/mobile_wallet.webp')
+    background-image: url('../../public/images/imgMobile/mobile_wallet.webp')
 }
 
 .mobileStore {

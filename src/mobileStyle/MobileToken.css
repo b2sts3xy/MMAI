@@ -1,7 +1,7 @@
 .mobileTokenPhoto {
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../public/imgMobile/mobile_token.webp')
+    background-image: url('../../public/images/imgMobile/mobile_token.webp')
 }
 
 .mobileTokenBtn {

@@ -19,7 +19,6 @@
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     background-image: url('../../public/images/img/pop_base.png');
 }
 
@@ -38,7 +37,7 @@
 .popup_closebtn {
     display: flex;
     justify-content: flex-end;
-    margin-right: 5.5%;
+    margin-right: 11%;
     color: white;
     font-size: 1vw;
     cursor: pointer;

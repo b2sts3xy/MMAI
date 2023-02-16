@@ -28,6 +28,10 @@
     justify-content: center;
 }
 
+.header_name {
+    cursor: pointer;
+}
+
 .header_categori1, .header_categori2 {
     display: inline-block; 
     margin: 0 5% 0 5%;

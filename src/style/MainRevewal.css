@@ -1,0 +1,226 @@
+
+/* 파트 1 */
+.world_wallet_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.world_box {
+    width: 48%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/imgNew/main_world.webp')
+}
+
+.wallet_box {
+    width: 48%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/imgNew/main_wallet.webp')
+}
+
+.world_contents, .wallet_contents {
+    padding: 60% 0 10% 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wc_title {
+    font-size: 1.6vw;
+    color: #fff;
+    font-weight: bold;
+}
+
+.wc_sub_title {
+    display: flex;
+    font-size: 0.8vw;
+    color: #fff;
+}
+
+
+#wd_img, #wv_img {
+    width: 24%;
+}
+
+
+
+
+
+/* 파트 2 */
+
+.ww_play_video {
+    margin: 4.5% 0 4% 0;
+    width: 100%;
+}
+
+#mv_img {
+    width: 100%;
+}
+
+
+
+
+/* 파트 3 */
+.part3_text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p3_main {
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.p3_sub {
+    color: #767676;
+    font-size: 1vw;
+}
+
+.part3_store {
+    width: 100%;
+    background-color: #f8f8fa;
+    margin: 4% 0 5% 0;
+}
+
+.p3_box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p3_store_text_btn {
+    width: 40%;
+}
+
+.p3_store_main {
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+
+.p3_store_sub {
+    color: #767676;
+    font-size: 1vw;
+}
+
+.p3_storeImgG, .p3_storeImgA {
+    width: 30%;
+}
+
+.p3_storeImgG {
+    margin-right: 2%;
+}
+
+.p3_storeImgA {
+    margin-left: 2%;
+}
+
+.p3_store_img {
+    width: 60%;
+    margin: 5% 0 5% 0;
+}
+
+#p3_img {
+    width: 100%;
+}
+
+
+
+/* 파트 4 */
+.visit_marketplace_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.visit_marketplace {
+    display: flex;
+}
+
+.vm_left {
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/imgNew/go_marketplace.webp');
+    text-align: center;
+}
+
+.vm_left_box {
+    width: 30%;
+    padding-top: 65%;
+    margin: 0 auto;
+}
+
+#p4_vm_btn {
+    width: 100%;
+    cursor: pointer;
+}
+
+.vm_right {
+    width: 50%;
+}
+
+#p4_right_img {
+    width: 100%;
+}
+
+.NFT_ticket {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.NFT_box {
+    margin: 6% 0 5% 0;
+}
+
+.NFT_maintext {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.NFT_subtext {
+    font-size: 1vw;
+    color: #767676;
+}
+
+.NFT_photo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.NFT_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.NFT_info {
+    width: 30%;
+    margin-top: 4%;
+}
+
+#NFT_info_img {
+    width: 100%;
+}
+
+.ticket_name {
+    color: #505050;
+    font-size: 0.8vw;
+}
+
+.ticket_number {
+    color: #111111;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.ticket_pieces {
+    color: #505050;
+    font-size: 0.7vw;
+}

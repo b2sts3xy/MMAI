@@ -23,6 +23,8 @@
 }
 
 .popup_link {
+    position: relative;
+    right: 5%;
     padding-top: 90%;
     padding-bottom: 10%;
     width: 50%;
@@ -32,6 +34,11 @@
 .popup_linkImg {
     width: 100%;
     cursor: pointer;
+}
+
+.popup_linkImg:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .popup_closebtn {

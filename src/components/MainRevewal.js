@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const MainRevewal = () => {
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({duration : 1000});
       })
 
     const onAppStore = () => {
@@ -17,6 +17,23 @@ const MainRevewal = () => {
         window.open('https://mmaipure.com/marketplace/', '_blank');
     }
 
+    const onBuyNow = () => {
+        window.open('/Guide', '_blank')
+    }
+
+    const onCERTIK = () => {
+        window.open('https://www.certik.com/projects/metamonkey-ai', '_blank')
+    }
+
+    const onWorldVideo = () => {
+        window.open('/')
+    }
+
+    const onGameVideo = () => {
+        window.open('/')
+    }
+
+
     return (
         <>
             {/* 월드와 비디오 파트 1 전체 너비 90% */}
@@ -25,14 +42,14 @@ const MainRevewal = () => {
                     <div className='world_contents' data-aos="fade-up" data-aos-duration="1500">
                         <span className='wc_title'>MMAI PUREWORLD</span>
                         <span className='wc_sub_title'><br />PureWorld is made for socializing, entertainment, gaming but it’s major focus is on bringing business to the virtual world. <br /><br /></span>
-                        <a href='/' rel="noopener noreferrer" aria-label="MMAI WORLD DOWNLOAD"><img id='wd_img' src='./images/imgNew/world_download.webp' alt='MMAI WORLD DOWNLOAD'/></a>
+                        <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI WORLD DOWNLOAD"><span>Download</span></a>
                     </div>
                 </div>
                 <div className='wallet_box'>
                     <div className='wallet_contents' data-aos="fade-up" data-aos-duration="1500">
                         <span className='wc_title'>MMAI PUREWALLET</span>
                         <span className='wc_sub_title'><br />PureWallet offers a secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardwar.<br /><br /></span>
-                        <a href='/' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><img id='wv_img' src='./images/imgNew/wallet_go_video.webp' alt='MMAI PUREWALLET DEMO WIDEO'/></a>
+                        <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Deno Video</span></a>
                     </div>
                 </div>
             </div>
@@ -41,7 +58,10 @@ const MainRevewal = () => {
 
             {/* 큰 비디오 파트 2 */}
             <div className='ww_play_video' data-aos="fade-up" data-aos-duration="1500">
-                <a href='/' rel="noopener noreferrer" aria-label="MMAI VIDEO"><img id='mv_img' src='./images/imgNew/meta_video_img.webp' alt='play_video'/></a>
+                <img id='mv_img' src='./images/imgNew/meta_video.webp' alt='play_video'/>
+                <div className='ww_play_video_btn'>
+                    <img onClick={onWorldVideo} id='mv_play_btn' src='./images/imgNew/play_btn.webp' alt='play_video'/>
+                </div>
             </div>
 
 
@@ -73,7 +93,8 @@ const MainRevewal = () => {
                 <div className='visit_marketplace' data-aos="fade-up" data-aos-duration="1500">
                     <div className='vm_left'>
                         <div className='vm_left_box'>
-                            <img id='p4_vm_btn' onClick={onMarketPlace} src="./images/imgNew/visit_marketplace_btn.webp" alt='Visit Marketplace'/>
+                            <span id='p4_vm_btn' onClick={onMarketPlace}>Visit Marketplace</span>
+                            {/* <img id='p4_vm_btn' onClick={onMarketPlace} src="./images/imgNew/visit_marketplace_btn.webp" alt='Visit Marketplace'/> */}
                         </div>
                     </div>
                     <div className='vm_right'>
@@ -196,6 +217,38 @@ const MainRevewal = () => {
                     </div>
                 </div>
                 
+            </div>
+
+
+            {/* 파트 5 게임 + token */}
+            <div className='game_video' data-aos="fade-up" data-aos-duration="1500">
+                <img id='game_video_img' src='./images/imgNew/game_video.webp' alt='MMAI Game' />
+                <div className='game_video_play_btn'>
+                    <img id='gv_play_btn' onClick={onGameVideo} src='./images/imgNew/play_btn.webp' alt='play_video'/>
+                </div>
+            </div>
+
+            <div className='text_token_buy'>
+                {/* 파트 3 부분과 파트 5 부분 동일하고 내용만 다른 부분이 있어서 파트 3 css를 사용함 */}
+                <div className='part3_text'>
+                    <span className='p3_main'>Enjoy Various Games at MMAI PUREWORLD!</span>
+                    <span className='p3_sub'><br /><br />Various Games will be Released soon by MMAI PUREWORLD</span>
+                </div>
+                <div className='part3_store' data-aos="fade-up" data-aos-duration="2000">
+                    <div className='p3_box'>
+                        <div className='p3_store_text_btn' data-aos="fade-up" data-aos-duration="1500">
+                            <span className='p3_store_main'>MMAI Token</span>
+                            <span className='p3_store_sub'><br /><br />Utility Token that will be used in the PUREWORLD  <br/> Ecosystem for Certain Interactions and Transactions. <br/> This is an ERC-20 Token Built on the Ethereum Blockchain<br/><br/><br/></span>
+                            <div className='p3_store_btn'>
+                                <img onClick={onBuyNow} className='p3_storeImgG' src='./images/imgNew/buy_now.webp' alt='Buy MMAI NOW!'/>
+                                <img onClick={onCERTIK} className='p3_storeImgA' src='./images/imgNew/CERTIK.webp' alt='CERTIK'/>
+                            </div>
+                        </div>
+                        <div className='p3_store_img' data-aos="fade-up" data-aos-duration="1500">
+                            <img id='p3_img' src='./images/imgNew/mmai_token.webp' alt='using mmai pure wallet'/>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </>
     );

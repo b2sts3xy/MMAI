@@ -33,7 +33,7 @@ const MainPage = () => {
           <MainCarousel />
           <MarketPlacePopUp />
           <MainRevewal />
-          {/* <div className='middle'>
+          <div className='middle'>
             <Whitepapers/>
             <div ref={partnerRef} className="AI-Technology-Partners">
                 <span>AI Technology Partners</span>
@@ -42,7 +42,7 @@ const MainPage = () => {
           </div>
           <div className='bottom'>
             <Footer/>
-          </div> */}
+          </div>
         </>
     );
 };

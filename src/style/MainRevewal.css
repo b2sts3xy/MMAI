@@ -45,6 +45,35 @@
     width: 24%;
 }
 
+#wd_img:hover, #wv_img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p1_white_btn {
+    display: block;
+    padding: 1.4%;
+    width: 23%;
+    border-radius: 3vw;
+    text-decoration: none;
+    text-align: center;
+    color: #111111;
+    background-color: #ffffff;
+}
+
+.p1_white_btn span {
+    font-weight: 900;
+    font-size: 1vw;
+}
+
+.p1_white_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p1_white_btn:hover {
+    color: #111111;
+}
 
 
 
@@ -52,15 +81,30 @@
 /* 파트 2 */
 
 .ww_play_video {
+    position: relative;
     margin: 4.5% 0 4% 0;
     width: 100%;
 }
 
-#mv_img {
+.ww_play_video_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mv_img, #mv_play_btn {
     width: 100%;
 }
 
+#mv_play_btn {
+    cursor: pointer;
+}
 
+#mv_play_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
 
 
 /* 파트 3 */
@@ -82,12 +126,14 @@
 
 .part3_store {
     width: 100%;
+    height: 90vh;
     background-color: #f8f8fa;
     margin: 4% 0 5% 0;
 }
 
 .p3_box {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -110,6 +156,12 @@
 
 .p3_storeImgG, .p3_storeImgA {
     width: 30%;
+    cursor: pointer;
+}
+
+.p3_storeImgG:hover, .p3_storeImgA:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .p3_storeImgG {
@@ -156,8 +208,19 @@
 }
 
 #p4_vm_btn {
+    display: block;
+    font-size: 1vw;
+    padding: 5%;
+    background-color: #fff;
     width: 100%;
+    font-weight: 900;
+    border-radius: 0.5vw;
     cursor: pointer;
+}
+
+#p4_vm_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .vm_right {
@@ -209,6 +272,11 @@
     width: 100%;
 }
 
+#NFT_info_img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 .ticket_name {
     color: #505050;
     font-size: 0.8vw;
@@ -223,4 +291,39 @@
 .ticket_pieces {
     color: #505050;
     font-size: 0.7vw;
+}
+
+
+
+
+/* 파트 5 */
+
+.game_video {
+    position: relative;
+    width: 100%;
+    margin: 6% 0 4% 0;
+}
+
+#game_video_img {
+    width: 100%;   
+}
+
+.game_video_play_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game_video_img, #gv_play_btn{
+    width: 100%;
+}
+
+#gv_play_btn {
+    cursor: pointer;
+}
+
+#gv_play_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }

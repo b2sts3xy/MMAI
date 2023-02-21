@@ -41,14 +41,14 @@ const MainRevewal = () => {
                 <div className='world_box'>
                     <div className='world_contents' data-aos="fade-up" data-aos-duration="1500">
                         <span className='wc_title'>MMAI PUREWORLD</span>
-                        <span className='wc_sub_title'><br />PureWorld is made for socializing, entertainment, gaming but it’s major focus is on bringing business to the virtual world. <br /><br /></span>
+                        <span className='wc_sub_title'><br/>PureWorld is made for socializing, entertainment, gaming but it’s major focus is on bringing business to the virtual world.</span>
                         <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI WORLD DOWNLOAD"><span>Download</span></a>
                     </div>
                 </div>
                 <div className='wallet_box'>
                     <div className='wallet_contents' data-aos="fade-up" data-aos-duration="1500">
                         <span className='wc_title'>MMAI PUREWALLET</span>
-                        <span className='wc_sub_title'><br />PureWallet offers a secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardwar.<br /><br /></span>
+                        <span className='wc_sub_title'><br/>PureWallet offers a secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardwar.</span>
                         <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Deno Video</span></a>
                     </div>
                 </div>

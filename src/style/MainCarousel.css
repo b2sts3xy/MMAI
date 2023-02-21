@@ -98,7 +98,9 @@
 }
 
 .downloadBtn:hover {
-    background-color: #cccccc;
+    transform: scale(1.1);
+    transition: .5s;
+    /* background-color: #cccccc; */
 }
 
 .btnImg {
@@ -116,33 +118,40 @@
 }
 
 .third_carouselBtn {
+    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
 .BN_container {
-    width: 20%;
-    display: flex;
+    width: 30%;
+}
+
+.thrid_buybtn {
+   width: 100%;
 }
 
 .third_link {
-    width: 30%;
+    width: 60%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.mc_BtnBuy {
-    width: 100%;
-}
-
-.third_link a {
-    width: 50%;
+.third_link_a {
+    width: 15%;
 }
 
 .third_carouselImg {
-    width: 80%;
+    width: 100%;
+}
+
+.thrid_buybtn:hover, .third_carouselImg:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .maincarousel_marketplace, .maincarousel_marketplace:hover {

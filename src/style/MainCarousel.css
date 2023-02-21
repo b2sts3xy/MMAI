@@ -103,10 +103,14 @@
     width: 30px;
 }
 
-.storeImgA,  .storeImgG{
+.storeImgA, .storeImgG{
     width: 20%;
-    min-width: 190px;
     cursor: pointer;
+}
+
+.storeImgA:hover, .storeImgG:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .storeImgA {

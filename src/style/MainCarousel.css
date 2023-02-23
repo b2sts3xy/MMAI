@@ -6,6 +6,7 @@
     display: none;
 }
 
+
 #first_carousel {
     width: 100%;
     height: 100%;
@@ -43,13 +44,13 @@
 }
 
 .prevBtn {
-    width: 15%;
+    width: 11%;
     text-align: end;
     cursor: pointer;
 }
 
 .nextBtn {
-    width: 15%;
+    width: 11%;
     cursor: pointer;
 }
 
@@ -100,7 +101,7 @@
 }
 
 .btnImg {
-    width: 30px;
+    width: 2vw;
 }
 
 .storeImgA, .storeImgG{
@@ -154,7 +155,70 @@
     transition: .5s;
 }
 
-.maincarousel_marketplace, .maincarousel_marketplace:hover {
-    color: white;
-    text-decoration: none;
+.carousel4_container {
+    position: relative;
+    width: 100%;
+}
+
+.carousel4_content {
+    position: absolute;
+    top: 51.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.carousel4_img {
+    width: 100%;
+}
+
+.carousel4_center {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.carousel4_main_text {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.6vw;
+}
+
+.carousel4_sub_text {
+    color: #fff;
+    font-size: 0.9vw;
+    margin: 2% 0 5% 0;
+}
+
+.carousel4_downloadbtn {
+    color: #000000;
+    background-color: #fff;
+
+    margin: 0 auto;
+    width: 50%;
+    height: 5vh;
+}
+
+.carousel4_downloadBtn {
+    color: #000000;
+    background-color: #fff;
+    border-radius: 3vw;
+    font-size: 1vw;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 60px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.carousel4_downloadBtn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    /* background-color: #cccccc; */
 }

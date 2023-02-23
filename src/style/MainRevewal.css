@@ -128,7 +128,7 @@
 .part3_store {
     width: 100%;
     background-color: #f8f8fa;
-    margin: 4% 0 5% 0;
+    margin: 7% 0 5% 0;
 }
 
 .p3_box {
@@ -237,7 +237,7 @@
 }
 
 .NFT_box {
-    margin: 6% 0 5% 0;
+    margin: 6% 0 0 0;
 }
 
 .NFT_maintext {
@@ -270,11 +270,43 @@
 
 #NFT_info_img {
     width: 100%;
+    /* transition: .5s; */
 }
 
-#NFT_info_img:hover {
+/* #NFT_info_img:hover {
     transform: scale(1.1);
     transition: .5s;
+} */
+
+/* 플립 테스트 */
+.filp_card {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .8s .1s;
+}
+
+.filp_card:hover {
+    transform: rotateY(180deg);
+}
+
+
+.card_front {
+    overflow: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.card_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    transform: rotateY(180deg);
+    z-index: 1;
 }
 
 .ticket_name {

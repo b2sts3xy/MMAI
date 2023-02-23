@@ -5,17 +5,17 @@ import {Link} from "react-router-dom";
 const MainCarousel = () => {
 
     const [eventNum, setEventNum] = useState(0)
-    const [event1id, event2id, event3id] = [0, 1, 2];
+    const [event1id, event2id, event3id, event4id] = [0, 1, 2, 3];
 
     const onArrowLeftClick = () => {
         if (eventNum === 0) {
-            setEventNum(2)
+            setEventNum(3)
         } else {
             setEventNum(eventNum - 1)
         }
     }
     const onArrowRightClick = () => {
-        if (eventNum === 2) {
+        if (eventNum === 3) {
             setEventNum(0)
         } else {
             setEventNum(eventNum + 1)
@@ -128,7 +128,7 @@ const MainCarousel = () => {
                             <div className='third_carouselBtn'>
                                 <div className='BN_container'>
                                     <Link to="/Guide" target="_blank">
-                                        <img className='thrid_buybtn' src='./images/imgNew/buy_now.webp' alt='Buy MMAI NOW!'/>
+                                        <img className='2' src='./images/imgNew/buy_now.webp' alt='Buy MMAI NOW!'/>
                                     </Link>
                                 </div>
                                 <div className='third_link'>
@@ -155,6 +155,23 @@ const MainCarousel = () => {
                             alt=''/></div>
                     </div>
                 </div>
+            </div>
+
+            <div className={(eventNum === event4id)
+                    ? 'default-view'
+                    : 'default-none'}>
+                        <div className='carousel4_container'>
+                            <img className='carousel4_img' src='./images/img/MainCarousel4.webp' alt='MAIN BANNER'/>
+                            <div className='carousel4_content'>
+                                <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./images/img/left.webp' alt=''/></div>
+                                <div className='carousel4_center'>
+                                    <div className='carousel4_main_text'>MMAI GAMES is launching soon!</div>
+                                    <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key to the city can play Demo version Now!</div>
+                                    <div className='carousel4_downloadBtn'>Download</div>
+                                </div>
+                                <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
+                            </div>
+                        </div>
             </div>
         </section>
     );

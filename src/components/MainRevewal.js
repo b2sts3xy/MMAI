@@ -71,6 +71,8 @@ const MainRevewal = () => {
                 <span className='p3_main'>We Bring Real World AI Technology To The Metaverse.</span>
                 <span className='p3_sub'><br /><br />The MMAI PUREWORLD is Based on Research and Development with a Major Focus on a Great Experience.</span>
             </div>
+
+
             <div className='part3_store' data-aos="fade-up" data-aos-duration="2000">
                 <div className='p3_box'>
                     <div className='p3_store_text_btn' data-aos="fade-up" data-aos-duration="1500">
@@ -116,7 +118,15 @@ const MainRevewal = () => {
                 {/* NFT 1 */}
                 <div className='NFT_line'>
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/NFT_ARENA.webp' alt='marketplace ticket' />
+                        {/* 플립 카드 */}
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/NFT_ARENA.webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/ARENA_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />ARENA<br /></span>
                         <span className='ticket_number'>2&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -124,7 +134,14 @@ const MainRevewal = () => {
 
                     {/* NFT 2 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/BUILDING_ELECTRONIC_DISPLAY.webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/BUILDING_ELECTRONIC_DISPLAY.webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/BUILDING_ELECTRONIC_DISPLAY_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />BUILDING ELECTRONIC DISPLAY<br /></span>
                         <span className='ticket_number'>500&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -132,7 +149,14 @@ const MainRevewal = () => {
 
                     {/* NFT 3 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/AD_BILLBOARD.webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/AD_BILLBOARD.webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/AD_BILLBOARD_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />AD BILLBOARD<br /></span>
                         <span className='ticket_number'>500&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -142,7 +166,14 @@ const MainRevewal = () => {
                 {/* NFT 4 */}
                 <div className='NFT_line'>
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/STAND_AD.webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/STAND_AD.webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/STAND_AD_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>      
                         <span className='ticket_name'><br /><br />STAND AD<br /></span>
                         <span className='ticket_number'>500&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -150,7 +181,14 @@ const MainRevewal = () => {
 
                     {/* NFT 5 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/STORE(LARGE).webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/STORE(LARGE).webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/STORE(LARGE)_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />STORE (LARGE)<br /></span>
                         <span className='ticket_number'>250&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -158,7 +196,14 @@ const MainRevewal = () => {
 
                     {/* NFT 6 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/SOTRE(MEDIUM).webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/STORE(MEDIUM).webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/STORE(MEDIUM)_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />SOTRE (MEDIUM)<br /></span>
                         <span className='ticket_number'>250&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -168,7 +213,14 @@ const MainRevewal = () => {
                 {/* NFT 7 */}
                 <div className='NFT_line'>
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/STORE(SMALL).webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/STORE(SMALL).webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/STORE(SMALL)_back.webp' alt='marketplace ticket' />    
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />STORE (SMALL)<br /></span>
                         <span className='ticket_number'>400&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -176,7 +228,14 @@ const MainRevewal = () => {
 
                     {/* NFT 8 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/OFFICE.webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/OFFICE.webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/OFFICE_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />OFFICE<br /></span>
                         <span className='ticket_number'>500&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -184,7 +243,14 @@ const MainRevewal = () => {
 
                     {/* NFT 9 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/BOOTH(LARGE).webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/BOOTH(LARGE).webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/BOOTH(LARGE)_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />BOOTH (LARGE)<br /></span>
                         <span className='ticket_number'>100&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -194,7 +260,14 @@ const MainRevewal = () => {
                 {/* NFT 10 */}
                 <div className='NFT_line'>
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/SOTRE(MEDIUM).webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/BOOTH(MEDIUM).webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/BOOTH(MEDIUM)_back.webp' alt='marketplace ticket' />
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />BOOTH (MEDIUM)<br /></span>
                         <span className='ticket_number'>250&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -202,7 +275,14 @@ const MainRevewal = () => {
 
                     {/* NFT 11 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/STORE(SMALL).webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/BOOTH(SMALL).webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/BOOTH(SMALL)_back.webp' alt='marketplace ticket' />    
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />BOOTH (SMALL)<br /></span>
                         <span className='ticket_number'>400&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -210,7 +290,14 @@ const MainRevewal = () => {
 
                     {/* NFT 12 */}
                     <div className='NFT_info' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-                        <img id='NFT_info_img' src='./images/imgNew/MMAI_MYSTERY_CAR.webp' alt='marketplace ticket' />
+                        <div className='filp_card'>
+                            <div className='card_front'>
+                                <img id='NFT_info_img' src='./images/imgNew/MMAI_MYSTERY_CAR.webp' alt='marketplace ticket' />
+                            </div>
+                            <div className='card_back'>
+                                <img id='NFT_info_img' src='./images/imgNew/MMAI_MYSTERY_CAR_back.webp' alt='marketplace ticket' />     
+                            </div>
+                        </div>
                         <span className='ticket_name'><br /><br />MMAI MYSTERY CAR<br /></span>
                         <span className='ticket_number'>1,500&nbsp;&nbsp;</span>
                         <span className='ticket_pieces'>Pieces<br /></span>
@@ -218,7 +305,6 @@ const MainRevewal = () => {
                 </div>
                 
             </div>
-
 
             {/* 파트 5 게임 + token */}
             <div className='game_video' data-aos="fade-up" data-aos-duration="1500">

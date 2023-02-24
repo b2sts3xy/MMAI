@@ -147,7 +147,7 @@ const MainCarousel = () => {
                             <div className='third_carouselBtn'>
                                 <div className='BN_container'>
                                     <Link to="/Guide" target="_blank">
-                                        <img className='2' src='./images/imgNew/buy_now.webp' alt='Buy MMAI NOW!'/>
+                                        <img className='thrid_buybtn' src='./images/imgNew/buy_now.webp' alt='Buy MMAI NOW!'/>
                                     </Link>
                                 </div>
                                 <div className='third_link'>

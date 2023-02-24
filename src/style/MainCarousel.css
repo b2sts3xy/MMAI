@@ -130,6 +130,11 @@
     width: 30%;
 }
 
+.BN_container:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 .thrid_buybtn {
    width: 100%;
 }

@@ -1,19 +1,29 @@
 .mobileWhitePapersContainer {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.mobileWhitePapersTitle {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-bottom: 9%;
+.mobileWhitePaperContents {
+    width: 90%;
+    margin: 8% auto 0 auto;
+}
+
+.mobileWhitePaperContents1 {
+    font-size: 0.85rem;
+    font-weight: bold;
     color: #191919;
 }
 
-.mobileWhitePapersText {
+.mobileWhitePaperContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileWhitePaperContents3 {
     font-size: 0.9rem;
-    margin-bottom: 10%;
     color: #767676;
+    margin-bottom: 7%;
 }
 
 .mobileBlockChain, .mobileMeaverse, .mobileAI {

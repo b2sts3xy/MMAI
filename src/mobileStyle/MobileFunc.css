@@ -4,15 +4,13 @@
 
 .mobileFuncContents {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 15%;
+    margin: 8% auto 0 auto;
 }
 
 .mobileFuncContents1 {
     font-size: 0.85rem;
-    color: #191919;
-    margin-top: 5%;
     font-weight: bold;
+    color: #191919;
 }
 
 .mobileFuncContents2 {
@@ -24,5 +22,28 @@
 .mobileFuncContents3 {
     font-size: 0.9rem;
     color: #767676;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.mobileFuncVideo {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+.mobileFuncVideo_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#mobileFuncVideoImg {
+    width: 100%;
+}
+
+#mobileFuncVideoImg_btnImg {
+    width: 50%;
 }

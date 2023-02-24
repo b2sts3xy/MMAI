@@ -7,12 +7,14 @@ import MoblieToken from './MobileToken';
 import MobileWhitePapers from './MobileWhitePapers';
 import MobilePartners from './MobilePartners';
 import MobileFooter from './MobileFooter';
+import MobileGames from './MobileGames';
 
 const MobileMainPage = () => {
     return (
         <>
             <MobileMain />
             <MoblieWorld />
+            <MobileGames />
             <MoblieWallet />
             <MobileFunc />
             <MoblieToken />

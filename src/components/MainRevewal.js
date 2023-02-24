@@ -49,7 +49,7 @@ const MainRevewal = () => {
                     <div className='wallet_contents' data-aos="fade-up" data-aos-duration="1500">
                         <span className='wc_title'>MMAI PUREWALLET</span>
                         <span className='wc_sub_title'><br/>PureWallet offers a secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardwar.</span>
-                        <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Deno Video</span></a>
+                        <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Demo Video</span></a>
                     </div>
                 </div>
             </div>

@@ -1,61 +1,61 @@
-.mobileWalletPhoto {
+.mobile_games_main_container {
     width: 100%;
     position: relative;
 }
 
-.mobile_wallet_main {
+.mmai_games_img {
     width: 100%;
 }
 
-.mobileStore {
+.mobile_games_btn_box {
     position: absolute;
-    width: 70%;
+    width: 40%;
     top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
 }
 
-.mobileStoreImgA, .mobileStore a{
-    width: 47%;
-    cursor: pointer;
-}
-.mobileStoreImgG {
+.mg_btn {
     width: 100%;
+    font-size: 4vw;
+    font-weight: bolder;
+    padding: 10%;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
 }
 
-.mobileWalletContents {
+.mobileGamesContents {
     width: 90%;
     margin: 8% auto 0 auto;
 }
 
-.mobileWalletContents1 {
+.mobileGamesContents1 {
     font-size: 0.85rem;
     font-weight: bold;
     color: #191919;
 }
 
-.mobileWalletContents2 {
+.mobileGamesContents2 {
     font-size: 1.5rem;
     font-weight: 900;
     margin: 5% 0 8% 0;
 }
 
-.mobileWalletContents3 {
+.mobileGamesContents3 {
     font-size: 0.9rem;
     color: #767676;
     margin-bottom: 7%;
 }
 
-.mobileWalletVideo {
+.mobileGamesVideo {
     position: relative;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 15%;
 }
 
-.mobileWalletVideo_btn {
+.mobileGamesVideo_btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,10 +63,10 @@
     text-align: center;
 }
 
-#mobileWalletVideoImg {
+#mobileGamesVideoImg {
     width: 100%;
 }
 
-#mobileWalletVideoImg_btnImg {
+#mobileGamesVideoImg_btnImg {
     width: 50%;
 }

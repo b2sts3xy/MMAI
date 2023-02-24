@@ -1,9 +1,5 @@
 .mobileFooterContainer {
     background-color: black;
-    height: 10vh;
-}
-.mobileFooterContainer {
-    background-color: black;
     height: 100%;
 }
 
@@ -17,7 +13,7 @@
 }
 
 .mobileFooterTitle {
-    width: 40%;
+    width: 30%;
     font-size: 1.5rem;
     color: white;
     font-weight: 900;
@@ -25,8 +21,8 @@
 }
 
 .mobileFooterSNS {
-    width: 60%;
-    font-size: 0.8rem;
+    width: 50%;
+    font-size: 1vw;
     display: flex;
     justify-content: space-between;
 }

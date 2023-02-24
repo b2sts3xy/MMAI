@@ -1,13 +1,12 @@
 .mobileWorldContents {
     width: 90%;
-    margin: 0 auto;
+    margin: 8% auto 0 auto;
 }
 
 .mobileWorldContents1 {
     font-size: 0.85rem;
     font-weight: bold;
     color: #191919;
-    margin-top: 5%;
 }
 
 .mobileWorldContents2 {
@@ -23,12 +22,24 @@
 }
 
 .mobileWorldVideo {
+    position: relative;
     width: 90%;
     margin: 0 auto;
-    margin-top: 5%;
     margin-bottom: 15%;
+}
+
+.mobileWorldVideo_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #mobileWorldVideoImg {
     width: 100%;
+}
+
+#mobileWorldVideoImg_btnImg {
+    width: 50%;
 }

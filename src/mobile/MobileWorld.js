@@ -10,7 +10,10 @@ const MoblieWorld = () => {
                 <div className='mobileWorldContents3'>We offer complete solutions for your business to integrate into the digital world, from creating your virtual store to managing your inventory and hosting your store on our MetaMonkey AI Mall</div>
             </div>
             <div className='mobileWorldVideo'>
-                <a href='./imgMobile/mmaiworld.mp4'><img id='mobileWorldVideoImg' src='./images/imgMobile/mobile_world_video.webp' alt='mmaipure world video'/></a>
+                <img id='mobileWorldVideoImg' src='./images/imgMobile/mobile_world_video.webp' alt='mmaipure world video'/>
+                <div className='mobileWorldVideo_btn'>
+                    <a href='./imgMobile/mmaiworld.mp4'><img id='mobileWorldVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure world video'/></a>
+                </div>
             </div>
         </section>
     );

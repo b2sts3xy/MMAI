@@ -6,9 +6,10 @@ const MoblieToken = () => {
     return (
         <section>
             <div className='mobileTokenPhoto'>
+                <img className='mobileTokenImg' src='./images/imgMobile/mobile_token.webp' alt='MMAI TOKEN'/>
                 <div className='mobileTokenBtn'>
-                    <Link to="/Guide" target="_blank">
-                        <img className='mobileTokenBtnImg' src='./images/imgMobile/mobile_tokenbtn.webp' alt='Buy MMAI NOW!'/>
+                    <Link to="/Guide" target="_blank" className='mobileToken_link'>
+                        <div className='mobileToken_buybtn'>Buy MMAI NOW!</div>
                     </Link>
                 </div>
             </div>

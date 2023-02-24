@@ -170,8 +170,10 @@ const MainCarousel = () => {
                                     <div className='carousel4_downloadBtn'>Download</div>
                                 </div>
                                 <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
+                                {/* <div className='cd_pop'>
+                                    <div className='dsa'>ds</div>
+                                </div> */}
                             </div>
-                            <div className='cd_pop'></div>
                         </div>
             </div>
         </section>

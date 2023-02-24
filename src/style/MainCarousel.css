@@ -155,9 +155,6 @@
     transition: .5s;
 }
 
-
-
-
 /* game 카루셀 */
 
 .carousel4_container {
@@ -226,4 +223,11 @@
     transform: scale(1.1);
     transition: .5s;
     /* background-color: #cccccc; */
+}
+
+.cd_pop {
+    position: absolute;
+    width: 50%;
+    background-color: aqua;
+    top: 10%;
 }

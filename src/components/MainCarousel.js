@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const MainCarousel = () => {
 
-    const [eventNum, setEventNum] = useState(0)
+    const [eventNum, setEventNum] = useState(3)
     const [event1id, event2id, event3id, event4id] = [0, 1, 2, 3];
 
     const onArrowLeftClick = () => {
@@ -171,6 +171,7 @@ const MainCarousel = () => {
                                 </div>
                                 <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
                             </div>
+                            <div className='cd_pop'></div>
                         </div>
             </div>
         </section>

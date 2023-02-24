@@ -3,7 +3,7 @@
     flex-direction: column;
     z-index: 2;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     /* 뷰포트 기준 인 듯 */
     transform: translate(-50%, -50%);

@@ -227,7 +227,24 @@
 
 .cd_pop {
     position: absolute;
-    width: 50%;
-    background-color: aqua;
-    top: 10%;
+    width: 30%;
+    top: -44.5%;
+    left: 33.5%;
+    text-align: right;
+    /* transform: translate(-50%, -29.7%); */
+}
+
+.cd_pop_none {
+    display: none;
+}
+
+.cdkey_img {
+    width: 100%;
+}
+
+.cdkey_close {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
 }

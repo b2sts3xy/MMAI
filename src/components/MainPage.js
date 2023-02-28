@@ -6,7 +6,7 @@ import MainCarousel from './MainCarousel';
 import "../style/MainPage.css"
 import MarketPlacePopUp from './MarketPlacePopUp';
 import Headers from './Headers';
-import MainRevewal from './MainRevewal';
+import MainRenewal from './MainRenewal';
 
 const MainPage = () => {
 
@@ -32,7 +32,7 @@ const MainPage = () => {
           <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
           <MainCarousel />
           <MarketPlacePopUp />
-          <MainRevewal />
+          <MainRenewal />
           <div className='middle'>
             <Whitepapers/>
             <div ref={partnerRef} className="AI-Technology-Partners">

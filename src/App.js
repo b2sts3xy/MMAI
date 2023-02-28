@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes} from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../src/style/Gallery.css';
 import MainPage from './components/MainPage';
 import Guide from './components/Guide';
 import MobileMainPage from './mobile/MobileMainPage';

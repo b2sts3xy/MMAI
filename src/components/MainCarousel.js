@@ -51,25 +51,24 @@ const MainCarousel = () => {
 
     return (
         <section>
-            <div
-                id='first_carousel'
-                className={(
+            <div className={(
                     eventNum === event1id)
                     ? 'default-view'
                     : 'default-none'}>
-                <div className='carousel_container'>
-                    <div className='carousel_content'>
+                <div className='carousel1_container'>
+                    <img className='carousel1_img' src='./images/img/MainCarousel1.webp' alt='MAIN BANNER'/>
+                    <div className='carousel1_content'>
                         <div className='prevBtn'><img
                             onClick={onArrowLeftClick}
                             className='btnImg'
                             src='./images/img/left.webp'
                             alt=''/></div>
                         <div className='carousel1_text'>
-                            <span className='main_carousel_text'>MMAI PUREWORLD
+                            <div className='main_carousel1_text'>MMAI PUREWORLD
                                 <br/>
-                                KEYS TO THE CITY RELEASE!<br/></span>
-                            <span className='sub_carousel_text'><br/><br/>The Keys To The City are 5,002
-                                NFTs that give holders exclusive rights within the MMAI PUREWOROLD!<br/><br/><br/><br/></span>
+                                KEYS TO THE CITY RELEASE!</div>
+                            <div className='sub_carousel1_text'>The Keys To The City are 5,002
+                                NFTs that give holders exclusive rights within the MMAI PUREWOROLD!</div>
                             <div className='downloadBtn' onClick={onMarketPlace}>KEYS TO THE CITY</div>
                         </div>
                         <div className='nextBtn'><img
@@ -82,25 +81,25 @@ const MainCarousel = () => {
             </div>
 
             <div
-                id='second_carousel'
                 className={(
                     eventNum === event2id)
                     ? 'default-view'
                     : 'default-none'}>
-                <div className='carousel_container'>
-                    <div className='carousel_content'>
+                <div className='carousel2_container'>
+                    <img className='carousel2_img' src='./images/img/MainCarousel2.webp' alt='MAIN BANNER'/>
+                    <div className='carousel2_content'>
                         <div className='prevBtn'><img
                             onClick={onArrowLeftClick}
                             className='btnImg'
                             src='./images/img/left.webp'
                             alt=''/></div>
-                        <div className='carousel_text'>
-                            <span className='header_carousel_text'>Released at End of December 2022</span>
-                            <span className='main_carousel_text'><br/>MMAI PUREWALLET<br/>Using The Cold Wallet in your Device!<br/></span>
-                            <span className='sub_carousel_text'><br/><br/><br/>Using MMAI PUREWALLET, you
+                        <div className='carousel2_text'>
+                            <div className='header_carousel2_text'>Released at End of December 2022</div>
+                            <div className='main_carousel2_text'>MMAI PUREWALLET<br/>Using The Cold Wallet in your Device!</div>
+                            <div className='sub_carousel2_text'>Using MMAI PUREWALLET, you
                                 can store and buy your Cryptocurrency in your Smart device freely
                                 <br/>
-                                trade Cryptocurrency with other people.<br/><br/><br/></span>
+                                trade Cryptocurrency with other people.</div>
                             <div className='storeBtn'>
                                 <img
                                     onClick={onAppStore}
@@ -124,25 +123,25 @@ const MainCarousel = () => {
             </div>
 
             <div
-                id='third_carousel'
                 className={(
                     eventNum === event3id)
                     ? 'default-view'
                     : 'default-none'}>
-                <div className='carousel_container'>
-                    <div className='carousel_content'>
+                <div className='carousel3_container'>
+                    <img className='carousel3_img' src='./images/img/MainCarousel3.webp' alt='MAIN BANNER'/>
+                    <div className='carousel3_content'>
                         <div className='prevBtn'><img
                             onClick={onArrowLeftClick}
                             className='btnImg'
                             src='./images/img/left.webp'
                             alt=''/></div>
-                        <div className='carousel_text'>
-                            <span className='main_carousel_text'>MetaMonkey AI can integrate<br/>
+                        <div className='carousel3_text'>
+                            <div className='main_carousel3_text'>MMAI can integrate<br/>
                                 our real-world technology<br/>
-                                into any Metaverse<br/></span>
-                            <span className='sub_carousel_text'><br/><br/>MetaMonkey AI can integrate our real-world AI technology into any Metaverse.<br/>
+                                into any Metaverse</div>
+                            <div className='sub_carousel3_text'>MMAI can integrate our real-world AI technology into any Metaverse.<br/>
                                 We offer solutions for companies to enhance user experiences and generate<br/>
-                                new revenue streams with our proprietary AI software and applications.<br/><br/><br/><br/></span>
+                                new revenue streams with our proprietary AI software and applications.</div>
                             
                             <div className='third_carouselBtn'>
                                 <div className='BN_container'>
@@ -151,17 +150,17 @@ const MainCarousel = () => {
                                     </Link>
                                 </div>
                                 <div className='third_link'>
-                                    <a href='https://uniswap.org/' className='third_link_a'><img className='third_carouselImg' src='./images/imgNew/coin1.webp' alt=''/>
+                                    <a href='https://uniswap.org/' target='_blank' className='third_link_a' rel="noopener noreferrer" aria-label="MMAI COIN"><img className='third_carouselImg' src='./images/imgNew/coin1.webp' alt=''/>
                                     </a>
                                     <a
-                                        href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark' className='third_link_a'><img className='third_carouselImg' src='./images/imgNew/coin2.webp' alt=''/>
+                                        href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark' target='_blank' className='third_link_a' rel="noopener noreferrer" aria-label="MMAI COIN"><img className='third_carouselImg' src='./images/imgNew/coin2.webp' alt=''/>
                                     </a>
-                                    <a href='https://www.bkex.com/trade/MMAI_USDT' className='third_link_a'><img className='third_carouselImg' src='./images/imgNew/coin3.webp' alt=''/>
+                                    <a href='https://www.bkex.com/trade/MMAI_USDT' target='_blank' className='third_link_a' rel="noopener noreferrer" aria-label="MMAI COIN"><img className='third_carouselImg' src='./images/imgNew/coin3.webp' alt=''/>
                                     </a>
                                     <a
-                                        href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code' className='third_link_a'><img className='third_carouselImg' src='./images/imgNew/coin4.webp' alt=''/>
+                                        href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code' target='_blank' className='third_link_a' rel="noopener noreferrer" aria-label="MMAI COIN"><img className='third_carouselImg' src='./images/imgNew/coin4.webp' alt=''/>
                                     </a>
-                                    <a href='https://www.lbank.info/exchange/mmai/usdt' className='third_link_a'><img className='third_carouselImg' src='./images/imgNew/coin5.webp' alt=''/>
+                                    <a href='https://www.lbank.info/exchange/mmai/usdt' target='_blank' className='third_link_a' rel="noopener noreferrer" aria-label="MMAI COIN"><img className='third_carouselImg' src='./images/imgNew/coin5.webp' alt=''/>
                                     </a>
                                 </div>
                             </div>
@@ -179,22 +178,22 @@ const MainCarousel = () => {
             <div className={(eventNum === event4id)
                     ? 'default-view'
                     : 'default-none'}>
-                        <div className='carousel4_container'>
-                            <img className='carousel4_img' src='./images/img/MainCarousel4.webp' alt='MAIN BANNER'/>
-                            <div className='carousel4_content'>
-                                <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./images/img/left.webp' alt=''/></div>
-                                <div className='carousel4_center'>
-                                    <div className='carousel4_main_text'>MMAI GAMES is launching soon!</div>
-                                    <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key to the city can play Demo version Now!</div>
-                                    <div className='carousel4_downloadBtn' onClick={onCDKeyOn}>Download</div>
-                                </div>
-                                <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
-                                <div className={(cdPop) ? 'cd_pop' : 'cd_pop_none'} data-aos="fade-up" data-aos-duration="1500">
-                                    <img className='cdkey_img' src='./images/imgNew/mmai_cdkey.webp' alt='MMAI CD KEY'/>
-                                    <span className='cdkey_close' onClick={onCDKeyClose}>close</span>
-                                </div>
+                    <div className='carousel4_container'>
+                        <img className='carousel4_img' src='./images/img/MainCarousel4.webp' alt='MAIN BANNER'/>
+                        <div className='carousel4_content'>
+                            <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./images/img/left.webp' alt=''/></div>
+                            <div className='carousel4_center'>
+                                <div className='carousel4_main_text'>MMAI GAMES is launching soon!</div>
+                                <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key to the city can play Demo version Now!</div>
+                                <div className='carousel4_downloadBtn' onClick={onCDKeyOn}>Download</div>
+                            </div>
+                            <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
+                            <div className={(cdPop) ? 'cd_pop' : 'cd_pop_none'} data-aos="fade-up" data-aos-duration="1500">
+                                <img className='cdkey_img' src='./images/imgNew/mmai_cdkey.webp' alt='MMAI CD KEY'/>
+                                <span className='cdkey_close' onClick={onCDKeyClose}>close</span>
                             </div>
                         </div>
+                    </div>
             </div>
         </section>
     );

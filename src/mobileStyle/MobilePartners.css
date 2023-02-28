@@ -19,7 +19,9 @@
 }
 
 .mobilePartnersBox {
-    width: 50%;
+    width: 40%;
+    margin: 0 auto 5% auto;
+    box-shadow: 1px 5px 20px 0 #999;
 }
 
 .mobilePartnersBox img {

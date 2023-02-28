@@ -1,4 +1,5 @@
 import React from 'react';
+import FuncGallery from '../components/FuncGallery';
 import '../mobileStyle/MobileFunc.css'
 
 const MobileFunc = () => {
@@ -10,10 +11,11 @@ const MobileFunc = () => {
                 <div className='mobileFuncContents2'>FUNCTIONAL NFTs</div>
                 <div className='mobileFuncContents3'>MMAI PureWorld is a decentralized virtual economy that runs parallel to the real world by providing an immersive social network, an open-source<br/> e-commerce platform and true digital ownership of properties.</div>
             </div>
+            <FuncGallery />
             <div className='mobileFuncVideo'>
                 <img id='mobileFuncVideoImg' src='./images/imgMobile/mobile_func_video.webp' alt='mmaipure world video'/>
                 <div className='mobileFuncVideo_btn'>
-                    <a href='/'><img id='mobileFuncVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
+                    <a href='./images/video/mmaifunc.mp4'><img id='mobileFuncVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
                 </div>
             </div>
         </section>

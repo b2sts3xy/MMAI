@@ -1,4 +1,5 @@
 import React from 'react';
+import WalletGallery from '../components/WalletGallery';
 import '../mobileStyle/MobileWallet.css'
 
 const MoblieWallet = () => {
@@ -21,10 +22,11 @@ const MoblieWallet = () => {
                 <div className='mobileWalletContents2'>MMAI PUREWALLET</div>
                 <div className='mobileWalletContents3'>PureWallet is an innovation in blockchain technology. It offers secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardware. It is also the only wallet that is capable of peer-to-peer transactions without an internet connection. Download the PureWallet and enter the exciting world of Web3 decentralized crypto banking.</div>
             </div>
+            <WalletGallery />
             <div className='mobileWalletVideo'>
             <a href='./imgMobile/mmaiwallet.mp4'><img id='mobileWalletVideoImg' src='./images/imgMobile/mobile_wallet_video.png' alt='mmaipurewallet video'/></a>
                 <div className='mobileWalletVideo_btn'>
-                    <a href='/'><img id='mobileWalletVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
+                    <a href='./images/video/mmaiwallet.mp4'><img id='mobileWalletVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
                 </div>
             </div>
         </section>

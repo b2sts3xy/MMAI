@@ -7,13 +7,16 @@ import "../style/Gallery.css"
 const GamesGallery = () => {
 
     const settings = {
+        slide: 'div',
+        row: 1,
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2.5,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 10000,
         autoplaySpeed: 0,
+        initialSlide: 1,
+        speed: 10000,
         cssEase: "linear"
     };
 

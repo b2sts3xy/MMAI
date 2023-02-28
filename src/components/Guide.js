@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import '../style/Guide.css'
 
 function Guide() {
-    return (<div className='Window_Guide'>
+    return (
+    <div className='Window_Guide'>
         <div className='Guide'>
             <img className='img_back'/>
             <div className='Guide_Title'>
@@ -13,7 +14,7 @@ function Guide() {
             <div className='CoinLink'>
                 <div className='Coin1'>
                     <a href='https://uniswap.org/'><img
-                        src='./images/img/coin1.webp'
+                        src='./images/imgNew/coin1.webp'
                         style={{
             width: "calc(17px + 6.5vw)"
         }}
@@ -22,7 +23,7 @@ function Guide() {
                 <div className='Coin2'>
                     <a
                         href='https://www.bitmart.com/trade/en?symbol=MMAI_USDT&layout=basic&theme=dark'><img
-                        src='./images/img/coin2.webp'
+                        src='./images/imgNew/coin2.webp'
                         style={{
             width: "calc(17px + 6.5vw)"
         }}
@@ -30,7 +31,7 @@ function Guide() {
                 </div>
                 <div className='Coin3'>
                     <a href='https://www.bkex.com/trade/MMAI_USDT'><img
-                        src='./images/img/coin3.webp'
+                        src='./images/imgNew/coin3.webp'
                         style={{
             width: "calc(17px + 6.5vw)"
         }}
@@ -39,7 +40,7 @@ function Guide() {
                 <div className='Coin4'>
                     <a
                         href='https://accounts.probit.com/id-id/login?client_id=probit-login&redirect_uri=https:%2F%2Fwww.probit.com%2Fauth%2Fcallback&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiIvdXNlci1jZW50ZXIvd2FsbGV0L2RlcG9zaXQvTU1BSSIsImlhdCI6MTY2ODc1ODMxMX0.pf_JjylfPlvvz8QIXUiobGEB8xV2PKOL_NqFBPWQzyU&response_type=code'><img
-                        src='./images/img/coin4.webp'
+                        src='./images/imgNew/coin4.webp'
                         style={{
             width: "calc(17px + 6.5vw)"
         }}
@@ -47,7 +48,7 @@ function Guide() {
                 </div>
                 <div className='Coin5'>
                     <a href='https://www.lbank.info/exchange/mmai/usdt'><img
-                        src='./images/img/coin5.webp'
+                        src='./images/imgNew/coin5.webp'
                         style={{
             width: "calc(17px + 6.5vw)"
         }}

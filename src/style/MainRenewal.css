@@ -165,12 +165,13 @@
     height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .p3_store_text_btn {
     width: 40%;
+    margin: 5% 0 5% 0;
 }
 
 .p3_store_main {
@@ -389,4 +390,61 @@
 #gv_play_btn:hover {
     transform: scale(1.1);
     transition: .5s;
+}
+
+.part5_store {
+    width: 100%;
+    background-color: #f8f8fa;
+    margin: 10% 0 5% 0;
+}
+
+.p5_box {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p5_store_text_btn {
+    width: 55%;
+    margin: 5% 0 5% 0;
+}
+
+.p5_store_main {
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+
+.p5_store_sub {
+    color: #767676;
+    font-size: 1vw;
+}
+
+.p5_BN, .p5_CERTIK {
+    width: 25%;
+    cursor: pointer;
+}
+
+.p5_BN:hover, .p5_CERTIK:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p5_BN{
+    margin-right: 2%;
+}
+
+.p5_CERTIK {
+    margin-left: 2%;
+}
+
+.p5_store_img {
+    width: 40%;
+    margin: 7% 0 7% 0;
+}
+
+#p5_img {
+    width: 100%;
 }

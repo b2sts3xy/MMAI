@@ -19,12 +19,12 @@
 
 .world_box {
     position: absolute;
-    top: 60%;
+    top: 54%;
 }
 
 .wallet_box {
     position: absolute;
-    top: 60%;
+    top: 54%;
 }
 
 .world_contents, .wallet_contents {
@@ -89,7 +89,8 @@
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
-    margin: 3% 0 3% 0;
+    margin: 1% 0 3% 0;
+    font-size: 0.8vw;
 }
 
 .more_btn:after {

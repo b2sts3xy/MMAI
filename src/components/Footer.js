@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="twitter"><a className='sns' href='https://twitter.com/metamonkey_ai'><img src='./images/imgHeader/twitter.png' className='footer_sns_img' alt='MMAI Twitter' /></a></div>
                     </div>
                 </div>
-                <div className='secondline'>Ⓒ 2022, BY MMAI</div>
+                <div className='secondline'>Ⓒ 2023, BY MMAI</div>
             </div>
         </section>
     );

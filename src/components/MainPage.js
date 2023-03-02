@@ -31,7 +31,6 @@ const MainPage = () => {
         <>
           <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
           <MainCarousel />
-          <MarketPlacePopUp />
           <MainRenewal />
           <div className='middle'>
             <Whitepapers/>

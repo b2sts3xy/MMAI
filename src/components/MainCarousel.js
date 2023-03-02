@@ -190,6 +190,7 @@ const MainCarousel = () => {
                             <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
                             <div className={(cdPop) ? 'cd_pop' : 'cd_pop_none'} data-aos="fade-up" data-aos-duration="1500">
                                 <img className='cdkey_img' src='./images/imgNew/mmai_cdkey.webp' alt='MMAI CD KEY'/>
+                                <div className='cd_key_commmig_soon'>On March 6, a demo version is available for download.</div>
                                 <span className='cdkey_close' onClick={onCDKeyClose}>close</span>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ const Whitepapers = () => {
                 <span>MMAI White Paper</span>
             </div>
             <div className="contentbox">
-                <span>Coming soon.</span>
+                <span>MMAI core belief is Research and then Development is more important than people think. R&D is the key component of innovation that will drive the broader adoption of Web3 technologies. The research labs are what drives our ability to obtain new knowledge that is placing MMAI tech on the cutting edge of tomorrow’s internet</span>
             </div>
             
             <div className="smaltitle">

@@ -85,6 +85,7 @@
 }
 
 .more_btn {
+    font-weight: bold;
     display: inline-block; 
     color: #ffffff;
     text-decoration: none;

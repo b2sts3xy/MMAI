@@ -57,8 +57,7 @@ const MainRenewal = () => {
                     <div className='world_box'>
                         <div className='world_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PureWorld</div>
-                            <div className='wc_sub_title'>MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. 
- </div>
+                            <div className='wc_sub_title'>MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. </div>
                             {/* <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI WORLD DOWNLOAD"><span>Download</span></a> */}
                             <span className='more_btn' onClick={onWorldImfo}>more info</span>
                             <div className='p1_white_btn' onClick={onPWDownload}><span>Download</span></div>

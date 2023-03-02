@@ -38,6 +38,14 @@ const MainRenewal = () => {
     const onPWDownload = () => {
         alert("Coming Soon!")
     }
+    
+    const onWorldImfo = () => {
+        window.open('./assets/MMAI_PureWorld_Page.pdf', '_blank')
+    }
+
+    const onWalletImfo = () => {
+        window.open('./assets/MMAI_PureWallet_Website_Page.pdf', '_blank')
+    }
 
 
     return (
@@ -49,8 +57,9 @@ const MainRenewal = () => {
                     <div className='world_box'>
                         <div className='world_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PUREWORLD</div>
-                            <div className='wc_sub_title'>PureWorld is made for socializing, entertainment, gaming but it’s major focus is on bringing business to the virtual world.</div>
+                            <div className='wc_sub_title'>PureWorld is made for socializing, entertainment, gaming but it’s major focus is on bringing business to the virtual world. </div>
                             {/* <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI WORLD DOWNLOAD"><span>Download</span></a> */}
+                            <span className='more_btn' onClick={onWorldImfo}>more info</span>
                             <div className='p1_white_btn' onClick={onPWDownload}><span>Download</span></div>
                         </div>
                     </div>
@@ -61,6 +70,7 @@ const MainRenewal = () => {
                         <div className='wallet_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PUREWALLET</div>
                             <div className='wc_sub_title'>PureWallet offers a secure crypto wallet by introducing cold wallet capabilities without the purchase of any additional hardwar.</div>
+                            <span className='more_btn' onClick={onWalletImfo}>more info</span>
                             <a href='./images/video/mmaiwallet.mp4' target='_blank' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Demo Video</span></a>
                         </div>
                     </div>

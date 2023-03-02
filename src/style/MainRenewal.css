@@ -44,7 +44,7 @@
     display: flex;
     font-size: 0.8vw;
     color: #fff;
-    margin: 0 0 5% 0;
+    /* margin: 0 0 5% 0; */
 }
 
 
@@ -84,6 +84,25 @@
     color: #111111;
 }
 
+.more_btn {
+    display: inline-block; 
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 3% 0 3% 0;
+}
+
+.more_btn:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #ffffff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.more_btn:hover::after {
+    transform: scaleX(1);
+}
 
 
 

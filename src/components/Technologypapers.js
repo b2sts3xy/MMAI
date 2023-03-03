@@ -1,18 +1,18 @@
 import React from 'react';
-import '../style/Whitepapers.css';
+import '../style/Technologypapers.css';
 
-const Whitepapers = () => {
+const Technologypapers = () => {
     return (
-        <div className='whiteBody'>
-            <div className="MMAI-White-Papers">
-                <span>MMAI White Paper</span>
+        <div className='TechnologyBody'>
+            <div className="MMAI-Technology-Papers">
+                <span>MMAI Technology Paper</span>
             </div>
             <div className="contentbox">
                 <span>MMAI core belief is Research and then Development is more important than people think. R&D is the key component of innovation that will drive the broader adoption of Web3 technologies. The research labs are what drives our ability to obtain new knowledge that is placing MMAI tech on the cutting edge of tomorrow’s internet</span>
             </div>
             
             <div className="smaltitle">
-                <span>Blockchain White Papers</span>
+                <span>Blockchain Technology Papers</span>
             </div>
             <div className='paperbox'>
                 <div className='imgcontent'>
@@ -45,7 +45,7 @@ const Whitepapers = () => {
                 </div>
             </div>
             <div className="smaltitle">
-                <span>Metaverse White Papers</span>
+                <span>Metaverse Technology Papers</span>
             </div>
             <div className='paperbox'>
                 <div className='imgcontent'>
@@ -77,7 +77,7 @@ const Whitepapers = () => {
                 </div>
             </div>
             <div className="smaltitle">
-                <span>AI & Deep Learning White Papers</span>
+                <span>AI & Deep Learning Technology Papers</span>
             </div>
             <div className='paperbox'>
                 <div className='imgcontent'>
@@ -109,4 +109,4 @@ const Whitepapers = () => {
     );
 };
 
-export default Whitepapers;
+export default Technologypapers;

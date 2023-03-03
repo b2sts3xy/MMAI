@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import Footer from './Footer';
 import Partners from './Partners';
-import Whitepapers from './Whitepapers';
+import Technologypapers from './Technologypapers';
 import MainCarousel from './MainCarousel';
 import "../style/MainPage.css"
-import MarketPlacePopUp from './MarketPlacePopUp';
 import Headers from './Headers';
 import MainRenewal from './MainRenewal';
 
@@ -33,7 +32,7 @@ const MainPage = () => {
           <MainCarousel />
           <MainRenewal />
           <div className='middle'>
-            <Whitepapers/>
+            <Technologypapers/>
             <div ref={partnerRef} className="AI-Technology-Partners">
                 <span>AI Technology Partners</span>
             </div>

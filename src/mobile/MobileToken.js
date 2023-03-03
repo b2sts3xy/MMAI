@@ -16,7 +16,7 @@ const MoblieToken = () => {
             <div className='mobileTokenContents'>
                 <div className='mobileTokenContents1'>ERC-20 Ethereum Blockchain</div>
                 <div className='mobileTokenContents2'>MMAI Token</div>
-                <div className='mobileTokenContents3'>The MMAI token is the utility token that will be used in the PUREWORLD ecosystem for certain interactions and transactions. This is an ERC-20 token built on the Ethereum blockchain.</div>
+                <div className='mobileTokenContents3'>We are committed to expanding the application of cryptocurrency tokens and increasing their utility, and with it comes two exciting new features. The MMAI token unlocks the potential of cold storage, allowing users to securely store and trade their tokens in a variety of cryptocurrencies via PureWallet. Additionally, it is the native token of the MMAI PureWorld metaverse.</div>
             </div>
             <div className='mobileCoinphoto'>
                 <div className='mobileCoinOne'>

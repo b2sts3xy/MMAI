@@ -19,7 +19,7 @@ const MobileGames = () => {
             <div className='mobileGamesContents'>
                 <div className='mobileGamesContents1'>MMAI's Key-to-the-City NFT required for early play</div>
                 <div className='mobileGamesContents2'>MMAI GAEMS</div>
-                <div className='mobileGamesContents3'>As we continue to develop and improve the game, players will be presented with an ever-increasing range of thrilling and intense battles. Our game offers a unique, fast-paced, casual gameplay experience that combines intense and thrilling battles with immersive military settings.</div>
+                <div className='mobileGamesContents3'>PureSoldier is a military-style 3rd person shooter game set in the MMAI PureWorld metaverse. Engage in thrilling battles with realistic weapons and take on intense missions as you become immersed in the action. Gear up and join the fight!</div>
             </div>
             <GamesGallery />
             <div className='mobileGamesVideo'>

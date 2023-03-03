@@ -11,10 +11,11 @@ const WalletGallery = () => {
         row: 1,
         dots: false,
         infinite: true,
-        slidesToShow: 2.5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
+        pauseOnHover : false,
         initialSlide: 1,
         speed: 10000,
         cssEase: "linear"

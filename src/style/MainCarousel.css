@@ -264,25 +264,11 @@
     display: none;
 }
 
-.cdkey_img {
-    width: 100%;
-}
-
 .cdkey_close {
     font-size: 1vw;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-}
-
-.cd_key_commmig_soon {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 88%;
-    color: #6F1212;
-    font-size: 1vw;
-    font-weight: bold;
 }
 
 /* ######## */

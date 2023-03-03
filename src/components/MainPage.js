@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Footer from './Footer';
 import Partners from './Partners';
 import Technologypapers from './Technologypapers';
@@ -6,6 +6,7 @@ import MainCarousel from './MainCarousel';
 import "../style/MainPage.css"
 import Headers from './Headers';
 import MainRenewal from './MainRenewal';
+import KeyModal from './KeyModal';
 
 const MainPage = () => {
 
@@ -25,11 +26,16 @@ const MainPage = () => {
       partnerRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const [modalState, setModalState] = useState(false);
+
+
+
 
     return (
         <>
           <Headers onSolutionClick={onSolutionClick} onGalleryClick={onGalleryClick} onPartnerClick={onPartnerClick} />
-          <MainCarousel />
+          <MainCarousel setModalState={setModalState}/>
+          {modalState && <KeyModal modalState={modalState} setModalState={setModalState}/>}
           <MainRenewal />
           <div className='middle'>
             <Technologypapers/>

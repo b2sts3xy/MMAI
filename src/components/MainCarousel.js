@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const MainCarousel = () => {
+const MainCarousel = ({setModalState}) => {
 
     useEffect(() => {
         AOS.init({duration : 1000});
@@ -12,7 +12,6 @@ const MainCarousel = () => {
 
     const [eventNum, setEventNum] = useState(3)
     const [event1id, event2id, event3id, event4id] = [0, 1, 2, 3];
-    const [cdPop, setCdPop] = useState(false)
 
     const onArrowLeftClick = () => {
         if (eventNum === 0) {
@@ -37,16 +36,8 @@ const MainCarousel = () => {
         window.open('https://mmaipure.com/marketplace/', '_blank');
     }
 
-    const onCDKeyOn = () => {
-        if(cdPop === false) {
-            setCdPop(true);
-        }
-    }
-
-    const onCDKeyClose = () => {
-        if(cdPop) {
-            setCdPop(false);
-        }
+    const onKeyModalOn = () => {
+        setModalState(true);
     }
 
     return (
@@ -185,14 +176,9 @@ const MainCarousel = () => {
                             <div className='carousel4_center'>
                                 <div className='carousel4_main_text'>MMAI GAMES is launching soon!</div>
                                 <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key to the city can play Demo version Now!</div>
-                                <div className='carousel4_downloadBtn' onClick={onCDKeyOn}>Download</div>
+                                <div className='carousel4_downloadBtn' onClick={onKeyModalOn}>Download</div>
                             </div>
                             <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
-                            <div className={(cdPop) ? 'cd_pop' : 'cd_pop_none'} data-aos="fade-up" data-aos-duration="1500">
-                                <img className='cdkey_img' src='./images/imgNew/mmai_cdkey.webp' alt='MMAI CD KEY'/>
-                                <div className='cd_key_commmig_soon'>On March 6, a demo version is available for download.</div>
-                                <span className='cdkey_close' onClick={onCDKeyClose}>close</span>
-                            </div>
                         </div>
                     </div>
             </div>

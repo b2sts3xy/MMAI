@@ -1,7 +1,7 @@
 /* 파트 1 */
 .p1_container {
     width: 90%;
-    margin: 0 auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

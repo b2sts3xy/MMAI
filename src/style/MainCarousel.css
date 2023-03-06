@@ -9,6 +9,7 @@
 .carousel1_container, .carousel2_container ,.carousel3_container, .carousel4_container {
     position: relative;
     width: 100%;
+    height: 90vh;
 }
 
 
@@ -195,6 +196,13 @@
 }
 
 /* game 카루셀 4*/
+
+.carousel4_container {
+    background-image: url("../../public/images/img/MainCarousel4.webp");
+    background-repeat : no-repeat;
+    background-size : cover;
+    height: 90vh;
+}
 
 .carousel4_content {
     position: absolute;

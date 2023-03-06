@@ -13,7 +13,10 @@ const MobileFooter = () => {
                         <div className="mobileFooterYoutube"><a  className='mobileSNSLink' href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ' aria-label='mmaipure youtube'>YouTube</a></div>
                     </div>
                 </div>
-                <div className='mobileFooterSecond'>Ⓒ 2023, MMAI</div>
+                <div className='mobileFooterSecond'>
+                    <div className='mobile_by_mmai'>Ⓒ 2023, MMAI</div>
+                    <div className='mobile_mmai_email'>📧Info@mmaipure.com </div>
+                </div>
             </div>
         </>
     );

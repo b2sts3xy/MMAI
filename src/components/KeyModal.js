@@ -32,7 +32,7 @@ const KeyModal = ({setModalState}) => {
                 {/* 흰 바탕 부분 */}
                 <div className='modal_front'>
                     {/* <button className='modal_close_btn' onClick={closeModal}>X</button> */}
-                    <img className='modal_close_btn' src='./images/imgModal/close_btn.webp' alt='modal close'/>
+                    <img onClick={closeModal} className='modal_close_btn' src='./images/imgModal/close_btn.webp' alt='modal close'/>
                     <div className='modal_content'>
                         <img className='madal_mmai_logo' src='./images/imgModal/modal_top_logo.webp' alt='MMAI'/>
                         <div className='modal_header'>Connect Your Wallet</div>

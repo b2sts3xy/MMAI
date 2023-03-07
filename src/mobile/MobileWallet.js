@@ -26,7 +26,7 @@ const MoblieWallet = () => {
             <div className='mobileWalletVideo'>
             <a href='./imgMobile/mmaiwallet.mp4'><img id='mobileWalletVideoImg' src='./images/imgMobile/mobile_wallet_video.png' alt='mmaipurewallet video'/></a>
                 <div className='mobileWalletVideo_btn'>
-                    <a href='./images/video/mmaiwallet.mp4'><img id='mobileWalletVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
+                    <a href='./video/mmaiwallet.mp4'><img id='mobileWalletVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
                 </div>
             </div>
         </section>

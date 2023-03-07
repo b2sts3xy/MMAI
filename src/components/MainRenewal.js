@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import WorldGallery from './WorldGallery';
 import GamesGallery from './GamesGallery';
 
-const MainRenewal = () => {
+const MainRenewal = ({setInfoState, setWhatInfo}) => {
 
     useEffect(() => {
         AOS.init({duration : 1000});
@@ -28,11 +28,11 @@ const MainRenewal = () => {
     }
 
     const onWorldVideo = () => {
-        window.open('./images/video/mmaiworld.mp4')
+        window.open('./video/mmaiworld.mp4')
     }
 
     const onGameVideo = () => {
-        window.open('./images/video/mmaigames.mp4')
+        window.open('./video/mmaigames.mp4')
     }
 
     const onPWDownload = () => {
@@ -58,7 +58,6 @@ const MainRenewal = () => {
                         <div className='world_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PureWorld</div>
                             <div className='wc_sub_title'>MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. </div>
-                            {/* <a href='/' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI WORLD DOWNLOAD"><span>Download</span></a> */}
                             {/* <span className='more_btn' onClick={onWorldImfo}>more info</span> */}
                             <div className='p1_white_btn' onClick={onPWDownload}><span>Download</span></div>
                         </div>
@@ -71,7 +70,7 @@ const MainRenewal = () => {
                             <div className='wc_title'>MMAI PureWallet</div>
                             <div className='wc_sub_title'>Convenience + Security - MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions.</div>
                             {/* <span className='more_btn' onClick={onWalletImfo}>more info</span> */}
-                            <a href='./images/video/mmaiwallet.mp4' target='_blank' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Video</span></a>
+                            <a href='./video/mmaiwallet.mp4' target='_blank' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Video</span></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +98,7 @@ const MainRenewal = () => {
                 <div className='p3_box'>
                     <div className='p3_store_text_btn' data-aos="fade-up" data-aos-duration="1500">
                         <span className='p3_store_main'>MMAI PureWallet<br /> Innovation in<br /> Blockchain System</span>
-                        <span className='p3_store_sub'><br /><br />Enjoy the Benefits of Cold Storage with MMAI PureWallet  <br/> without the need for extra hardware –  <br/> The Convenient and Secure Cryptocurrency Wallet! <br/><br/><br/></span>
+                        <span className='p3_store_sub'><br /><br />Enjoy the Benefits of Cold Storage with MMAI PureWallet  <br/> without the need for extra hardware.  <br/> <b>The Convenient and Secure Cryptocurrency Wallet!</b> <br/><br/><br/></span>
                         <div className='p3_store_btn'>
                             <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1' target="_blank" rel="noopener noreferrer" aria-label="google play store"><img className='p3_storeImgG' src='./images/img/GooglePlay.webp' alt=''/></a>
                             <img onClick={onAppStore} className='p3_storeImgA' src='./images/img/APPLESTORE.webp' alt='Appstore'/>
@@ -347,7 +346,7 @@ const MainRenewal = () => {
                     <div className='p5_box'>
                         <div className='p5_store_text_btn' data-aos="fade-up" data-aos-duration="1500">
                             <span className='p5_store_main'>Introducing the MMAI Token:<br/> Unlocking an <br />Ethereum-Based Future!</span>
-                            <span className='p5_store_sub'><br /><br />We are committed to expanding the application of cryptocurrency tokens and increasing their utility, and with it comes two exciting new features. <br />The MMAI token unlocks the potential of cold storage, allowing users to securely store<br /> and trade their tokens in a variety of cryptocurrencies via PureWallet. <br />Additionally, it is the native token of the MMAI PureWorld metaverse.<br/><br/><br/></span>
+                            <span className='p5_store_sub'><br /><br />We are committed to expanding the application of cryptocurrency tokens and increasing their utility, and with it comes two exciting new features. The MMAI token unlocks the potential of cold storage, allowing users to securely store  and trade their tokens in a variety of cryptocurrencies via PureWallet. Additionally, it is the native token of the MMAI PureWorld metaverse.<br/><br/><br/></span>
                             <div className='p5_store_btn'>
                                 <img onClick={onBuyNow} className='p5_BN' src='./images/imgNew/buy_now.webp' alt='Buy MMAI NOW!'/>
                                 <img onClick={onCERTIK} className='p5_CERTIK' src='./images/imgNew/CERTIK.webp' alt='CERTIK'/>

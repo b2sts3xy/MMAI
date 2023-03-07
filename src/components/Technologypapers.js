@@ -8,7 +8,7 @@ const Technologypapers = () => {
                 <span>MMAI Technology Paper</span>
             </div>
             <div className="contentbox">
-                <span>MMAI core belief is Research and then Development is more important than people think. R&D is the key component of innovation that will drive the broader adoption of Web3 technologies. The research labs are what drives our ability to obtain new knowledge that is placing MMAI tech on the cutting edge of tomorrow’s internet</span>
+                <span>Together with two university-ran research labs, MMAI is building a multi-faceted platform, built on extensive research, that enables the world to interact with blockchain applications in an easier and more efficient manner. We are focused on creating a world where data is owned and controlled by its owners, allowing for maximum security, privacy and trust in digital transactions.</span>
             </div>
             
             <div className="smaltitle">

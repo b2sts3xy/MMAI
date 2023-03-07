@@ -14,7 +14,7 @@ const MoblieWorld = () => {
             <div className='mobileWorldVideo'>
                 <img id='mobileWorldVideoImg' src='./images/imgMobile/mobile_world_video.webp' alt='mmaipure world video'/>
                 <div className='mobileWorldVideo_btn'>
-                    <a href='./images/video/mmaiworld.mp4'><img id='mobileWorldVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure world video'/></a>
+                    <a href='./video/mmaiworld.mp4'><img id='mobileWorldVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure world video'/></a>
                 </div>
             </div>
         </section>

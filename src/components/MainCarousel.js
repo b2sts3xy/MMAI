@@ -179,8 +179,8 @@ const MainCarousel = ({setModalState}) => {
                             <div className='prevBtn'><img onClick={onArrowLeftClick} className='btnImg' src='./images/img/left.webp' alt=''/></div>
                             <div className='carousel4_center'>
                                 <div className='carousel4_main_text'>MMAI GAMES is launching soon!</div>
-                                <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key to the city can play Demo version Now!</div>
-                                <div className='carousel4_downloadBtn' onClick={onAlert}>Download</div>
+                                <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key-to-the-City can play Demo version Now!</div>
+                                <div className='carousel4_downloadBtn' onClick={onKeyModalOn}>Download</div>
                             </div>
                             <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
                         </div>

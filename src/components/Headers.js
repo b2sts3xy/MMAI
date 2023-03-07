@@ -1,7 +1,7 @@
 import React from 'react';
 import "../style/Headers.css"
 
-const Headers = ({onSolutionClick,onGalleryClick, onPartnerClick}) => {
+const Headers = () => {
     const reload = () => {
         window.location.replace('/');
     }

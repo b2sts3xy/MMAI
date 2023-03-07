@@ -25,7 +25,7 @@ const MobileGames = () => {
             <div className='mobileGamesVideo'>
                 <img id='mobileGamesVideoImg' src='./images/imgMobile/mobile_games_video.webp' alt='mmaipure world video'/>
                 <div className='mobileGamesVideo_btn'>
-                    <a href='./images/video/mmaigames.mp4'><img id='mobileGamesVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
+                    <a href='./video/mmaigames.mp4'><img id='mobileGamesVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
                 </div>
             </div>
         </section>

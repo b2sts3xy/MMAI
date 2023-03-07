@@ -15,7 +15,7 @@ const MobileFunc = () => {
             <div className='mobileFuncVideo'>
                 <img id='mobileFuncVideoImg' src='./images/imgMobile/mobile_func_video.webp' alt='mmaipure world video'/>
                 <div className='mobileFuncVideo_btn'>
-                    <a href='./images/video/mmaifunc.mp4'><img id='mobileFuncVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
+                    <a href='./video/mmaifunc.mp4'><img id='mobileFuncVideoImg_btnImg' src='./images/imgNew/play_btn.webp' alt='mmaipure games video'/></a>
                 </div>
             </div>
         </section>

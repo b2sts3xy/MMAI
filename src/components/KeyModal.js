@@ -26,12 +26,12 @@ const KeyModal = ({setModalState}) => {
     return (
         // 모달 외부
         <div className='modal' onClick={closeModal}>
-            {/* // 모달 내부 */}
+            <img className='cdkey_alert' src='./images/imgModal/cdkey_alert.webp' alt="mmai games demo"/>
+            {/* // 모달 내부
             <div className='modal_body' onClick={(e) => e.stopPropagation()}>
 
-                {/* 흰 바탕 부분 */}
+                흰 바탕 부분
                 <div className='modal_front'>
-                    {/* <button className='modal_close_btn' onClick={closeModal}>X</button> */}
                     <img onClick={closeModal} className='modal_close_btn' src='./images/imgModal/close_btn.webp' alt='modal close'/>
                     <div className='modal_content'>
                         <img className='madal_mmai_logo' src='./images/imgModal/modal_top_logo.webp' alt='MMAI'/>
@@ -55,7 +55,7 @@ const KeyModal = ({setModalState}) => {
                 </div>
 
                 <div className='modal_logo_footer'><img className='modal_logo_footer_img' src='./images/imgModal/mmai_logo.webp' alt='By MMAI'/></div>
-            </div>
+            </div> */}
         </div>
     );
 };

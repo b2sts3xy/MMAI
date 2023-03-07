@@ -35,8 +35,8 @@ const MoreInfo = ({whatInfo}) => {
       }, []);
 
     return (
-        <div className='moreinfo_container'>
-
+        <div className='moreinfo_out'>
+            <div className='moreinfo_container'></div>
         </div>
     );
 };

@@ -39,12 +39,19 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
         alert("Coming Soon!")
     }
     
-    const onWorldImfo = () => {
-        window.open('./assets/MMAI_PureWorld_Page.pdf', '_blank')
+    const onWorldInfo = () => {
+        setInfoState(true);
+        setWhatInfo("world");
     }
 
-    const onWalletImfo = () => {
-        window.open('./assets/MMAI_PureWallet_Website_Page.pdf', '_blank')
+    const onWalletInfo = () => {
+        setInfoState(true);
+        setWhatInfo("wallet");
+    }
+
+    const onGamesInfo = () => {
+        setInfoState(true);
+        setWhatInfo("games");
     }
 
 
@@ -58,7 +65,7 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                         <div className='world_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PureWorld</div>
                             <div className='wc_sub_title'>MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. </div>
-                            {/* <span className='more_btn' onClick={onWorldImfo}>more info</span> */}
+                            {/* <span className='more_btn' onClick={onWorldInfo}>more info</span> */}
                             <div className='p1_white_btn' onClick={onPWDownload}><span>Download</span></div>
                         </div>
                     </div>
@@ -69,7 +76,7 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                         <div className='wallet_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PureWallet</div>
                             <div className='wc_sub_title'>Convenience + Security - MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions.</div>
-                            {/* <span className='more_btn' onClick={onWalletImfo}>more info</span> */}
+                            {/* <span className='more_btn' onClick={onWalletInfo}>more info</span> */}
                             <a href='./video/mmaiwallet.mp4' target='_blank' className='p1_white_btn' rel="noopener noreferrer" aria-label="MMAI PUREWALLET DEMO WIDEO"><span>Video</span></a>
                         </div>
                     </div>
@@ -339,7 +346,8 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                 {/* 파트 3 부분과 파트 5 부분 동일하고 내용만 다른 부분이 있어서 파트 3 css를 사용함 */}
                 <div className='part3_text'>
                     <span className='p3_main'>Experience the Thrill of a High-Octane <br />Military Shooter Game with MMAI PureWorld!</span>
-                    <span className='p3_sub'><br /><br />PureSoldier is a military-style 3rd person shooter game set in the MMAI PureWorld metaverse.<br /> Engage in thrilling battles with realistic weapons and take on intense missions as you become immersed in the action. <br />Gear up and join the fight!</span>
+                    <span className='p3_sub'><br /><br />PureSoldier is a military-style 3rd person shooter game set in the MMAI PureWorld metaverse.<br /> Engage in thrilling battles with realistic weapons and take on intense missions as you become immersed in the action. <br />Gear up and join the fight! <br/></span>
+                    {/* <span className='more_btn_games' onClick={onGamesInfo}>more info</span> */}
                 </div>
                 <GamesGallery />
                 <div className='part5_store' data-aos="fade-up" data-aos-duration="2000">

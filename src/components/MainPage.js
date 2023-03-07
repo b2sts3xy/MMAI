@@ -19,7 +19,7 @@ const MainPage = () => {
           <Headers />
           <MainCarousel setModalState={setModalState}/>
           {modalState && <KeyModal modalState={modalState} setModalState={setModalState}/>}
-          {infoState && <MoreInfo whatInfo={whatInfo} />}
+          {infoState && <MoreInfo whatInfo={whatInfo} setInfoState={setInfoState} />}
           <MainRenewal setInfoState={setInfoState} setWhatInfo={setWhatInfo} />
           <div className='middle'>
             <Technologypapers/>

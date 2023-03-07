@@ -107,6 +107,30 @@
     transform: scaleX(1);
 }
 
+.more_btn_games {
+    font-weight: bold;
+    display: inline-block; 
+    color: #767676;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 0 3% 0;
+    font-size: 1vw;
+}
+
+.more_btn_games:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #767676;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.more_btn_games:hover::after {
+    transform: scaleX(1);
+}
+
+
+
 
 
 /* 파트 2 */

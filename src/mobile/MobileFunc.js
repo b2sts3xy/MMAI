@@ -9,7 +9,7 @@ const MobileFunc = () => {
             <div className='mobileFuncContents'>
                 <div className='mobileFuncContents1'>You can purchase MMAI land through NFT</div>
                 <div className='mobileFuncContents2'>FUNCTIONAL NFTs</div>
-                <div className='mobileFuncContents3'>MMAI PureWorld is a decentralized virtual economy that runs parallel to the real world by providing an immersive social network, an open-source<br/> e-commerce platform and true digital ownership of properties.</div>
+                <div className='mobileFuncContents3'>MMAI PureWorld is a decentralized virtual economy that runs parallel to the real world by providing an immersive social network, an open-source e-commerce platform and true digital ownership of properties.</div>
             </div>
             <FuncGallery />
             <div className='mobileFuncVideo'>

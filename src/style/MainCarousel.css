@@ -245,6 +245,11 @@
     cursor: pointer;
 }
 
+.carousel4_downloadBtn a {
+    text-decoration: none;
+    color: black;
+}
+
 .carousel4_downloadBtn:hover {
     transform: scale(1.1);
     transition: .5s;

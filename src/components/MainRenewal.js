@@ -101,7 +101,7 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                         <span className='p3_store_sub'><br /><br />Enjoy the Benefits of Cold Storage with MMAI PureWallet  <br/> without the need for extra hardware.  <br/> <b>The Convenient and Secure Cryptocurrency Wallet!</b> <br/><br/><br/></span>
                         <div className='p3_store_btn'>
                             <a href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1' target="_blank" rel="noopener noreferrer" aria-label="google play store"><img className='p3_storeImgG' src='./images/img/GooglePlay.webp' alt=''/></a>
-                            <img onClick={onAppStore} className='p3_storeImgA' src='./images/img/APPLESTORE.webp' alt='Appstore'/>
+                            <img className='p3_storeImgA' src='./images/img/APPLESTORE_coming_soon.webp' alt='Appstore'/>
                         </div>
                     </div>
                     <div className='p3_store_img' data-aos="fade-up" data-aos-duration="1500">

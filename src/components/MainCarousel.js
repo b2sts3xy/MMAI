@@ -10,7 +10,7 @@ const MainCarousel = ({setModalState}) => {
         AOS.init({duration : 1000});
       })
 
-    const [eventNum, setEventNum] = useState(3)
+    const [eventNum, setEventNum] = useState()
     const [event1id, event2id, event3id, event4id] = [0, 1, 2, 3];
 
     const onArrowLeftClick = () => {
@@ -40,9 +40,11 @@ const MainCarousel = ({setModalState}) => {
         setModalState(true);
     }
 
-    const onAlert = () => {
-        alert("Coming soon!")
-    }
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setEventNum(3)
+        }, 600);
+    },[])
 
     return (
         <section>
@@ -180,11 +182,7 @@ const MainCarousel = ({setModalState}) => {
                             <div className='carousel4_center'>
                                 <div className='carousel4_main_text'>MMAI GAMES is launching soon!</div>
                                 <div className='carousel4_sub_text'>The holders of MMAIPUREWORLD Key-to-the-City can play Demo version Now!</div>
-                                <div className='carousel4_downloadBtn' onClick={onKeyModalOn}>
-                                    <a href={process.env.PUBLIC_URL +'/MMAIGAME.zip'} download>
-                                        Download
-                                    </a>
-                                </div>
+                                <div className='carousel4_downloadBtn' onClick={onKeyModalOn}>Download</div>
                             </div>
                             <div className='nextBtn'><img onClick={onArrowRightClick} className='btnImg' src='./images/img/right.webp' alt=''/></div>
                         </div>

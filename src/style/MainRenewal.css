@@ -186,12 +186,16 @@
     font-size: 1vw;
 }
 
-.p3_storeImgG, .p3_storeImgA {
+.p3_storeImgG {
     width: 30%;
     cursor: pointer;
 }
 
-.p3_storeImgG:hover, .p3_storeImgA:hover {
+.p3_storeImgA {
+    width: 30%;
+}
+
+.p3_storeImgG:hover {
     transform: scale(1.1);
     transition: .5s;
 }

@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className='secondline'>
                     <div className='by_mmai'>Ⓒ 2023, BY MMAI</div>
-                    <div className='mmai_email'>📧Info@mmaipure.com </div>
+                    <div className='mmai_email'>📧Contact@mmaipure.com </div>
                 </div>
             </div>
         </section>

@@ -17,35 +17,15 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                     on3thMain()
                 }} src='./images/imgInfo/world_3.webp' alt='MMAI MORE INFO'/>
             ],
-            text : `MMAI PureWorld is a virtual world where users can socialize, be entertained, 
-            and do business in the most realistic way possible. MMAI PureWorld offers 
-            various features that make it stand out from other metaverses:\n
+            text : `MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. MMAI PureWorld offers various features that make it stand out from other metaverses:
             
-            Firstly, MMAI PureWorld specializes in providing an immersive virtual 
-            business experience. Users can participate in virtual e-commerce, host events 
-            in arenas, advertise on digital billboards, collaborate with your colleagues, rent 
-            out virtual booths for conventions, and even have the option to drive virtual 
-            cars and race them! All of these features provide users with a realistic 
-            experience that emulates the real world.\n
+            Firstly, MMAI PureWorld specializes in providing an immersive virtual business experience. Users can participate in virtual e-commerce, host events in arenas, advertise on digital billboards, collaborate with your colleagues, rent out virtual booths for conventions, and even have the option to drive virtual cars and race them! All of these features provide users with a realistic experience that emulates the real world.
             
-            Secondly, MMAI PureWorld has an interactive community where people can 
-            interact with one another in a safe and secure environment. MMAI PureWorld 
-            has a variety of activities t hat people can participate in, including 
-            tournaments, gaming, dating, virtual stores, chat rooms, and much more! By 
-            offering a safe and realistic virtual business experience, MMAI PureWorld 
-            provides users with an opportunity to gain skills that are useful in the real 
-            world. MMAI PureWorld allows users to socialize, be entertained, and conduct 
-            business in an atmosphere that is similar to the real world. MMAI PureWorld 
-            is a great place for entrepreneurs and business professionals alike!\n
+            Secondly, MMAI PureWorld has an interactive community where people can interact with one another in a safe and secure environment. MMAI PureWorld has a variety of activities t hat people can participate in, including tournaments, gaming, dating, virtual stores, chat rooms, and much more! By offering a safe and realistic virtual business experience, MMAI PureWorld provides users with an opportunity to gain skills that are useful in the real world. MMAI PureWorld allows users to socialize, be entertained, and conduct business in an atmosphere that is similar to the real world. MMAI PureWorld is a great place for entrepreneurs and business professionals alike!\n
             
-            Finally, MMAI PureWorld is committed to providing the best experience for its 
-            users. MMAI PureWorld is always innovating and adding new features to its 
-            platform, from tournaments and events to new services and products. MMAI 
-            PureWorld is also constantly improving its security measures to ensure the 
-            safety of all users.\n
+            Finally, MMAI PureWorld is committed to providing the best experience for its users. MMAI PureWorld is always innovating and adding new features to its platform, from tournaments and events to new services and products. MMAI PureWorld is also constantly improving its security measures to ensure the safety of all users.
             
-            So come join MMAI PureWorld, coing soon, and experience what it's like to do 
-            real life-like business and fun in our virtual reality!`
+            So come join MMAI PureWorld, coing soon, and experience what it's like to do real life-like business and fun in our virtual reality!`
         },
         "wallet" : {
             imgs : [
@@ -60,17 +40,15 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                     on3thMain()
                 }} src='./images/imgInfo/wallet_3.webp' alt='MMAI MORE INFO'/>
             ],
-            text : `MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions. Another new and unique quality of our PureWallet is that it
-            provides secure software based cold storage without the need for costly additional hardware.\n
+            text : `MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions. Another new and unique quality of our PureWallet is that it provides secure software based cold storage without the need for costly additional hardware.
             
             At MMAI, we believe in taking financial freedom to new heights. MMAI PureWallet offers you a fast, secure and convenient way to manage your digital assets, allowing you to take control of
-            your financial future. MMAI PureWallet is the ideal solution for those looking for an easy-to-use cryptocurrency wallet that provides maximum security with convenience and allows for offline
-            peer-to-peer payments.\n
+            your financial future. MMAI PureWallet is the ideal solution for those looking for an easy-to-use cryptocurrency wallet that provides maximum security with convenience and allows for offline peer-to-peer payments.
             
             We understand the importance of secure storage when it comes to cryptocurrency, which is why MMAI PureWallet allows you to securely store your digital assets in our software-based cold
-            storage solution. MMAI PureWallet also offers you the ability to send and receive payments with ease while ensuring that your transactions remain secure.\n
+            storage solution. MMAI PureWallet also offers you the ability to send and receive payments with ease while ensuring that your transactions remain secure.
             
-            With MMAI PureWallet, you can securely store your digital assets in our software-based cold wallet storage solution without the need for costly and inconvenient additional hardware. MMAI PureWallet also offers you the ability to do offline peer-to-peer payment transactions, making it one of the most convenient cryptocurrency wallets available on the market today. MMAI PureWallet was specifically designed with the user in mind. We understand that many individuals are not technically savvy, so MMAI PureWallet has been designed to ensure that it is easy to use for all types of users. MMAI PureWallet is the perfect solution for those looking for a secure, convenient and user-friendly cryptocurrency wallet with powerful features. So if you're looking for an easy and secure way to manage your digital assets, MMAI PureWallet is the perfect choice. Get started today and take control of your financial future with MMAI PureWallet.\n
+            With MMAI PureWallet, you can securely store your digital assets in our software-based cold wallet storage solution without the need for costly and inconvenient additional hardware. MMAI PureWallet also offers you the ability to do offline peer-to-peer payment transactions, making it one of the most convenient cryptocurrency wallets available on the market today. MMAI PureWallet was specifically designed with the user in mind. We understand that many individuals are not technically savvy, so MMAI PureWallet has been designed to ensure that it is easy to use for all types of users. MMAI PureWallet is the perfect solution for those looking for a secure, convenient and user-friendly cryptocurrency wallet with powerful features. So if you're looking for an easy and secure way to manage your digital assets, MMAI PureWallet is the perfect choice. Get started today and take control of your financial future with MMAI PureWallet.
             
             Thank you for choosing MMAI PureWallet! We are proud to provide the best cryptocurrency
             wallet solution available on the market.`

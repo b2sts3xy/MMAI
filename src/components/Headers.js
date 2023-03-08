@@ -13,7 +13,6 @@ const Headers = () => {
             </div>
             <div className='header_center'>
                 <span className='header_categori1' onClick={reload}>Home</span>
-                <a href='https://mmaipure.com/marketplace/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI MARKETPLACE" className='header_categori2'>MMAI MARKETPLACE</a>
                 <a href='https://go.mmaipure.com/nft-sale' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI NFT SALE" className='header_categori2'>MMAI NFT SALE</a>
                 <a href='https://blog.mmaipure.com/' target="_blank" rel="noopener noreferrer" aria-label="Go MMAI BLOG" className='header_categori2'>MMAI BLOG</a>
                 {/* <span onClick={onSolutionClick} className='header_categori2'>MMAI SOLUTIONS</span>

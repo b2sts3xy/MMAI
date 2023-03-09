@@ -173,10 +173,10 @@ const KeyModal = ({setModalState}) => {
                                 <div className='connect_form_name' onClick={connectWallet} >Coinbase</div>
                             </div>
                             <div className='walletconnect'>
-                                {/* { !isTryConnectWallet && <img className='connect_form_img'  src='./images/imgModal/walletconnect.webp' alt='Connect Wallet on walletconnect' />} */}
-                                { !isTryConnectWallet &&< MyWeb3Button onClick={connect2WalletConect} > WalletConnect</MyWeb3Button>}
-                                { isTryConnectWallet && < MyWeb3Button />}
-                                < MyWeb3Modal projectId="2865116d46271676d0052964be11bc6c" ethereumClient={ethereumClient}/>
+                                { !isTryConnectWallet && <img className='connect_form_img'  src='./images/imgModal/walletconnect.webp' alt='Connect Wallet on walletconnect' />}
+                                {/* { !isTryConnectWallet &&< MyWeb3Button onClick={connect2WalletConect} > WalletConnect</MyWeb3Button>}
+                                // { isTryConnectWallet && < MyWeb3Button />}
+                                < MyWeb3Modal projectId="2865116d46271676d0052964be11bc6c" ethereumClient={ethereumClient}/> */}
                             </div>
                         </div>
                         <div className='modal_footer'>Connect your wallet <br /> For check if you have MMAI Pureworld Key to the city</div>
@@ -185,7 +185,7 @@ const KeyModal = ({setModalState}) => {
 
                 <div className='modal_logo_footer'><img className='modal_logo_footer_img' src='./images/imgModal/mmai_logo.webp' alt='By MMAI'/></div>
             </div>}
-            { <MyWeb3Modal projectId="2865116d46271676d0052964be11bc6c" ethereumClient={ethereumClient} />}
+            {/* { <MyWeb3Modal projectId="2865116d46271676d0052964be11bc6c" ethereumClient={ethereumClient} />} */}
         </div>
         
         </WagmiConfig>

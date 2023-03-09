@@ -57,7 +57,7 @@ const NFTOwn = ({nfts: nfts_put}) => {
         // console.log(ans)
         // if(ans.includes(true)) {
         //     final = true
-        // }
+        // } 
 
         nftaddresslist.map((addr) =>{
             // console.log(addr)

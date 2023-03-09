@@ -112,7 +112,10 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                     </div>  
                 </div>
             </div>
-
+            
+            <div className='wallet_func_text'>
+                <span className='wallet_func'>MMAI PureWorld<br /><br /></span>
+            </div>
 
             {/* NFT 토큰 파트 4  전체 너비 90% */}
             <div className='visit_marketplace_container'>

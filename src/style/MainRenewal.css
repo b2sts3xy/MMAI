@@ -240,6 +240,16 @@
     width: 100%;
 }
 
+.wallet_func_text {
+    width: 70%;
+    margin: 0 auto 2% auto;
+    text-align: center;
+}
+
+.wallet_func {
+    font-size: 3vw;
+    font-weight: bold;
+}
 
 
 /* 파트 4 */

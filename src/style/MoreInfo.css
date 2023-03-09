@@ -31,11 +31,15 @@
 .moreinfo_subimg img:nth-child(1) {
     width: 50%;
     filter: brightness(60%); 
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .moreinfo_subimg img:nth-child(2) {
     width: 50%;
-    filter: brightness(30%); 
+    filter: brightness(30%);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .moreinfo_mainimg {

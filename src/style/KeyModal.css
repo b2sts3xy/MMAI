@@ -8,6 +8,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.cdkey_container {
+    position: relative;
+    width: 100%;
+    left: 35%;
+    cursor: default;
+}
+
+.cdkey_number {
+    position: absolute;
+    top: 89%;
+    left: 7.9%;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    color: #6F1212;
+    -webkit-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text
 }
 
 .modal_body {

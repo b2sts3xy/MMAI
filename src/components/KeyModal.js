@@ -8,25 +8,17 @@ const KeyModal = ({setModalState}) => {
 
     const closeModal = () => {
         setModalState(false);
-    }
-
-    useEffect(() => {
-        document.body.style.cssText = `
-          position: fixed; 
-          top: -${window.scrollY}px;
-          overflow-y: scroll;
-          width: 100%;`;
-        return () => {
-          const scrollY = document.body.style.top;
-          document.body.style.cssText = '';
-          window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
-        };
-      }, []);      
+    }     
 
     return (
         // 모달 외부
         <div className='modal' onClick={closeModal}>
-            <img className='cdkey_alert' src='./images/imgModal/cdkey_alert.webp' alt="mmai games demo"/>
+            <div className='cdkey_container' onClick={(e) => e.stopPropagation()}>
+                <img className='cdkey_alert' src='./images/imgModal/cdkey_alert.webp' alt="mmai games demo"/>
+                <div className='cdkey_number'>
+                    <span>1234-5678-9123-4567</span>
+                </div>
+            </div>
             {/* // 모달 내부
             <div className='modal_body' onClick={(e) => e.stopPropagation()}>
 

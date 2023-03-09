@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setDisPlay(true)
-  }, 1000);
+  }, 1500);
   })
 
   return (

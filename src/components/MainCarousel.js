@@ -10,7 +10,7 @@ const MainCarousel = ({setModalState}) => {
         AOS.init({duration : 1000});
       })
 
-    const [eventNum, setEventNum] = useState()
+    const [eventNum, setEventNum] = useState(3)
     const [event1id, event2id, event3id, event4id] = [0, 1, 2, 3];
 
     const onArrowLeftClick = () => {
@@ -40,12 +40,6 @@ const MainCarousel = ({setModalState}) => {
     const onKeyModalOn = () => {
         setModalState(true);
     }
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setEventNum(3)
-        }, 600);
-    },[])
 
     return (
         <section>

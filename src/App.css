@@ -23,6 +23,11 @@ body {
 .App{
     font-family:  'Roboto', 'Apple SD Gothic Neo', sans-serif;
 }
+
+.App_none {
+    display: none;
+}
+
 /* html{
     font-size: 80%;
 } */

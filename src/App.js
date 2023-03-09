@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
@@ -9,8 +9,17 @@ import MobileMainPage from './mobile/MobileMainPage';
 
 function App() {
 
+  const [disPlay, setDisPlay] = useState(false)
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDisPlay(true)
+  }, 1000);
+  })
+
   return (
-    <section className="App">
+    <section className={(disPlay) ? "App" : "App_none"}>
       <div className='pc'>
         <BrowserRouter>
           <Routes>

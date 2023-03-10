@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
 
 
 const NFTOwn = ({nfts: nfts_put}) => {
     // const [nfts_put, setnfts_put] = useState([]);
-  const nftaddresslist = 
+  let nftaddresslist = 
   ['ETHEREUM:0x3355b82a425f0eeefc4b9b0070e865633e837be5', 
   'ETHEREUM:0xdbfee2557319206b719b16cad8d70f94743d1e52', 
   'ETHEREUM:0x22463d37eb3f88355f5e39870e2e681ba27f5e1d', 

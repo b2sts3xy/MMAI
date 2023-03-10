@@ -1,4 +1,3 @@
-import React from 'react';
 import GamesGallery from '../components/GamesGallery';
 import '../mobileStyle/MobileGames.css'
 

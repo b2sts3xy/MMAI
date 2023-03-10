@@ -4,11 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import NFTOwn from './NFTOwn';
 import {
     EthereumClient,
-    modalConnectors,
-    walletConnectProvider,
+    w3mConnectors,
+    w3mProvider ,
   } from "@web3modal/ethereum";
-import { Web3Modal as MyWeb3Modal, Web3Button as MyWeb3Button  } from "@web3modal/react";
+import { Web3Modal, Web3Button as MyWeb3Button, useWeb3Modal  } from "@web3modal/react";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
+import { useAccount, useContract, useSigner } from 'wagmi'
 import { arbitrum, mainnet, polygon } from "wagmi/chains";
 
 let final = false;
@@ -30,13 +31,16 @@ const KeyModal = ({setModalState}) => {
     const [nfts, setNfts ] = useState([])
     let [cdvalue, setcdvalue] = useState(null)
     let [strcdvalue, setstrcdvalue] = useState(null)
+    const { isOpen, open, close, setDefaultChain } = useWeb3Modal();
 
-
+    // Options {
+    //     route: "Account" | "ConnectWallet" | "Help" | "SelectNetwork";
+    //   }
 
     const mounted = useRef(false);
 
     const connectWallet = async () => {
-        if (typeof window.ethereum !== 'undefined') {
+        if (typeof window.ethereum !== 'undefined' && window.ethereum.isMetaMask) {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         setWalletAddress(accounts[0])
         }
@@ -44,16 +48,24 @@ const KeyModal = ({setModalState}) => {
     
     const connect2WalletConect = async () => {
         
-        if (typeof window.ethereum !== 'undefined') {
+        if (typeof ethereumClient !== 'undefined') {
             // const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
             setisTryConnectWallet(true)
             // setWalletAddress(accounts[0])
-            return <MyWeb3Button/>
+            // return <MyWeb3Button/>
+              await open("ConnectWallet");
+              setDefaultChain(mainnet);
+              const address = await ethereumClient.getAccount();
+              setWalletAddress(address)
+
+              debugger
             }
+
     }
     
     const disconnect2WalletConect = async () => {
         setisTryConnectWallet(false)
+        close();
     }
 
     const getNftData = async () => {
@@ -69,6 +81,7 @@ const KeyModal = ({setModalState}) => {
         const data = await response.json()
         
         console.log('response data', data)
+        console.log('walletAddress',walletAddress)
         setNfts(data.items)
         setisWalletModalOpen(false)
       }
@@ -76,21 +89,16 @@ const KeyModal = ({setModalState}) => {
       const chains = [arbitrum, mainnet, polygon];
 
     // Wagmi client
-
-    const { provider } = configureChains(chains, [
-    walletConnectProvider({ projectId: "2865116d46271676d0052964be11bc6c" }),
-    ]);
+    const { provider } = configureChains(chains, [w3mProvider({ projectId: "2865116d46271676d0052964be11bc6c" })]);
     const wagmiClient = createClient({
     autoConnect: true,
-    connectors: modalConnectors({
+    connectors: w3mConnectors({
         projectId: "2865116d46271676d0052964be11bc6c",
         version: "1", // or "2"
-        appName: "web3Modals",
         chains,
     }),
     provider,
     });
-
     // Web3Modal Ethereum Client
     const ethereumClient = new EthereumClient(wagmiClient, chains);
 
@@ -119,8 +127,9 @@ const KeyModal = ({setModalState}) => {
         strcdvalue = strcdvalue.slice(0,-12).padStart(4,'0') +'-'+strcdvalue.slice(-12,-8) + '-' +strcdvalue.slice(-8,-4) + '-' +strcdvalue.slice(-4)
         console.log('walletAddress', strcdvalue)
         setCDkey(strcdvalue)
-        }
+        }else{
         setCDkey("check the KTTC NFT")
+        }
     }, [final, nfts])
 
     useEffect(() => {
@@ -173,19 +182,17 @@ const KeyModal = ({setModalState}) => {
                                 <div className='connect_form_name' onClick={connectWallet} >Coinbase</div>
                             </div>
                             <div className='walletconnect'>
-                                { !isTryConnectWallet && <img className='connect_form_img'  src='./images/imgModal/walletconnect.webp' alt='Connect Wallet on walletconnect' />}
-                                {/* { !isTryConnectWallet &&< MyWeb3Button onClick={connect2WalletConect} > WalletConnect</MyWeb3Button>}
-                                // { isTryConnectWallet && < MyWeb3Button />}
-                                < MyWeb3Modal projectId="2865116d46271676d0052964be11bc6c" ethereumClient={ethereumClient}/> */}
+                               { !isTryConnectWallet && <img className='connect_form_img'  src='./images/imgModal/walletconnect.webp' alt='Connect Wallet on walletconnect'  />}
+                               { !isTryConnectWallet && <div className='connect_form_name' onClick={connect2WalletConect} > WalletConnect </div>}
+                               { isTryConnectWallet && <MyWeb3Button />}
                             </div>
                         </div>
                         <div className='modal_footer'>Connect your wallet <br /> For check if you have MMAI Pureworld Key to the city</div>
                     </div>
                 </div>
-
+                { isTryConnectWallet && <Web3Modal projectId = "2865116d46271676d0052964be11bc6c" ethereumClient = {ethereumClient}/>}
                 <div className='modal_logo_footer'><img className='modal_logo_footer_img' src='./images/imgModal/mmai_logo.webp' alt='By MMAI'/></div>
             </div>}
-            {/* { <MyWeb3Modal projectId="2865116d46271676d0052964be11bc6c" ethereumClient={ethereumClient} />} */}
         </div>
         
         </WagmiConfig>

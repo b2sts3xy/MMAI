@@ -30,7 +30,7 @@
 
 .moreinfo_subimg img:nth-child(1) {
     width: 50%;
-    filter: brightness(60%); 
+    filter: brightness(30%); 
     cursor: pointer;
     transition: 0.5s;
 }
@@ -42,6 +42,9 @@
     transition: 0.5s;
 }
 
+.moreinfo_subimg img:nth-child(1):hover, .moreinfo_subimg img:nth-child(2):hover {
+    filter: brightness(100%);
+}
 .moreinfo_mainimg {
     width: 50%;
 }
@@ -80,3 +83,15 @@
     background-color: #000000;
 }
 
+/* .close_box {
+    width: 48vw;
+    text-align: right;
+} */
+
+.info_close {
+    position: absolute;
+    left: 77%;
+    top: -2%;
+    width: 7%;
+    cursor: pointer;
+}

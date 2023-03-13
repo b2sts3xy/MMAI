@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WorldGallery from './WorldGallery';
 import GamesGallery from './GamesGallery';
+import { Wallet } from 'ethers';
+import WalletGallery from './WalletGallery';
 
 const MainRenewal = ({setInfoState, setWhatInfo}) => {
 
@@ -112,6 +114,8 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                     </div>  
                 </div>
             </div>
+
+            <WalletGallery />
             
             <div className='wallet_func_text'>
                 <span className='wallet_func'>MMAI PureWorld<br /><br /></span>

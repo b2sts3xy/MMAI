@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import AOS from "aos";
 import "../style/MoreInfo.css"
 
 const MoreInfo = ({whatInfo, setInfoState}) => {
+
+    useEffect(() => {
+        AOS.init({duration : 1000});
+      })
 
     const infos = {
         "world" : {
@@ -96,7 +101,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
 
     return (
         <div className='moreinfo_out' onClick={onCloseInfo}>
-            <div className='moreinfo_container'>
+            <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="1500">
                 <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/>
                 <div className='moreinfo_img'>
                     <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>

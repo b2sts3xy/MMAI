@@ -14,10 +14,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 <img onClick={(e) => {
                     e.stopPropagation()
                     on1thMain()
-                }} src='./images/imgInfo/world_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} src='./images/imgInfo/world_2.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_2.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. MMAI PureWorld offers various features that make it stand out from other metaverses:
             
@@ -33,10 +33,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 <img onClick={(e) => {
                     e.stopPropagation() 
                     on1thMain()
-                }} src='./images/imgInfo/wallet_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} src='./images/imgInfo/wallet_2.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_2.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions. Another new and unique quality of our PureWallet is that it provides secure software based cold storage without the need for costly additional hardware.
             
@@ -54,10 +54,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 <img onClick={(e) => {
                     e.stopPropagation()
                     on1thMain()
-                }} src='./images/imgInfo/games_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} src='./images/imgInfo/games_2.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_2.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWorld: PureSoldiers
             In MMAI PureWorld, players can experience the thrill of being a soldier in an immersive third-person shooter game. \n
@@ -73,6 +73,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
     const [infoImg1, setInfoImg1] = useState(0)
     const [infoImg2, setInfoImg2] = useState(0)
     const [infoImg3, setInfoImg3] = useState(1)
+    const [textOn, setTextOn] = useState(false);
 
     const on1thMain = () => {
         setInfoImg1(0)
@@ -88,11 +89,13 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
 
 
     const infoText = () => {
-        return <p>
+        if(textOn) {
+            return <p>
             {infos[whatInfo].text.split("\n").map((txt) => 
                 <>{txt}<br /></>
             )}
         </p>
+        }
     }
 
     const onCloseInfo = () => {
@@ -101,7 +104,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
 
     return (
         <div className='moreinfo_out' onClick={onCloseInfo}>
-            <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="1500">
+            <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="2500">
                 <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/>
                 <div className='moreinfo_img'>
                     <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>

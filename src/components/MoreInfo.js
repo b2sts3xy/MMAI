@@ -89,23 +89,27 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
 
 
     const infoText = () => {
-        if(textOn) {
             return <p>
             {infos[whatInfo].text.split("\n").map((txt) => 
                 <>{txt}<br /></>
             )}
         </p>
-        }
     }
 
     const onCloseInfo = () => {
         setInfoState(false);
     }
 
+    useEffect(() => {
+        document.body.style= `overflow: hidden`;
+        return () => document.body.style = `overflow: auto`
+      }, [])
+      
+
     return (
         <div className='moreinfo_out' onClick={onCloseInfo}>
             <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="2500">
-                <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/>
+                {textOn ? <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/> : ""}
                 <div className='moreinfo_img'>
                     <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>
                     <div className='moreinfo_subimg'>
@@ -113,7 +117,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                         {infos[whatInfo].imgs[infoImg3]}
                     </div>
                 </div>
-                <div className='moreinfo_text' onClick={(e) => e.stopPropagation()}><div className='moreinfo_textbox'>{infoText()}</div></div>
+                {textOn ? <div className='moreinfo_text' onClick={(e) => e.stopPropagation()}><div className='moreinfo_textbox'>{infoText()}</div></div> : ""}
             </div>
         </div>
     );

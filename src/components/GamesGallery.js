@@ -9,6 +9,7 @@ const GamesGallery = () => {
     const settings = {
         slide: 'div',
         row: 1,
+        arrows : false,
         dots: false,
         infinite: true,
         slidesToShow: 3,

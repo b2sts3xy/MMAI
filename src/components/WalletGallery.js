@@ -9,6 +9,7 @@ const WalletGallery = () => {
     const settings = {
         slide: 'div',
         row: 1,
+        arrows : false,
         dots: false,
         infinite: true,
         slidesToShow: 3,
@@ -18,7 +19,8 @@ const WalletGallery = () => {
         pauseOnHover : false,
         initialSlide: 1,
         speed: 10000,
-        cssEase: "linear"
+        cssEase: "linear",
+        draggable : false
     };
 
     return (

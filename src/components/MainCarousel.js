@@ -96,7 +96,7 @@ const MainCarousel = ({setModalState}) => {
                                 <img
                                     onClick={onAppStore}
                                     className='storeImgA'
-                                    src='./images/img/APPLESTORE.webp'
+                                    src='./images/img/APPLESTORE_coming_soon.webp'
                                     alt=''/>
                                 <a
                                     href='https://play.google.com/store/apps/details?id=com.nslab.purewallet&pli=1'

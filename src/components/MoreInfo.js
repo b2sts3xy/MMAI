@@ -17,7 +17,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_2.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                    e.stopPropagation()
+                    on3thMain()
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_3.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. MMAI PureWorld offers various features that make it stand out from other metaverses:
             
@@ -36,7 +39,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_2.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                    e.stopPropagation()
+                    on3thMain()
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_3.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions. Another new and unique quality of our PureWallet is that it provides secure software based cold storage without the need for costly additional hardware.
             
@@ -57,7 +63,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_2.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                    e.stopPropagation()
+                    on3thMain()
+                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_3.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWorld: PureSoldiers
             In MMAI PureWorld, players can experience the thrill of being a soldier in an immersive third-person shooter game. \n
@@ -71,20 +80,26 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
     }
 
     const [infoImg1, setInfoImg1] = useState(0)
-    const [infoImg2, setInfoImg2] = useState(0)
-    const [infoImg3, setInfoImg3] = useState(1)
+    const [infoImg2, setInfoImg2] = useState(1)
+    const [infoImg3, setInfoImg3] = useState(2)
     const [textOn, setTextOn] = useState(false);
 
     const on1thMain = () => {
         setInfoImg1(0)
-        setInfoImg2(0)
-        setInfoImg3(1)
+        setInfoImg2(1)
+        setInfoImg3(2)
     }
     
     const on2thMain = () => {
         setInfoImg1(1)
-        setInfoImg2(0)
-        setInfoImg3(1)
+        setInfoImg2(2)
+        setInfoImg3(0)
+    }
+
+    const on3thMain = () => {
+        setInfoImg1(2)
+        setInfoImg2(1)
+        setInfoImg3(0)
     }
 
 

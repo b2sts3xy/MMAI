@@ -83,6 +83,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
     const [infoImg2, setInfoImg2] = useState(1)
     const [infoImg3, setInfoImg3] = useState(2)
     const [textOn, setTextOn] = useState(false);
+    const [infoOn, setInfoOn] = useState(false);
 
     const on1thMain = () => {
         setInfoImg1(0)
@@ -115,6 +116,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
         setInfoState(false);
     }
 
+    const onInfoOn = () => {
+        setInfoOn(true);
+    }
+
     useEffect(() => {
         document.body.style= `overflow: hidden`;
         return () => document.body.style = `overflow: auto`
@@ -122,7 +127,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
       
 
     return (
-        <div className='moreinfo_out' onClick={onCloseInfo}>
+        <div className={(infoOn) ? 'moreinfo_out' : "moreinfo_none"} onLoad={onInfoOn} onClick={onCloseInfo}>
             <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="2500">
                 {textOn ? <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/> : ""}
                 <div className='moreinfo_img'>

@@ -14,13 +14,13 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 <img onClick={(e) => {
                     e.stopPropagation()
                     on1thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setImg1On(true)} src='./images/imgInfo/world_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setImg2On(true)} src='./images/imgInfo/world_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on3thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/world_3.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setImg3On(true)} src='./images/imgInfo/world_3.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWorld is a virtual world where users can socialize, be entertained, and do business in the most realistic way possible. MMAI PureWorld offers various features that make it stand out from other metaverses:
             
@@ -36,13 +36,13 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 <img onClick={(e) => {
                     e.stopPropagation() 
                     on1thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setImg1On(true)} src='./images/imgInfo/wallet_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setImg2On(true)} src='./images/imgInfo/wallet_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on3thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/wallet_3.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setImg3On(true)} src='./images/imgInfo/wallet_3.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWallet is the world's first and only cryptocurrency wallet that allows you to do offline peer-to-peer payment transactions. Another new and unique quality of our PureWallet is that it provides secure software based cold storage without the need for costly additional hardware.
             
@@ -60,13 +60,13 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                 <img onClick={(e) => {
                     e.stopPropagation()
                     on1thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setImg1On(true)} src='./images/imgInfo/games_1.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on2thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
+                }} onLoad={() => setImg2On(true)} src='./images/imgInfo/games_2.webp' alt='MMAI MORE INFO'/>, <img onClick={(e) => {
                     e.stopPropagation()
                     on3thMain()
-                }} onLoad={() => setTextOn(true)} src='./images/imgInfo/games_3.webp' alt='MMAI MORE INFO'/>
+                }} onLoad={() => setImg3On(true)} src='./images/imgInfo/games_3.webp' alt='MMAI MORE INFO'/>
             ],
             text : `MMAI PureWorld: PureSoldiers
             In MMAI PureWorld, players can experience the thrill of being a soldier in an immersive third-person shooter game. \n
@@ -82,7 +82,10 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
     const [infoImg1, setInfoImg1] = useState(0)
     const [infoImg2, setInfoImg2] = useState(1)
     const [infoImg3, setInfoImg3] = useState(2)
-    const [textOn, setTextOn] = useState(false);
+    
+    const [Img1, setImg1On] = useState(false);
+    const [Img2, setImg2On] = useState(false);
+    const [Img3, setImg3On] = useState(false);
 
     const on1thMain = () => {
         setInfoImg1(0)
@@ -124,7 +127,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
     return (
         <div className='moreinfo_out' onClick={onCloseInfo}>
             <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="2500">
-                {textOn ? <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/> : ""}
+                {(Img1 && Img2 && Img3) ? <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/> : ""}
                 <div className='moreinfo_img'>
                     <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>
                     <div className='moreinfo_subimg'>
@@ -132,7 +135,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
                         {infos[whatInfo].imgs[infoImg3]}
                     </div>
                 </div>
-                {textOn ? <div className='moreinfo_text' onClick={(e) => e.stopPropagation()}><div className='moreinfo_textbox'>{infoText()}</div></div> : ""}
+                {(Img1 && Img2 && Img3) ? <div className='moreinfo_text' onClick={(e) => e.stopPropagation()}><div className='moreinfo_textbox'>{infoText()}</div></div> : ""}
             </div>
         </div>
     );

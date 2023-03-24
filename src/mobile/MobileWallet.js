@@ -3,10 +3,6 @@ import WalletGallery from '../components/WalletGallery';
 import '../mobileStyle/MobileWallet.css'
 
 const MoblieWallet = () => {
-
-    const mobileAPPClick = () => {
-        alert("Coming Soon!");
-    }
     
     return (
         <section>

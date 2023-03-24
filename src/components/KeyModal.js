@@ -8,11 +8,13 @@ import {
     w3mProvider ,
   } from "@web3modal/ethereum";
 import { Web3Modal, Web3Button as MyWeb3Button, useWeb3Modal  } from "@web3modal/react";
-import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { useAccount, useContract, useSigner } from 'wagmi'
+import { configureChains, createClient, WagmiConfig, useAccount  } from "wagmi";
 import { arbitrum, mainnet, polygon } from "wagmi/chains";
 
 let final = false;
+
+
+
 
 // 모달의 재사용 필요 시 구조를 바꾸자. (모달 안 내용을 children으로)
 
@@ -20,6 +22,8 @@ const KeyModal = ({setModalState}) => {
 
     const closeModal = () => {
         setModalState(false);
+        setisWalletModalOpen(false);
+        setisTryConnectWallet(false);
         // disconnect2WalletConect(false);
     }     
     const[isWalletModalOpen, setisWalletModalOpen] = useState(true)
@@ -32,6 +36,7 @@ const KeyModal = ({setModalState}) => {
     let [cdvalue, setcdvalue] = useState(null)
     let [strcdvalue, setstrcdvalue] = useState(null)
     const { isOpen, open, close, setDefaultChain } = useWeb3Modal();
+    
 
     // Options {
     //     route: "Account" | "ConnectWallet" | "Help" | "SelectNetwork";
@@ -39,13 +44,28 @@ const KeyModal = ({setModalState}) => {
 
     const mounted = useRef(false);
 
-    const connectWallet = async () => {
-        if (typeof window.ethereum !== 'undefined' && window.ethereum.isMetaMask) {
-        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        setWalletAddress(accounts[0])
+
+      
+    //connect with MetaMask / Coinbase wallet
+    const connectWallet = () => {
+        if (typeof window.ethereum !== 'undefined' ) {
+            // debugger
+            const accounts = window.ethereum.request({ method: 'eth_requestAccounts' })
+                                                    .catch((error) => { if (error.code === 4001) {
+                                                                            // EIP-1193 userRejectedRequest error
+                                                                            console.log('Please connect to MetaMask.');
+                                                                        } else {
+                                                                            console.error(error);
+                                                                        }
+                                                                        });
+            // debugger
+            setWalletAddress(accounts[0])
+            // console.log(walletAddress)
         }
+        // debugger
     }
     
+
     const connect2WalletConect = async () => {
         
         if (typeof ethereumClient !== 'undefined') {
@@ -53,12 +73,15 @@ const KeyModal = ({setModalState}) => {
             setisTryConnectWallet(true)
             // setWalletAddress(accounts[0])
             // return <MyWeb3Button/>
-              await open("ConnectWallet");
-              setDefaultChain(mainnet);
-              const address = await ethereumClient.getAccount();
-              setWalletAddress(address)
 
-              debugger
+
+            await open("ConnectWallet");
+            setDefaultChain(mainnet);
+            //   const address = await ethereumClient.getAccount();
+            //   setWalletAddress(address)
+
+            //   debugger
+            setisWalletModalOpen(false)
             }
 
     }
@@ -86,18 +109,17 @@ const KeyModal = ({setModalState}) => {
         setisWalletModalOpen(false)
       }
     
-      const chains = [arbitrum, mainnet, polygon];
+      const chains = [arbitrum, mainnet, polygon]
+      const projectId = '2865116d46271676d0052964be11bc6c'
 
     // Wagmi client
-    const { provider } = configureChains(chains, [w3mProvider({ projectId: "2865116d46271676d0052964be11bc6c" })]);
+    const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
+
+
     const wagmiClient = createClient({
-    autoConnect: true,
-    connectors: w3mConnectors({
-        projectId: "2865116d46271676d0052964be11bc6c",
-        version: "1", // or "2"
-        chains,
-    }),
-    provider,
+        autoConnect: true,
+        connectors: w3mConnectors({ projectId, version: 2, chains }),
+        provider,
     });
     // Web3Modal Ethereum Client
     const ethereumClient = new EthereumClient(wagmiClient, chains);
@@ -153,10 +175,15 @@ const KeyModal = ({setModalState}) => {
         };
       }, []);      
 
+    useAccount({
+    onConnect({ address }) {
+        setWalletAddress(address);
+        console.log('Connected', { address });
+    },
+    })
 
     return (
         // 모달 외부
-        <WagmiConfig client={wagmiClient}>
         <div className='modal' onClick={closeModal}>
             <div className='cdkey_container' onClick={(e) => e.stopPropagation()}>
                 <img className='cdkey_alert' src='./images/imgModal/cdkey_alert.webp' alt="mmai games demo"/>
@@ -184,18 +211,21 @@ const KeyModal = ({setModalState}) => {
                             <div className='walletconnect'>
                                { !isTryConnectWallet && <img className='connect_form_img'  src='./images/imgModal/walletconnect.webp' alt='Connect Wallet on walletconnect'  />}
                                { !isTryConnectWallet && <div className='connect_form_name' onClick={connect2WalletConect} > WalletConnect </div>}
-                               { isTryConnectWallet && <MyWeb3Button />}
+                                <WagmiConfig client={wagmiClient}>
+                                    { isTryConnectWallet &&  <MyWeb3Button />}
+                                </WagmiConfig> 
+                                
                             </div>
                         </div>
                         <div className='modal_footer'>Connect your wallet <br /> For check if you have MMAI Pureworld Key to the city</div>
                     </div>
                 </div>
-                { isTryConnectWallet && <Web3Modal projectId = "2865116d46271676d0052964be11bc6c" ethereumClient = {ethereumClient}/>}
                 <div className='modal_logo_footer'><img className='modal_logo_footer_img' src='./images/imgModal/mmai_logo.webp' alt='By MMAI'/></div>
             </div>}
+            <Web3Modal projectId = {projectId} ethereumClient = {ethereumClient}/>
         </div>
         
-        </WagmiConfig>
+        
     );
 };
 

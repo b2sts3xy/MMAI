@@ -127,8 +127,8 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
       
 
     return (
-        <div className={(infoOn) ? 'moreinfo_out' : "moreinfo_none"} onLoad={onInfoOn} onClick={onCloseInfo}>
-            <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="2500">
+        <div className='moreinfo_out' onClick={onCloseInfo}>
+            <div className={(infoOn) ?'moreinfo_container' : "moreinfo_none"} onLoad={onInfoOn} data-aos="fade-up" data-aos-duration="2500">
                 {textOn ? <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/> : ""}
                 <div className='moreinfo_img'>
                     <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>

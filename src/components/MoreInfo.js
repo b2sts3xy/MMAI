@@ -8,6 +8,7 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
         AOS.init({duration : 1000});
       })
 
+
     const infos = {
         "world" : {
             imgs : [
@@ -83,7 +84,6 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
     const [infoImg2, setInfoImg2] = useState(1)
     const [infoImg3, setInfoImg3] = useState(2)
     const [textOn, setTextOn] = useState(false);
-    const [infoOn, setInfoOn] = useState(false);
 
     const on1thMain = () => {
         setInfoImg1(0)
@@ -116,10 +116,6 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
         setInfoState(false);
     }
 
-    const onInfoOn = () => {
-        setInfoOn(true);
-    }
-
     useEffect(() => {
         document.body.style= `overflow: hidden`;
         return () => document.body.style = `overflow: auto`
@@ -128,15 +124,15 @@ const MoreInfo = ({whatInfo, setInfoState}) => {
 
     return (
         <div className='moreinfo_out' onClick={onCloseInfo}>
-            <div className={(infoOn) ?'moreinfo_container' : "moreinfo_none"} onLoad={onInfoOn} data-aos="fade-up" data-aos-duration="2500">
+            <div className='moreinfo_container' data-aos="fade-up" data-aos-duration="2500">
                 {textOn ? <img className='info_close' src='./images/imgModal/close_btn.webp' alt='info close'/> : ""}
-                <div className='moreinfo_img'>
-                    <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>
-                    <div className='moreinfo_subimg'>
-                        {infos[whatInfo].imgs[infoImg2]}
-                        {infos[whatInfo].imgs[infoImg3]}
+                    <div className='moreinfo_img'>
+                        <div className='moreinfo_mainimg'>{infos[whatInfo].imgs[infoImg1]}</div>
+                            <div className='moreinfo_subimg'>
+                                {infos[whatInfo].imgs[infoImg2]}
+                                {infos[whatInfo].imgs[infoImg3]}
+                            </div>
                     </div>
-                </div>
                 {textOn ? <div className='moreinfo_text' onClick={(e) => e.stopPropagation()}><div className='moreinfo_textbox'>{infoText()}</div></div> : ""}
             </div>
         </div>

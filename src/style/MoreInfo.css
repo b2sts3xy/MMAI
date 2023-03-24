@@ -11,10 +11,6 @@
     z-index: 2;
 }
 
-.moreinfo_none {
-    display: none;
-}
-
 .moreinfo_container {
     position: absolute;
     top: 8%;

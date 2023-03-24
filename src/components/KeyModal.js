@@ -25,6 +25,7 @@ const KeyModal = ({setModalState}) => {
         setisWalletModalOpen(false);
         setisTryConnectWallet(false);
         // disconnect2WalletConect(false);
+        Web3Modal.close();
     }     
     const[isWalletModalOpen, setisWalletModalOpen] = useState(true)
     const[CDkey, setCDkey] = useState("check the KTTC NFT")

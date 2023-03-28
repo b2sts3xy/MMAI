@@ -33,7 +33,6 @@ const MainCarousel = ({setModalState}) => {
     }
 
     const onMarketPlace = () => {
-        // window.open('https://mmaipure.com/marketplace/', '_blank');
         alert("NFT Sale done")
     }
 

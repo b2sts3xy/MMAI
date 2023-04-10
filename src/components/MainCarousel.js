@@ -3,6 +3,7 @@ import "../style/MainCarousel.css"
 import {Link} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from 'axios';
 
 const MainCarousel = ({setModalState}) => {
 
@@ -38,14 +39,13 @@ const MainCarousel = ({setModalState}) => {
 
     const onKeyModalOn = () => {
         setModalState(true);
-
-        const fs = require("fs");
-        var file = fs.readFileSync(`${process.env.PUBLIC_URL}/counts/games`)
-        file = file.toString();
-        file = Number(file);
-        file = file+1;
-        console.log(file)
-        fs.writeFileSync(`${process.env.PUBLIC_URL}/counts/games`, file.toString())
+        axios.post("mmaipure.com/games", {})
+        .then((res) => {
+            console.log(res.data);
+        })
+        .catch((err) => {
+            console.log(err)
+        })
     }
 
     return (

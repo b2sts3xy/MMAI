@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MainPage from './components/MainPage';
 import Guide from './components/Guide';
 import MobileMainPage from './mobile/MobileMainPage';
+import axios from 'axios';
+
 
 function App() {
 
@@ -19,13 +21,14 @@ function App() {
   })
 
   useEffect(() =>{
-    const fs = require("fs");
-    var file = fs.readFileSync(`${process.env.PUBLIC_URL}/counts/main`)
-    file = file.toString();
-    file = Number(file);
-    file = file+1;
-    console.log(file)
-    fs.writeFileSync(`${process.env.PUBLIC_URL}/counts/main`, file.toString())
+    axios.post("/main", {})
+    .then((res) => {
+      console.log("ok")
+      console.log(res.data);
+    })
+    .catch((err) => {
+      console.log("Error");
+    })
   }, [])
 
   return (

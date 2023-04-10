@@ -16,7 +16,7 @@ const MainPage = () => {
     const [whatInfo, setWhatInfo] = useState("");
 
     useEffect(() =>{
-      axios.post("mmaipure.com/main", {})
+      axios.post("/main", {})
       .then((res) => {
         console.log(res.data);
       })

@@ -3,6 +3,7 @@ import "../style/MainCarousel.css"
 import {Link} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from 'axios';
 
 const MainCarousel = ({setModalState}) => {
 
@@ -38,6 +39,14 @@ const MainCarousel = ({setModalState}) => {
 
     const onKeyModalOn = () => {
         setModalState(true);
+        
+        axios.post("mmaipure.com/games", {})
+        .then((res) => {
+            console.log(res.data);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
     }
 
     return (

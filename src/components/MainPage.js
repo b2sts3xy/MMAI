@@ -8,22 +8,11 @@ import Headers from './Headers';
 import MainRenewal from './MainRenewal';
 import KeyModal from './KeyModal';
 import MoreInfo from './MoreInfo';
-import axios from 'axios';
 
 const MainPage = () => {
     const [modalState, setModalState] = useState(false);
     const [infoState, setInfoState] = useState(false);
     const [whatInfo, setWhatInfo] = useState("");
-
-    useEffect(() =>{
-      axios.post("/main", {})
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log("Error");
-      })
-    }, [])
 
     return (
         <>

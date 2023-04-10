@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MainPage from './components/MainPage';
 import Guide from './components/Guide';
 import MobileMainPage from './mobile/MobileMainPage';
-import axios from 'axios';
 
 
 function App() {
@@ -19,17 +18,6 @@ function App() {
       setDisPlay(true)
   }, 1500);
   })
-
-  useEffect(() =>{
-    axios.post("/main", {})
-    .then((res) => {
-      console.log("ok")
-      console.log(res.data);
-    })
-    .catch((err) => {
-      console.log("Error");
-    })
-  }, [])
 
   return (
     <section className={(disPlay) ? "App" : "App_none"}>

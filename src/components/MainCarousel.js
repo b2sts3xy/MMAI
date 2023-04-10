@@ -39,13 +39,6 @@ const MainCarousel = ({setModalState}) => {
 
     const onKeyModalOn = () => {
         setModalState(true);
-        axios.post("mmaipure.com/games", {})
-        .then((res) => {
-            console.log(res.data);
-        })
-        .catch((err) => {
-            console.log(err)
-        })
     }
 
     return (

@@ -1,7 +1,14 @@
-.Editor_Container {
-  width: 100%;
+.BoardContainer {
+  width: 70vw;
+  margin: 0 auto;
 }
-
-.ck.ck-editor__editable {
-  min-height: 50vh;
+.BoardContainer .test {
+  width: 20%;
+}
+.BoardContainer .writeBtn {
+  margin-left: auto;
+  margin-top: 1vh;
+}
+.BoardContainer .writeBtn a {
+  text-decoration: none;
 }

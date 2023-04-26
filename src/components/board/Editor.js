@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import "../../style/board/css/Editor.css";
@@ -6,7 +6,12 @@ import axios from "axios";
 
 const Editor = ({ content, setContent, setImage }) => {
   const [flag, setFlag] = useState(false);
-  const imgLink = "http://localhost:5000/images/";
+  const imgLink = "http://localhost:8000/images/";
+  const fileInput = useRef(null);
+
+  useEffect(() => {
+    axios.get("/api/test").then((res) => console.log(res));
+  }, []);
 
   const customUploadAdapter = (loader) => {
     // (2)
@@ -21,6 +26,7 @@ const Editor = ({ content, setContent, setImage }) => {
             axios
               .post("/api/upload", data)
               .then((res) => {
+                console.log("ASDFASDF");
                 if (!flag) {
                   setFlag(true);
                   setImage(res.data.filename);

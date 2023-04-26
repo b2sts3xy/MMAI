@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import "../../style/board/css/Editor.css";
@@ -7,7 +7,6 @@ import axios from "axios";
 const Editor = ({ content, setContent, setImage }) => {
   const [flag, setFlag] = useState(false);
   const imgLink = "http://localhost:8000/images/";
-  const fileInput = useRef(null);
 
   useEffect(() => {
     axios.get("/api/test").then((res) => console.log(res));

@@ -8,6 +8,7 @@ import Guide from "./components/Guide";
 import MobileMainPage from "./mobile/MobileMainPage";
 import Write from "./components/board/Write";
 import BoardList from "./components/board/BoardList";
+import BoardDetail from "./components/board/BoardDetail";
 
 function App() {
   const [disPlay, setDisPlay] = useState(false);
@@ -25,7 +26,8 @@ function App() {
           <Routes>
             <Route exact path="/" element={<MainPage />}></Route>
             <Route exact path="/Guide" element={<Guide />}></Route>
-            <Route path="/board" element={<BoardList />} />
+            <Route path="/board" element={<BoardList />}></Route>
+            <Route path="/board/notice/:postId" element={<BoardDetail />} />
             <Route path="/write" element={<Write />} />
           </Routes>
         </BrowserRouter>

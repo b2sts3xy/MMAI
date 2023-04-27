@@ -1,6 +1,6 @@
 import React from "react";
 import Headers from "../Headers";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Table, Button } from "antd";
 import "../../style/board/css/Board.css";
 import BoardDetail from "./BoardDetail";
@@ -35,6 +35,7 @@ const data = [
 ];
 
 const BoardList = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Headers />
@@ -48,7 +49,7 @@ const BoardList = () => {
           onRow={(record, rowIndex) => {
             return {
               onClick: () => {
-                console.log(record.index);
+                navigate(`/board/notice/${record.index}`);
               },
             };
           }}

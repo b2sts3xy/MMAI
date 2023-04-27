@@ -4,13 +4,22 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import "../../style/board/css/Editor.css";
 import axios from "axios";
 
-const Editor = ({ content, setContent, setImage }) => {
+const Editor = ({ postId, content, setPostId, setContent, setImage }) => {
   const [flag, setFlag] = useState(false);
-  const imgLink = "http://localhost:8000/images/";
+  const imgLink = "http://localhost:8000/images";
 
   useEffect(() => {
-    axios.get("/api/test").then((res) => console.log(res));
-  }, []);
+    const getPostId = async () => {
+      try {
+        const idx = await axios.get("/api/postId");
+        setPostId(idx.data);
+        console.log(postId, idx.data);
+      } catch (e) {
+        console.err(e);
+      }
+    };
+    getPostId();
+  }, [postId, setPostId]);
 
   const customUploadAdapter = (loader) => {
     // (2)
@@ -23,15 +32,14 @@ const Editor = ({ content, setContent, setImage }) => {
             data.append("file", file);
 
             axios
-              .post("/api/upload", data)
+              .post(`/api/upload/${postId}`, data)
               .then((res) => {
-                console.log("ASDFASDF");
                 if (!flag) {
                   setFlag(true);
                   setImage(res.data.filename);
                 }
                 resolve({
-                  default: `${imgLink}/${res.data.filename}`,
+                  default: `${imgLink}/temp/postId_${postId}/${res.data.filename}`,
                 });
               })
               .catch((err) => reject(err));
@@ -64,7 +72,6 @@ const Editor = ({ content, setContent, setImage }) => {
           onChange={(event, editor) => {
             const data = editor.getData();
             setContent(data);
-            console.log(data);
           }}
           onBlur={(event, editor) => {
             // console.log('Blur.', editor);

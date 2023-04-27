@@ -1,13 +1,20 @@
 .WriteContainer {
   width: 80%;
   margin: 0 auto;
+  margin-top: 3vh;
+}
+.WriteContainer .WriteForm {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3vh;
 }
-.WriteContainer .writeBtn {
+.WriteContainer .WriteForm .inputBox {
+  margin-bottom: 2vh;
+  height: 6vh;
+}
+.WriteContainer .WriteForm .writeBtn {
   margin-left: auto;
   margin-top: 1vh;
 }

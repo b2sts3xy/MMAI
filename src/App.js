@@ -6,8 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainPage from "./components/MainPage";
 import Guide from "./components/Guide";
 import MobileMainPage from "./mobile/MobileMainPage";
-import FreeBoard from "./components/board/FreeBoard";
 import Write from "./components/board/Write";
+import BoardList from "./components/board/BoardList";
 
 function App() {
   const [disPlay, setDisPlay] = useState(false);
@@ -25,7 +25,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<MainPage />}></Route>
             <Route exact path="/Guide" element={<Guide />}></Route>
-            <Route path="/freeboard" element={<FreeBoard />} />
+            <Route path="/board" element={<BoardList />} />
             <Route path="/write" element={<Write />} />
           </Routes>
         </BrowserRouter>

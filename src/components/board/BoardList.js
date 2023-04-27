@@ -3,6 +3,7 @@ import Headers from "../Headers";
 import { Link } from "react-router-dom";
 import { Table, Button } from "antd";
 import "../../style/board/css/Board.css";
+import BoardDetail from "./BoardDetail";
 
 const { Column } = Table;
 
@@ -33,7 +34,7 @@ const data = [
   },
 ];
 
-const FreeBoard = () => {
+const BoardList = () => {
   return (
     <>
       <Headers />
@@ -44,6 +45,13 @@ const FreeBoard = () => {
             position: ["bottomCenter"],
           }}
           bordered
+          onRow={(record, rowIndex) => {
+            return {
+              onClick: () => {
+                console.log(record.index);
+              },
+            };
+          }}
         >
           <Column
             title="번호"
@@ -88,4 +96,4 @@ const FreeBoard = () => {
   );
 };
 
-export default FreeBoard;
+export default BoardList;

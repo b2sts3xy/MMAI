@@ -8,10 +8,10 @@ import axios from "axios";
 
 const Write = () => {
   const [content, setContent] = useState("");
-  const [postId, setPostId] = useState(0);
   const [image, setImage] = useState("");
   const navigate = useNavigate();
   const inputRef = useRef([]);
+  const postId = useRef();
 
   // useEffect(() => {
   //   return async () => {
@@ -24,18 +24,16 @@ const Write = () => {
     const data = {
       title: inputRef.current[0].input.value,
       content: content,
-      idx: postId,
+      idx: postId.current,
     };
-    console.log(data);
-    console.log(postId);
 
-    /*  const res = await axios.post("/api/register", data);
+    const res = await axios.post("/api/register", data);
     console.log(res.data);
     if (res === 200) {
       console.log("성공~");
     } else {
       console.log("fail");
-    } */
+    }
   };
 
   const onUploadImage = useCallback((e) => {
@@ -60,7 +58,6 @@ const Write = () => {
             data={content}
             postId={postId}
             setContent={setContent}
-            setPostId={setPostId}
             setImage={setImage}
           />
           <Input

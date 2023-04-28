@@ -22,7 +22,7 @@ const Headers = () => {
             <div className='header_right'>
                 <a href='https://www.youtube.com/channel/UCp0Bou6D571oZ_LTeUBd0EQ' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/youtube.png' className='header_sns_img' alt='MMAI YouTube'/></a>
                 <a href='https://t.me/MMAI_Official' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/telegram.png' className='header_sns_img' alt='MMAI Telegram' /></a>
-                <a href='https://twitter.com/metamonkey_ai' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/twitter.png' className='header_sns_img' alt='MMAI Twitter' /></a>
+                <a href='https://twitter.com/MMAIPure' target="_blank" rel="noopener noreferrer" className='header_sns'><img src='./images/imgHeader/twitter.png' className='header_sns_img' alt='MMAI Twitter' /></a>
                 </div>
         </section>
     );

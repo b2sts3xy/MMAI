@@ -18,7 +18,7 @@ const MobileMain = () => {
                         <div className='mobileTitle' onClick={mobileReload}><img className='mobile_main' src='./images/imgMobile/mmai_logo.webp' alt='MMAI MAIN LOGO' /></div>
                         <div className='mobileTab'>
                             <div className="mTab">
-                                <a href='https://twitter.com/metamonkey_ai' aria-label='mmaipure twitter'>twitter</a>
+                                <a href='https://twitter.com/MMAIPure' aria-label='mmaipure twitter'>twitter</a>
                             </div>
                             <div className="mTab">
                                 <a href='https://t.me/MMAI_Official' aria-label='mmaipure telegram'>telegram</a>

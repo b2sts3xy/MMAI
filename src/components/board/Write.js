@@ -9,39 +9,46 @@ import axios from "axios";
 const Write = () => {
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
+  const [file, setFile] = useState("");
   const navigate = useNavigate();
   const inputRef = useRef([]);
   const postId = useRef();
 
-  // useEffect(() => {
-  //   return async () => {
-  //     await axios.delete(`/api/upload`);
-  //   };
-  // }, []);
+  useEffect(() => {
+    return async () => {
+      await axios.delete(`/api/upload/${postId.current}`);
+    };
+  }, []);
 
   const onRegister = async (e) => {
     e.preventDefault();
     const data = {
       title: inputRef.current[0].input.value,
       content: content,
+      file: file,
       idx: postId.current,
     };
 
+    console.log(data);
     const res = await axios.post("/api/register", data);
     console.log(res.data);
-    if (res === 200) {
+    if (res.status === 200) {
       console.log("성공~");
     } else {
       console.log("fail");
     }
+    navigate(-1);
   };
 
-  const onUploadImage = useCallback((e) => {
-    if (!e.target.files) {
-      return;
-    }
-    console.log(e.target.files[0].name);
-  }, []);
+  const onSaveUrl = (e) => {
+    const formData = new FormData();
+    formData.append("file", e.target.files[0]);
+    axios
+      .post(`/api/upload/${postId.current}/?type=files`, formData)
+      .then((res) => {
+        setFile(res.data.filename);
+      });
+  };
 
   return (
     <>
@@ -60,11 +67,7 @@ const Write = () => {
             setContent={setContent}
             setImage={setImage}
           />
-          <Input
-            type="file"
-            ref={(value) => inputRef.current[1]}
-            onChange={onUploadImage}
-          />
+          <Input type="file" multiple={true} onChange={onSaveUrl} />
           <Button htmlType="submit" className="writeBtn">
             작성하기
           </Button>

@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Editor = ({ postId, content, setContent, setImage }) => {
   const [flag, setFlag] = useState(false);
-  const imgLink = "http://localhost:8000/images";
+  const uploadLink = `http://localhost:8000/uploads/idx_`;
 
   useEffect(() => {
     const getPostId = async () => {
@@ -31,14 +31,14 @@ const Editor = ({ postId, content, setContent, setImage }) => {
             data.append("file", file);
 
             axios
-              .post(`/api/upload/${postId.current}`, data)
+              .post(`/api/upload/${postId.current}/?type=images`, data)
               .then((res) => {
                 if (!flag) {
                   setFlag(true);
                   setImage(res.data.filename);
                 }
                 resolve({
-                  default: `${imgLink}/temp/postId_${postId.current}/${res.data.filename}`,
+                  default: `${uploadLink}${postId.current}/images/temp/${res.data.filename}`,
                 });
               })
               .catch((err) => reject(err));

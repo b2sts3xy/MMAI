@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Typography } from "antd";
+import { Divider, Typography } from "antd";
 import axios from "axios";
-import Headers from "../Headers";
+import "../../style/board/css/BoardDetail.css";
+import ReactHtmlParser from "react-html-parser";
 
 const { Title } = Typography;
 
@@ -14,7 +15,11 @@ const BoardDetail = ({ record }) => {
     const getData = async () => {
       try {
         const res = await axios.get(`/api/data/${postId}`);
-        setData(() => res.data);
+        if (res.status === 200) {
+          setData(() => res.data);
+        } else {
+          console.log("Err");
+        }
       } catch (e) {
         console.error(e);
       }
@@ -26,7 +31,8 @@ const BoardDetail = ({ record }) => {
     <>
       <div className="DetailContainer">
         <Title level={1}>{data.title}</Title>
-        <p>{data.content}</p>
+        <Divider />
+        <div>{ReactHtmlParser(data.content)}</div>
       </div>
     </>
   );

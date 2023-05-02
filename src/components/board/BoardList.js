@@ -1,6 +1,5 @@
 import React from "react";
-import Headers from "../Headers";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { Table, Button } from "antd";
 import "../../style/board/css/Board.css";
 import BoardDetail from "./BoardDetail";
@@ -38,7 +37,7 @@ const BoardList = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Headers />
+      <Outlet />
       <section className="BoardContainer">
         <Table
           dataSource={data}

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Divider, Typography } from "antd";
 import axios from "axios";
 import "../../style/board/css/BoardDetail.css";
-import ReactHtmlParser from "react-html-parser";
+import parse from "html-react-parser";
 
 const { Title } = Typography;
 
@@ -32,7 +32,7 @@ const BoardDetail = ({ record }) => {
       <div className="DetailContainer">
         <Title level={1}>{data.title}</Title>
         <Divider />
-        <div>{ReactHtmlParser(data.content)}</div>
+        <div>{data?.content ? parse(data.content) : null}</div>
       </div>
     </>
   );

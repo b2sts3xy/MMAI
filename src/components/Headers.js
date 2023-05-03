@@ -39,7 +39,9 @@ const Headers = () => {
         >
           MMAI BLOG
         </a>
-        <Link to="/board">FreeBoard</Link>
+        <Link className="header_categori2" to="/board">
+          Board
+        </Link>
         {/* <span onClick={onSolutionClick} className='header_categori2'>MMAI SOLUTIONS</span>
                 <span onClick={onGalleryClick} className='header_categori2'>MMAI GALLERY</span>
                 <span onClick={onPartnerClick} className='header_categori2'>PARTNERS</span> */}

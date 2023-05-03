@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { Table, Button } from "antd";
 import "../../style/board/css/Board.css";
 import BoardDetail from "./BoardDetail";
+import axios from "axios";
 
 const { Column } = Table;
 
@@ -35,12 +36,21 @@ const data = [
 
 const BoardList = () => {
   const navigate = useNavigate();
+  const [content, setContent] = useState([]);
+
+  useEffect(() => {
+    const getPostList = async () => {
+      const res = await axios.get("/api/data");
+      setContent(() => res.data);
+    };
+    getPostList();
+  }, [content]);
   return (
     <>
       <Outlet />
       <section className="BoardContainer">
         <Table
-          dataSource={data}
+          dataSource={content}
           pagination={{
             position: ["bottomCenter"],
           }}

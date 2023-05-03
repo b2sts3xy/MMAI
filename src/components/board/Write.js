@@ -9,7 +9,7 @@ import axios from "axios";
 const Write = () => {
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
-  const [file, setFile] = useState("");
+  const [file, setFile] = useState([]);
   const navigate = useNavigate();
   const inputRef = useRef([]);
   const postId = useRef();
@@ -22,6 +22,7 @@ const Write = () => {
 
   const onRegister = async (e) => {
     e.preventDefault();
+    console.log(file);
     const data = {
       title: inputRef.current[0].input.value,
       content: content,
@@ -46,13 +47,12 @@ const Write = () => {
     axios
       .post(`/api/upload/${postId.current}/?type=files`, formData)
       .then((res) => {
-        setFile(res.data.filename);
+        setFile([...file, res.data.filename]);
       });
   };
 
   return (
     <>
-      <Headers />
       <div className="WriteContainer">
         <form className="WriteForm" onSubmit={onRegister}>
           <Input

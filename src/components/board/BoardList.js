@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { Table, Button } from "antd";
+import { Table, Button, ConfigProvider } from "antd";
+import { SearchOutlined } from "@ant-design/icons";
 import "../../style/board/css/Board.css";
 import BoardDetail from "./BoardDetail";
 import axios from "axios";
+import Headers from "../Headers";
 
 const { Column } = Table;
 
@@ -47,14 +49,16 @@ const BoardList = () => {
   }, [content]);
   return (
     <>
-      <Outlet />
+      <header className="header">
+        <Headers />
+      </header>
       <section className="BoardContainer">
         <Table
           dataSource={content}
           pagination={{
             position: ["bottomCenter"],
           }}
-          bordered
+          // bordered={{ outerBorder: true, innerBorder: true }}
           onRow={(record, rowIndex) => {
             return {
               onClick: () => {
@@ -91,16 +95,14 @@ const BoardList = () => {
             width="7%"
             align="center"
           />
-          <Column
-            title="조회 수"
-            dataIndex="viewCnt"
-            key="viewCnt"
-            width="7%"
-          />
+          <Column title="조회수" dataIndex="viewCnt" key="viewCnt" width="6%" />
         </Table>
-        <Button className="writeBtn">
+        <div className="temp">
+          <SearchOutlined className="search" />
+        </div>
+        {/* <Button className="writeBtn">
           <Link to="/write">게시글 작성</Link>
-        </Button>
+        </Button> */}
       </section>
     </>
   );

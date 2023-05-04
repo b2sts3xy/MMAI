@@ -1,9 +1,38 @@
+.header {
+  background-image: "../../public/images/imgHeader/mmai_logo.png";
+}
+
 .BoardContainer {
   width: 70vw;
   margin: 0 auto;
+  margin-top: 5vh;
 }
-.BoardContainer .test {
-  width: 20%;
+.BoardContainer .temp {
+  width: 15%;
+  height: 4vh;
+  border: 3px solid #ededed;
+}
+.BoardContainer .temp .search {
+  font-weight: bold;
+  font-size: 26px;
+  height: 100%;
+  float: right;
+}
+.BoardContainer .ant-table-thead .ant-table-cell {
+  background-color: #bae0ff;
+}
+.BoardContainer .table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+.BoardContainer .ant-table {
+  width: 100%;
+}
+.BoardContainer .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #ededed;
+}
+.BoardContainer .ant-table-tbody > tr > td:first-child {
+  border-left: none;
 }
 .BoardContainer .writeBtn {
   margin-left: auto;

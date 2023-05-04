@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Outlet } from "react-router-dom";
 import { Divider, Typography } from "antd";
 import axios from "axios";
 import "../../style/board/css/BoardDetail.css";
 import parse from "html-react-parser";
 
-const { Title } = Typography;
+const { Text, Title } = Typography;
 
 const BoardDetail = ({ record }) => {
   const [data, setData] = useState([]);
@@ -30,8 +30,17 @@ const BoardDetail = ({ record }) => {
   return (
     <>
       <div className="DetailContainer">
+        <Divider />
         <Title level={1}>{data.title}</Title>
         <Divider />
+        <Text>작성자 : 최고 관리자 조회수 : 1</Text>
+        <Divider />
+        {data.length !== 0 && data.file.length !== 0 && (
+          <>
+            <Text>첨부파일: {data.file}</Text>
+            <Divider />
+          </>
+        )}
         <div>{data?.content ? parse(data.content) : null}</div>
       </div>
     </>

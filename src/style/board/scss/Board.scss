@@ -1,52 +1,79 @@
 .header {
   background-image: "../../public/images/imgHeader/mmai_logo.png";
 }
-
 .BoardContainer {
-  width: 70vw;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   margin-top: 5vh;
 
-  .temp {
-    width: 15%;
-    height: 4vh;
-    border: 3px solid #ededed;
+  .BoardListContainer {
+    width: 65vw;
 
-    .search {
-      font-weight: bold;
-      font-size: 26px;
-      height: 100%;
+    .temp {
+      width: 15%;
+      height: 4vh;
+      border: 3px solid #ededed;
+      margin-bottom: 15px;
       float: right;
+      .search {
+        font-weight: bold;
+        font-size: 26px;
+        height: 100%;
+        float: right;
+      }
+    }
+
+    .ant-table-thead .ant-table-cell {
+      background-color: #bae0ff;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .ant-table {
+      width: 100%;
+    }
+
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid #ededed;
+    }
+
+    .ant-table-tbody > tr > td:first-child {
+      border-left: none;
+    }
+
+    .writeBtn {
+      margin-left: auto;
+      margin-top: 1vh;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 
-  .ant-table-thead .ant-table-cell {
-    background-color: #bae0ff;
-  }
+  .sideBarContainer {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    box-sizing: border-box;
 
-  .table-container {
-    width: 100%;
-    overflow-x: auto;
-  }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1vh;
 
-  .ant-table {
-    width: 100%;
-  }
-
-  .ant-table-tbody > tr > td {
-    border-bottom: 1px solid #ededed;
-  }
-
-  .ant-table-tbody > tr > td:first-child {
-    border-left: none;
-  }
-
-  .writeBtn {
-    margin-left: auto;
-    margin-top: 1vh;
-
-    a {
-      text-decoration: none;
+      span {
+        // font-size: 1.25rem;
+        border-left: 2px solid #bae0ff;
+        padding: 6px 10px;
+      }
     }
   }
 }

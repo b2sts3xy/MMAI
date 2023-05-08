@@ -48,11 +48,11 @@ const BoardList = () => {
     getPostList();
   }, [content]);
   return (
-    <>
-      <header className="header">
-        <Headers />
-      </header>
-      <section className="BoardContainer">
+    <div className="BoardContainer">
+      <section className="BoardListContainer">
+        <div className="temp">
+          <SearchOutlined className="search" />
+        </div>
         <Table
           dataSource={content}
           pagination={{
@@ -97,14 +97,20 @@ const BoardList = () => {
           />
           <Column title="조회수" dataIndex="viewCnt" key="viewCnt" width="6%" />
         </Table>
-        <div className="temp">
-          <SearchOutlined className="search" />
-        </div>
+
         {/* <Button className="writeBtn">
           <Link to="/write">게시글 작성</Link>
         </Button> */}
       </section>
-    </>
+      {/* <aside className="sideBarContainer">
+        <nav>
+          <span className="text">공지사항</span>
+          <span className="text">업데이트</span>
+          <span className="text">행사안내</span>
+          <span className="text">일반소식</span>
+        </nav>
+      </aside> */}
+    </div>
   );
 };
 

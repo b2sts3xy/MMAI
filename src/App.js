@@ -25,9 +25,9 @@ function App() {
       <div className="pc">
         <BrowserRouter>
           <Routes>
-            <Route path="/board" element={<BoardList />}></Route>
             <Route element={<Layout />}>
               <Route exact path="/" element={<MainPage />}></Route>
+              <Route path="/board" element={<BoardList />}></Route>
               <Route path="/board/notice/:postId" element={<BoardDetail />} />
               <Route path="/write" element={<Write />} />
             </Route>

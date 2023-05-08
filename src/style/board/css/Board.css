@@ -3,41 +3,64 @@
 }
 
 .BoardContainer {
-  width: 70vw;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   margin-top: 5vh;
 }
-.BoardContainer .temp {
+.BoardContainer .BoardListContainer {
+  width: 65vw;
+}
+.BoardContainer .BoardListContainer .temp {
   width: 15%;
   height: 4vh;
   border: 3px solid #ededed;
+  margin-bottom: 15px;
+  float: right;
 }
-.BoardContainer .temp .search {
+.BoardContainer .BoardListContainer .temp .search {
   font-weight: bold;
   font-size: 26px;
   height: 100%;
   float: right;
 }
-.BoardContainer .ant-table-thead .ant-table-cell {
+.BoardContainer .BoardListContainer .ant-table-thead .ant-table-cell {
   background-color: #bae0ff;
 }
-.BoardContainer .table-container {
+.BoardContainer .BoardListContainer .table-container {
   width: 100%;
   overflow-x: auto;
 }
-.BoardContainer .ant-table {
+.BoardContainer .BoardListContainer .ant-table {
   width: 100%;
 }
-.BoardContainer .ant-table-tbody > tr > td {
+.BoardContainer .BoardListContainer .ant-table-tbody > tr > td {
   border-bottom: 1px solid #ededed;
 }
-.BoardContainer .ant-table-tbody > tr > td:first-child {
+.BoardContainer .BoardListContainer .ant-table-tbody > tr > td:first-child {
   border-left: none;
 }
-.BoardContainer .writeBtn {
+.BoardContainer .BoardListContainer .writeBtn {
   margin-left: auto;
   margin-top: 1vh;
 }
-.BoardContainer .writeBtn a {
+.BoardContainer .BoardListContainer .writeBtn a {
   text-decoration: none;
+}
+.BoardContainer .sideBarContainer {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.BoardContainer .sideBarContainer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+.BoardContainer .sideBarContainer nav span {
+  border-left: 2px solid #bae0ff;
+  padding: 6px 10px;
 }

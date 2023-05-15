@@ -16,6 +16,7 @@ const BoardDetail = ({ record }) => {
       try {
         const res = await axios.get(`/api/data/${postId}`);
         if (res.status === 200) {
+          console.log(res.data);
           setData(() => res.data);
         } else {
           console.log("Err");

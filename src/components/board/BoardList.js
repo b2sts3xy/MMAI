@@ -43,6 +43,7 @@ const BoardList = () => {
   useEffect(() => {
     const getPostList = async () => {
       const res = await axios.get("/api/data");
+      res.data.sort((a, b) => b.index - a.index);
       setContent(() => res.data);
     };
     getPostList();
@@ -68,48 +69,48 @@ const BoardList = () => {
           }}
         >
           <Column
-            title="번호"
+            title="number"
             dataIndex="index"
             key="index"
             width="5%"
             align="center"
           />
           <Column
-            title="제목"
+            title="title"
             dataIndex="title"
             key="title"
-            width="50%"
+            width="45%"
             align="center"
           />
           <Column
-            title="글쓴이"
+            title="writer"
             dataIndex="writer"
             key="writer"
             width="7%"
             align="center"
           />
           <Column
-            title="날짜"
+            title="date"
             dataIndex="date"
             key="date"
             width="7%"
             align="center"
           />
-          <Column title="조회수" dataIndex="viewCnt" key="viewCnt" width="6%" />
+          <Column title="view" dataIndex="viewCnt" key="viewCnt" width="6%" />
         </Table>
 
-        {/* <Button className="writeBtn">
+        <Button className="writeBtn">
           <Link to="/write">게시글 작성</Link>
-        </Button> */}
+        </Button>
       </section>
-      {/* <aside className="sideBarContainer">
+      <aside className="sideBarContainer">
         <nav>
           <span className="text">공지사항</span>
           <span className="text">업데이트</span>
           <span className="text">행사안내</span>
           <span className="text">일반소식</span>
         </nav>
-      </aside> */}
+      </aside>
     </div>
   );
 };

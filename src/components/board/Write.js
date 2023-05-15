@@ -42,8 +42,10 @@ const Write = () => {
   };
 
   const onSaveUrl = (e) => {
+    console.log([...e.target.files]);
+    console.log(e.target.files);
     const formData = new FormData();
-    formData.append("file", e.target.files[0]);
+    formData.append("file", [...e.target.files]);
     axios
       .post(`/api/upload/${postId.current}/?type=files`, formData)
       .then((res) => {

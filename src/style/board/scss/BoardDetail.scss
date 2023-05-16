@@ -2,4 +2,18 @@
   width: 70vw;
   margin: 0 auto;
   margin-top: 3vh;
+
+  .attachedFile {
+    margin-right: 3vw;
+  }
+
+  button {
+    border: 0;
+    background-color: transparent;
+    &:link,
+    &:visited,
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

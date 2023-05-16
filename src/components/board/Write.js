@@ -41,16 +41,21 @@ const Write = () => {
     navigate(-1);
   };
 
-  const onSaveUrl = (e) => {
+  const onSaveUrl = async (e) => {
     console.log([...e.target.files]);
     console.log(e.target.files);
     const formData = new FormData();
     formData.append("file", [...e.target.files]);
-    axios
+
+    [...e.target.files].forEach((file) => {
+      formData.append("file", file);
+    });
+    console.log(formData);
+
+    const res = await axios
       .post(`/api/upload/${postId.current}/?type=files`, formData)
-      .then((res) => {
-        setFile([...file, res.data.filename]);
-      });
+      .then((res) => res.data);
+    setFile(...file, res);
   };
 
   return (

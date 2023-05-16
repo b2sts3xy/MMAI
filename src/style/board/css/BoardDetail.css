@@ -3,3 +3,13 @@
   margin: 0 auto;
   margin-top: 3vh;
 }
+.DetailContainer .attachedFile {
+  margin-right: 3vw;
+}
+.DetailContainer button {
+  border: 0;
+  background-color: transparent;
+}
+.DetailContainer button:link, .DetailContainer button:visited, .DetailContainer button:hover {
+  text-decoration: none;
+}

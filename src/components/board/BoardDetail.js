@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Outlet } from "react-router-dom";
-import { Divider, Typography } from "antd";
+import { Divider, Space, Typography } from "antd";
 import axios from "axios";
 import "../../style/board/css/BoardDetail.css";
 import parse from "html-react-parser";
@@ -28,6 +28,10 @@ const BoardDetail = ({ record }) => {
     getData();
   }, []);
 
+  const onDownload = async (fileName) => {
+    // const download = await axios.get()
+  };
+
   return (
     <>
       <div className="DetailContainer">
@@ -38,7 +42,18 @@ const BoardDetail = ({ record }) => {
         <Divider />
         {data.length !== 0 && data.file.length !== 0 && (
           <>
-            <Text>첨부파일: {data.file}</Text>
+            <Text className="attachedFile">첨부파일 : </Text>
+            <Text>
+              <Space direction="vertical">
+                {data.file.map((file) => (
+                  <Text>
+                    <button type="button" onClick={() => onDownload(file)}>
+                      {file}
+                    </button>
+                  </Text>
+                ))}
+              </Space>
+            </Text>
             <Divider />
           </>
         )}

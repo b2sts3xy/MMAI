@@ -13,7 +13,7 @@ const Headers = () => {
         <img
           className="header_name"
           onClick={reload}
-          src="./images/imgHeader/mmai_logo.png"
+          src="/images/imgHeader/mmai_logo.png"
           alt="MMAI MAIN LOGO"
         />
       </div>
@@ -54,7 +54,7 @@ const Headers = () => {
           className="header_sns"
         >
           <img
-            src="./images/imgHeader/youtube.png"
+            src="/images/imgHeader/youtube.png"
             className="header_sns_img"
             alt="MMAI YouTube"
           />
@@ -66,7 +66,7 @@ const Headers = () => {
           className="header_sns"
         >
           <img
-            src="./images/imgHeader/telegram.png"
+            src="/images/imgHeader/telegram.png"
             className="header_sns_img"
             alt="MMAI Telegram"
           />
@@ -78,7 +78,7 @@ const Headers = () => {
           className="header_sns"
         >
           <img
-            src="./images/imgHeader/twitter.png"
+            src="/images/imgHeader/twitter.png"
             className="header_sns_img"
             alt="MMAI Twitter"
           />

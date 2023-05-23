@@ -63,6 +63,18 @@ const Editor = ({ postId, content, setContent, setImage }) => {
           config={{
             // (4)
             extraPlugins: [uploadPlugin],
+            image: {
+              toolbar: [
+                "imageStyle:inline",
+                "imageStyle:alignLeft",
+                "imageTextAlternative",
+                "imageStyle:block",
+                "imageStyle:side",
+              ],
+            },
+            contentFilter: {
+              allowedContent: "div(!class){style}; img[!src,alt]{style}", // <div> 태그로 이미지 감싸기
+            },
           }}
           data="<p>Hello World</p>"
           onReady={(editor) => {

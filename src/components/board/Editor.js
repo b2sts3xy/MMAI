@@ -55,6 +55,13 @@ const Editor = ({ postId, content, setContent, setImage }) => {
     };
   }
 
+  const contentFilter = {
+    allowedContent: "p img[!src,alt]{style}", // p 태그로 이미지 감싸기
+    transformTags: {
+      span: "p", // span 태그를 p 태그로 변환
+    },
+  };
+
   return (
     <>
       <div className="Editor_Container">
@@ -65,16 +72,13 @@ const Editor = ({ postId, content, setContent, setImage }) => {
             extraPlugins: [uploadPlugin],
             image: {
               toolbar: [
-                "imageStyle:inline",
-                "imageStyle:alignLeft",
                 "imageTextAlternative",
+                "imageStyle:inline",
                 "imageStyle:block",
                 "imageStyle:side",
               ],
             },
-            contentFilter: {
-              allowedContent: "div(!class){style}; img[!src,alt]{style}", // <div> 태그로 이미지 감싸기
-            },
+            contentFilter,
           }}
           data="<p>Hello World</p>"
           onReady={(editor) => {

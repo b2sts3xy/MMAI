@@ -4,6 +4,9 @@
 .Editor_Container .ck-editor__main > span {
   display: block;
 }
+.Editor_Container .ck-content .image {
+  margin: 0.9rem;
+}
 .Editor_Container img {
   width: 25vw;
   height: 25vh;

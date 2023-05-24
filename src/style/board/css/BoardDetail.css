@@ -13,3 +13,7 @@
 .DetailContainer button:link, .DetailContainer button:visited, .DetailContainer button:hover {
   text-decoration: none;
 }
+.DetailContainer img {
+  max-width: 25vw;
+  max-height: 25vh;
+}

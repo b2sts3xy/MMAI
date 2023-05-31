@@ -10,9 +10,23 @@
     justify-content: center;
     align-items: center;
 
-    .inputBox {
-      margin-bottom: 2vh;
+    .WriteFormHeader {
+      display: flex;
+      width: 100%;
       height: 6vh;
+      margin-bottom: 2vh;
+      // border: 1px solid #ededed;
+
+      .Category {
+        border-color: #ededed;
+        border-radius: 5px 0 0 5px;
+        padding: 12px;
+        width: 11.8%;
+      }
+
+      .inputBox {
+        border-radius: 0 5px 5px 0;
+      }
     }
 
     .writeBtn {

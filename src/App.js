@@ -9,7 +9,7 @@ import MobileMainPage from "./mobile/MobileMainPage";
 import Write from "./components/board/Write";
 import BoardList from "./components/board/BoardList";
 import BoardDetail from "./components/board/BoardDetail";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   const [disPlay, setDisPlay] = useState(false);

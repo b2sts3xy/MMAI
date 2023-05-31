@@ -6,6 +6,7 @@ import "../../style/board/css/Board.css";
 import BoardDetail from "./BoardDetail";
 import axios from "axios";
 import Headers from "../Headers";
+import SideBar from "../navBar/SideBar";
 
 const { Column } = Table;
 
@@ -72,14 +73,21 @@ const BoardList = () => {
             title="number"
             dataIndex="index"
             key="index"
-            width="5%"
+            width="4%"
+            align="center"
+          />
+          <Column
+            title="category"
+            dataIndex="index"
+            key="index"
+            width="4%"
             align="center"
           />
           <Column
             title="title"
             dataIndex="title"
             key="title"
-            width="45%"
+            width="40%"
             align="center"
           />
           <Column
@@ -103,14 +111,7 @@ const BoardList = () => {
           <Link to="/write">게시글 작성</Link>
         </Button>
       </section>
-      <aside className="sideBarContainer">
-        <nav>
-          <span className="text">공지사항</span>
-          <span className="text">업데이트</span>
-          <span className="text">행사안내</span>
-          <span className="text">일반소식</span>
-        </nav>
-      </aside>
+      <SideBar />
     </div>
   );
 };

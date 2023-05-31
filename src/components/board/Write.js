@@ -5,13 +5,15 @@ import Editor from "./Editor";
 import { Button, Input, Space } from "antd";
 import "../../style/board/css/Write.css";
 import axios from "axios";
+import Category from "./Category";
 
 const Write = () => {
+  const [category, setCategory] = useState("");
+  const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
   const [file, setFile] = useState([]);
   const navigate = useNavigate();
-  const inputRef = useRef([]);
   const postId = useRef();
 
   useEffect(() => {
@@ -20,11 +22,20 @@ const Write = () => {
     };
   }, []);
 
+  const onChangeTitle = (e) => {
+    setTitle(e.target.value);
+  };
+
+  const onChangeCategory = (e) => {
+    setCategory(e.target.value);
+  };
+
   const onRegister = async (e) => {
     e.preventDefault();
     console.log(file);
     const data = {
-      title: inputRef.current[0].input.value,
+      category: category,
+      title: title,
       content: content,
       file: file,
       idx: postId.current,
@@ -42,10 +53,7 @@ const Write = () => {
   };
 
   const onSaveUrl = async (e) => {
-    console.log([...e.target.files]);
-    console.log(e.target.files);
     const formData = new FormData();
-    formData.append("file", [...e.target.files]);
 
     [...e.target.files].forEach((file) => {
       formData.append("file", file);
@@ -55,19 +63,29 @@ const Write = () => {
     const res = await axios
       .post(`/api/upload/${postId.current}/?type=files`, formData)
       .then((res) => res.data);
-    setFile(...file, res);
+    setFile(res);
   };
 
   return (
     <>
       <div className="WriteContainer">
         <form className="WriteForm" onSubmit={onRegister}>
-          <Input
-            ref={(value) => (inputRef.current[0] = value)}
-            className="inputBox"
-            size="large"
-            placeholder=""
-          />
+          <div className="WriteFormHeader">
+            <select className="Category" onChange={onChangeCategory}>
+              <option>category</option>
+              <option value="pureWorld">Pure World</option>
+              <option value="mmaiGames">MMAI GAMES</option>
+              <option value="general">General</option>
+              <option valye="news">News</option>
+            </select>
+            <Input
+              className="inputBox"
+              value={title}
+              onChange={onChangeTitle}
+              size="large"
+              placeholder="제목을 입력해주세요"
+            />
+          </div>
           <Editor
             data={content}
             postId={postId}

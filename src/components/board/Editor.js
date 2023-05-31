@@ -72,9 +72,9 @@ const Editor = ({ postId, content, setContent, setImage }) => {
             extraPlugins: [uploadPlugin],
             image: {
               toolbar: [
+                "imageStyle:block",
                 "imageTextAlternative",
                 "imageStyle:inline",
-                "imageStyle:block",
                 "imageStyle:side",
               ],
             },

@@ -12,11 +12,17 @@
   justify-content: center;
   gap: 1vh;
 }
-.SideBar nav span {
+.SideBar nav .CategoryBtn {
+  background: white;
+  border: none;
   border-left: 2px solid #bae0ff;
   padding: 6px 10px;
+  background: linear-gradient(to right, #ededed 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.5s;
 }
-.SideBar nav span:hover {
-  background-color: #ededed;
+.SideBar nav .CategoryBtn:hover {
+  background-position: left;
   border-radius: 2px;
 }

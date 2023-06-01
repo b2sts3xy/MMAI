@@ -13,13 +13,21 @@
     justify-content: center;
     gap: 1vh;
 
-    span {
+    .CategoryBtn {
       // font-size: 1.25rem;
+      background: white;
+      border: none;
       border-left: 2px solid #bae0ff;
       padding: 6px 10px;
 
+      background: linear-gradient(to right, #ededed 50%, #ffffff 50%);
+      background-size: 200% 100%;
+      background-position: right;
+      transition: background-position 0.5s; // 배경색 변화를 0.5초로 설정
+
       &:hover {
-        background-color: #ededed;
+        background-position: left;
+
         border-radius: 2px;
       }
     }

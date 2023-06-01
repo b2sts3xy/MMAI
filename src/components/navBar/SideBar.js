@@ -1,14 +1,25 @@
 import React from "react";
 import "../../style/sideBar/css/SideBar.css";
 
-const SideBar = () => {
+const SideBar = ({ setCategory }) => {
+  const categories = ["all", "Pure World", "MMAI GAMES", "General", "News"];
+
+  const onChangeCategory = (category) => {
+    setCategory(() => category);
+  };
+
   return (
     <div className="SideBar">
       <nav>
-        <span className="text">Pure World</span>
-        <span className="text">MMAI GAMES</span>
-        <span className="text">General</span>
-        <span className="text">News</span>
+        {categories.map((category) => (
+          <button
+            key={category}
+            className="CategoryBtn"
+            onClick={() => onChangeCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
       </nav>
     </div>
   );

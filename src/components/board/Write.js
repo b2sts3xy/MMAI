@@ -5,7 +5,6 @@ import Editor from "./Editor";
 import { Button, Input, Space } from "antd";
 import "../../style/board/css/Write.css";
 import axios from "axios";
-import Category from "./Category";
 
 const Write = () => {
   const [category, setCategory] = useState("");
@@ -32,13 +31,19 @@ const Write = () => {
 
   const onRegister = async (e) => {
     e.preventDefault();
+
+    if (category === "") {
+      alert("카테고리를 선택해 주세요");
+      return;
+    }
+
     console.log(file);
     const data = {
-      category: category,
+      idx: postId.current,
       title: title,
+      category: category,
       content: content,
       file: file,
-      idx: postId.current,
     };
 
     console.log(data);
@@ -73,10 +78,10 @@ const Write = () => {
           <div className="WriteFormHeader">
             <select className="Category" onChange={onChangeCategory}>
               <option>category</option>
-              <option value="pureWorld">Pure World</option>
-              <option value="mmaiGames">MMAI GAMES</option>
-              <option value="general">General</option>
-              <option valye="news">News</option>
+              <option value="Pure World">Pure World</option>
+              <option value="MMAI GAMES">MMAI GAMES</option>
+              <option value="General">General</option>
+              <option valye="News">News</option>
             </select>
             <Input
               className="inputBox"

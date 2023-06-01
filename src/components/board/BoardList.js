@@ -1,45 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { Table, Button, ConfigProvider } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
+import { Table, Button, Input } from "antd";
 import "../../style/board/css/Board.css";
-import BoardDetail from "./BoardDetail";
 import axios from "axios";
-import Headers from "../Headers";
 import SideBar from "../navBar/SideBar";
 
 const { Column } = Table;
-
-const data = [
-  {
-    key: "1",
-    index: 1,
-    title: "Test1",
-    writer: "Brown",
-    date: "2023.04.23",
-    viewCnt: 100,
-  },
-  {
-    key: "2",
-    index: 2,
-    title: "Test2",
-    writer: "Green",
-    date: "2023.04.24",
-    viewCnt: 120,
-  },
-  {
-    key: "3",
-    index: 3,
-    title: "Test3",
-    writer: "Black",
-    date: "2023.04.24",
-    viewCnt: 140,
-  },
-];
+const { Search } = Input;
 
 const BoardList = () => {
   const navigate = useNavigate();
+  const [category, setCategory] = useState("all");
   const [content, setContent] = useState([]);
+  const [filteredContent, setFilteredContent] = useState(content);
 
   useEffect(() => {
     const getPostList = async () => {
@@ -48,15 +21,27 @@ const BoardList = () => {
       setContent(() => res.data);
     };
     getPostList();
-  }, [content]);
+  }, []);
+
+  useEffect(() => {
+    setFilteredContent(
+      category === "all"
+        ? content
+        : content.filter((item) => item.category === category)
+    );
+    console.log(filteredContent);
+  }, [category, content]);
+
+  const onSearch = (value) => {
+    setFilteredContent(content.filter((item) => item.title.includes(value)));
+  };
+
   return (
     <div className="BoardContainer">
       <section className="BoardListContainer">
-        <div className="temp">
-          <SearchOutlined className="search" />
-        </div>
+        <Search onSearch={onSearch} enterButton />
         <Table
-          dataSource={content}
+          dataSource={filteredContent}
           pagination={{
             position: ["bottomCenter"],
           }}
@@ -78,8 +63,8 @@ const BoardList = () => {
           />
           <Column
             title="category"
-            dataIndex="index"
-            key="index"
+            dataIndex="category"
+            key="category"
             width="4%"
             align="center"
           />
@@ -111,7 +96,7 @@ const BoardList = () => {
           <Link to="/write">게시글 작성</Link>
         </Button>
       </section>
-      <SideBar />
+      <SideBar setCategory={setCategory} />
     </div>
   );
 };

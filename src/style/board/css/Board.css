@@ -10,17 +10,10 @@
 .BoardContainer .BoardListContainer {
   width: 65vw;
 }
-.BoardContainer .BoardListContainer .temp {
-  width: 15%;
+.BoardContainer .BoardListContainer .ant-input-search {
+  width: 25%;
   height: 4vh;
-  border: 3px solid #ededed;
   margin-bottom: 15px;
-  float: right;
-}
-.BoardContainer .BoardListContainer .temp .search {
-  font-weight: bold;
-  font-size: 26px;
-  height: 100%;
   float: right;
 }
 .BoardContainer .BoardListContainer .ant-table-thead .ant-table-cell {

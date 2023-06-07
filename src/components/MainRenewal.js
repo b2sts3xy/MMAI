@@ -69,7 +69,7 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                     </div>
                 </div>
                 <div className='wallet_container'>
-                    <img className='p1_img'  src='./images/imgNew/main_wallet.webp' alt='MMAI PUREWORLD'/>
+                    <img className='p1_img'  src='./images/imgNew/main_wallet.png' alt='MMAI PUREWORLD'/>
                     <div className='wallet_box'>
                         <div className='wallet_contents' data-aos="fade-up" data-aos-duration="1500">
                             <div className='wc_title'>MMAI PureWallet</div>
@@ -110,7 +110,7 @@ const MainRenewal = ({setInfoState, setWhatInfo}) => {
                         </div>
                     </div>
                     <div className='p3_store_img' data-aos="fade-up" data-aos-duration="1500">
-                        <img id='p3_img' src='./images/imgNew/p3_img.webp' alt='using mmai pure wallet'/>
+                        <img id='p3_img' src='./images/imgNew/p3_img.png' alt='using mmai pure wallet'/>
                     </div>  
                 </div>
             </div>

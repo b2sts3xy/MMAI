@@ -27,19 +27,19 @@ const WalletGallery = () => {
         <div className="gallery_container">
             <Slider {...settings}>
                 <div className="gallery_box">
-                    <img src="./images/imgNew/wallet_slide_1.webp" alt="MMAI PUREWORLD"/>
+                    <img src="./images/imgNew/wallet_slide_1.png" alt="MMAI PUREWORLD"/>
                 </div>
                 <div className="gallery_box">
-                    <img src="./images/imgNew/wallet_slide_2.webp" alt="MMAI PUREWORLD"/>
+                    <img src="./images/imgNew/wallet_slide_2.png" alt="MMAI PUREWORLD"/>
                 </div>
                 <div className="gallery_box">
-                    <img src="./images/imgNew/wallet_slide_3.webp" alt="MMAI PUREWORLD"/>
+                    <img src="./images/imgNew/wallet_slide_3.png" alt="MMAI PUREWORLD"/>
                 </div>
                 <div className="gallery_box">
-                    <img src="./images/imgNew/wallet_slide_4.webp" alt="MMAI PUREWORLD"/>
+                    <img src="./images/imgNew/wallet_slide_4.png" alt="MMAI PUREWORLD"/>
                 </div>
                 <div className="gallery_box">
-                    <img src="./images/imgNew/wallet_slide_5.webp" alt="MMAI PUREWORLD"/>
+                    <img src="./images/imgNew/wallet_slide_5.png" alt="MMAI PUREWORLD"/>
                 </div>
             </Slider>
         </div>

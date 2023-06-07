@@ -1,0 +1,21 @@
+{
+  "folders": [
+	{
+		"name": "MMAI",
+		"path": "../../.."
+	},
+	{
+		"name": "Server",
+		"path": "../../../../Server"
+	},
+	{
+		"name": "WiShare_Front",
+		"path": "../../../../WiShare_Front"
+	},
+	{
+		"name": "Code",
+		"path": "../../../.."
+	}
+],
+  "settings": {}
+}

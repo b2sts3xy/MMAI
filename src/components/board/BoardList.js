@@ -93,7 +93,7 @@ const BoardList = () => {
         </Table>
 
         <Button className="writeBtn">
-          <Link to="/write">게시글 작성</Link>
+          <Link to="/write">Write</Link>
         </Button>
       </section>
       <SideBar setCategory={setCategory} />

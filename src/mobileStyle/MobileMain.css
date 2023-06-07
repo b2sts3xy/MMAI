@@ -1,0 +1,49 @@
+.mobileMainContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile_main {
+    width: 100%;
+}
+
+.mobileMainContents {
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 7%;
+}
+
+.mobileHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobileTitle {
+    width: 30%;
+    cursor: pointer;
+}
+
+.mobileTab {
+    font-size: 0.7rem;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobileTab a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mobileTab a:hover {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}

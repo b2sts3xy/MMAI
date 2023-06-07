@@ -1,0 +1,78 @@
+.mobileWalletPhoto {
+    width: 100%;
+    position: relative;
+}
+
+.mobile_wallet_main {
+    width: 100%;
+}
+
+.mobileStore {
+    position: absolute;
+    width: 70%;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileStoreImgA {
+    width: 47%;
+}
+
+.mobileStore a{
+    display: flex;
+    align-items: center;
+    width: 47%;
+    cursor: pointer;
+}
+.mobileStoreImgG {
+    width: 100%;
+}
+
+.mobileWalletContents {
+    width: 90%;
+    margin: 8% auto 0 auto;
+}
+
+.mobileWalletContents1 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #191919;
+}
+
+.mobileWalletContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileWalletContents3 {
+    font-size: 0.9rem;
+    color: #767676;
+    margin-bottom: 7%;
+}
+
+.mobileWalletVideo {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+.mobileWalletVideo_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#mobileWalletVideoImg {
+    width: 100%;
+}
+
+#mobileWalletVideoImg_btnImg {
+    width: 50%;
+}

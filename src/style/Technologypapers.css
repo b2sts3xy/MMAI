@@ -1,0 +1,55 @@
+.TechnologyBody{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.MMAI-Technology-Papers {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #000;
+}
+.contentbox {
+    margin-top: 1%;
+    font-size: 1vw;
+    color: #767676;
+}
+.smaltitle {
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 8% 0 8% 0;
+}
+.imgcontent{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paperbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.paperImg{
+    width: 100%;
+}
+.mtitle{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: #202020;
+}
+.stitle{
+    margin-top:8%;
+    font-size: 0.7vw;
+    font-weight: bolder;
+    color: #909090;
+}
+
+@media (min-width : 1098px) {
+    .paperbox {
+        flex-wrap: nowrap;
+    }
+}

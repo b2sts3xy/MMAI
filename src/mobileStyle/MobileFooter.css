@@ -1,0 +1,64 @@
+.mobileFooterContainer {
+    background-color: black;
+    height: 100%;
+}
+
+.mobileFooterFirst {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.mobileFooterTitle {
+    width: 30%;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.mobileFooterSNS {
+    width: 50%;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileSNSLink {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobileSNSLink:hover {
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.mobileFooterSecond {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    width: 80%;
+    margin: 0 auto;
+    color: #909090;
+}
+
+.mobile_by_mmai {
+    font-size: 1vw;
+}
+
+.mobile_footer_main {
+    width: 80%;
+}
+
+.mobile_mmai_email {
+    color: #ffffff;
+    font-size: 3vw;
+}

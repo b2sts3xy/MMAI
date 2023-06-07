@@ -1,0 +1,297 @@
+.default-view {
+    width: 100%;
+}
+
+.default-none {
+    display: none;
+}
+
+.carousel1_container, .carousel2_container ,.carousel3_container, .carousel4_container {
+    position: relative;
+    width: 100%;
+}
+
+
+/* 카루셀 1 */
+.carousel1_img {
+    width: 100%;
+}
+
+.carousel1_content {
+    position: absolute;
+    top: 51.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel1_text {
+    width: 70%;
+    color: white;
+    text-align: center;
+}
+
+.main_carousel1_text {
+    font-weight: 900;
+    font-size: 2.6vw;
+}
+
+.sub_carousel1_text {
+    font-size: 0.9vw;
+    margin: 4% 0;
+}
+
+.downloadBtn {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 3vw;
+    font-size: 1vw;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 30%;
+    cursor: pointer;
+}
+
+.downloadBtn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    /* background-color: #cccccc; */
+}
+
+/* 카루셀 2 */
+
+.carousel2_img {
+    width: 100%;
+    filter: brightness(75%);
+}
+
+.carousel2_content {
+    position: absolute;
+    top: 51.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel2_text {
+    width: 70%;
+    color: white;
+}
+
+.header_carousel2_text {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.main_carousel2_text {
+    font-weight: 900;
+    font-size: 2.6vw;
+    margin: 3% 0;
+}
+
+.sub_carousel2_text {
+    font-size: 0.9vw;
+    margin-bottom: 4%;
+}
+
+.storeImgA, .storeImgG{
+    width: 20%;
+    cursor: pointer;
+}
+
+.storeImgG:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.storeImgA {
+    margin-right: 2.437rem;
+}
+
+/* 카루셀 3 */
+.carousel3_img {
+    width: 100%;
+}
+
+.carousel3_content {
+    position: absolute;
+    top: 51.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel3_text {
+    width: 70%;
+    color: white;
+}
+
+.main_carousel3_text {
+    font-weight: 900;
+    font-size: 2.6vw;
+}
+
+.sub_carousel3_text {
+    font-size: 0.9vw;
+    margin: 4% 0;
+}
+
+.third_carouselBtn {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BN_container {
+    width: 30%;
+}
+
+.BN_container:hover {
+    transform: scale(1);
+    transition: .5s;
+}
+
+.thrid_buybtn {
+   width: 100%;
+}
+
+.third_link {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third_link_a {
+    width: 15%;
+}
+
+.third_carouselImg {
+    width: 100%;
+}
+
+.thrid_buybtn:hover, .third_carouselImg:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+/* game 카루셀 4*/
+
+.carousel4_content {
+    position: absolute;
+    top: 51.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel4_img {
+    width: 100%;
+}
+
+.carousel4_center {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.carousel4_main_text {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.6vw;
+}
+
+.carousel4_sub_text {
+    color: #fff;
+    font-size: 0.9vw;
+    margin: 2% 0 5% 0;
+}
+
+.carousel4_downloadBtn {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 3vw;
+    font-size: 1vw;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 40%;
+    cursor: pointer;
+}
+
+.carousel4_downloadBtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.carousel4_downloadBtn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    /* background-color: #cccccc; */
+}
+
+.cd_pop {
+    position: absolute;
+    width: 35%;
+    top: -58.5%;
+    left: 33%;
+    text-align: right;
+    /* transform: translate(-50%, -29.7%); */
+}
+
+.cd_pop_none {
+    display: none;
+}
+
+.cdkey_close {
+    font-size: 1vw;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ######## */
+
+/* 화살표 버튼 */
+
+.prevBtn {
+    width: 11%;
+    text-align: end;
+    cursor: pointer;
+}
+
+.nextBtn {
+    width: 11%;
+    cursor: pointer;
+}
+
+.btnImg {
+    width: 2vw;
+}

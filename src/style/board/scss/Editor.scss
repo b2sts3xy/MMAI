@@ -1,0 +1,24 @@
+.Editor_Container {
+  width: 100%;
+
+  .ck-editor__main > span {
+    display: block;
+  }
+
+  .ck-content .image {
+    margin: 0.9rem;
+  }
+  img {
+    width: 25vw;
+    height: 25vh;
+  }
+
+  .ck-content .image-inline {
+    // display: block;
+  }
+}
+
+.ck.ck-editor__editable {
+  height: 50vh;
+  max-height: 50vh;
+}

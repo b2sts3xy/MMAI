@@ -1,0 +1,91 @@
+.mobileTokenPhoto {
+    width: 100%;
+    position: relative;
+}
+
+.mobileTokenImg {
+    width: 100%;
+}
+
+.mobileTokenBtn {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+.mobileToken_buybtn {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 3vw;
+    font-weight: bolder;
+    padding: 3%;
+    border-radius: 30px;
+    text-align: center;
+    background-image: linear-gradient(115deg, #251ecd -15%, #448cff 114%, #000 114%);
+    color: #ffffff;
+}
+
+.mobileToken_link {
+    text-decoration: none;
+}
+
+.mobileTokenContents {
+    width: 90%;
+    margin: 8% auto 0 auto;
+}
+
+.mobileTokenContents1 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #191919;
+}
+
+.mobileTokenContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileTokenContents3 {
+    font-size: 0.9rem;
+    color: #767676;
+    margin-bottom: 7%;
+}
+
+.mobileCoinphoto {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileCoinOne, .mobileCoinTwo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobileCoinOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mobileCoinOne a {
+    text-align: center;
+}
+
+.mobileCoinTwo {
+    margin-bottom: 10%;
+}
+
+.mobileCoinOneImg {
+    width: 80%;
+}
+
+.mobileCoinTwoImg {
+    margin-top: 3%;
+    width: 100%;
+}

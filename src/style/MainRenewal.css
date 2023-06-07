@@ -1,0 +1,489 @@
+/* 파트 1 */
+.p1_container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.world_container, .wallet_container {
+    position: relative;
+    width: 48%;
+    margin-top: 5%;
+}
+
+.p1_img {
+    width: 100%;
+}
+
+.world_box {
+    position: absolute;
+    top: 54%;
+}
+
+.wallet_box {
+    position: absolute;
+    top: 54%;
+}
+
+.world_contents, .wallet_contents {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.wc_title {
+    font-size: 1.6vw;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.wc_sub_title {
+    display: flex;
+    font-size: 0.8vw;
+    color: #fff;
+    /* margin: 0 0 5% 0; */
+}
+
+
+#wd_img, #wv_img {
+    width: 24%;
+}
+
+#wd_img:hover, #wv_img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p1_white_btn {
+    font-size: 0.8vw;
+    display: block;
+    padding: 2%;
+    width: 30%;
+    border-radius: 3vw;
+    text-decoration: none;
+    text-align: center;
+    color: #111111;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.p1_white_btn span {
+    font-weight: 900;
+    font-size: 1vw;
+}
+
+.p1_white_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p1_white_btn:hover {
+    color: #111111;
+}
+
+.more_btn {
+    font-weight: bold;
+    display: inline-block; 
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 0 3% 0;
+    font-size: 0.8vw;
+}
+
+.more_btn:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #ffffff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.more_btn:hover::after {
+    transform: scaleX(1);
+}
+
+.more_btn_games {
+    font-weight: bold;
+    display: inline-block; 
+    color: #767676;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1% 0 3% 0;
+    font-size: 1vw;
+}
+
+.more_btn_games:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #767676;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.more_btn_games:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+
+/* 파트 2 */
+
+.ww_play_video {
+    position: relative;
+    margin: 4.5% 0 4% 0;
+    width: 100%;
+}
+
+.ww_play_video_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mv_img, #mv_play_btn {
+    width: 100%;
+}
+
+#mv_play_btn {
+    width: 10vw;
+    cursor: pointer;
+}
+
+#mv_play_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+/* 파트 3 */
+.part3_text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p3_main {
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.p3_sub {
+    color: #767676;
+    font-size: 1vw;
+}
+
+.part3_store {
+    width: 100%;
+    background-color: #f8f8fa;
+    margin: 10% 0 5% 0;
+}
+
+.p3_box {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p3_store_text_btn {
+    width: 40%;
+    margin: 5% 0 5% 0;
+}
+
+.p3_store_main {
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+
+.p3_store_sub {
+    color: #767676;
+    font-size: 1vw;
+}
+
+.p3_storeImgG {
+    width: 30%;
+    cursor: pointer;
+}
+
+.p3_storeImgA {
+    width: 30%;
+}
+
+.p3_storeImgG:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p3_storeImgG {
+    margin-right: 2%;
+}
+
+.p3_storeImgA {
+    margin-left: 2%;
+}
+
+.p3_store_img {
+    width: 60%;
+    margin: 7% 0 7% 0;
+}
+
+#p3_img {
+    width: 100%;
+}
+
+.wallet_func_text {
+    width: 70%;
+    margin: 10% auto 2% auto;
+    text-align: center;
+}
+
+.wallet_func {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+
+/* 파트 4 */
+.visit_marketplace_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.visit_marketplace {
+    display: flex;
+}
+
+.vm_left {
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/imgNew/go_marketplace.webp');
+    text-align: center;
+}
+
+.vm_left_box {
+    width: 30%;
+    padding-top: 65%;
+    margin: 0 auto;
+}
+
+#p4_vm_btn {
+    display: block;
+    font-size: 1vw;
+    padding: 5%;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 900;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+#p4_vm_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.vm_right {
+    width: 50%;
+}
+
+#p4_right_img {
+    width: 100%;
+}
+
+.NFT_ticket {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.NFT_box {
+    margin: 6% 0 0 0;
+}
+
+.NFT_maintext {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.NFT_subtext {
+    font-size: 1vw;
+    color: #767676;
+}
+
+.NFT_photo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.NFT_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.NFT_info {
+    width: 30%;
+    margin-top: 4%;
+}
+
+#NFT_info_img {
+    width: 100%;
+    /* transition: .5s; */
+}
+
+/* #NFT_info_img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+} */
+
+/* 플립 테스트 */
+.filp_card {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .8s .01s ease;
+    will-change: transform;
+}
+
+.filp_card:hover {
+    transform: rotateY(180deg);
+}
+
+
+.card_front {
+    overflow: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.card_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.ticket_name {
+    color: #505050;
+    font-size: 0.8vw;
+}
+
+.ticket_number {
+    color: #111111;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.ticket_pieces {
+    color: #505050;
+    font-size: 0.7vw;
+}
+
+
+
+
+/* 파트 5 */
+
+.game_video {
+    position: relative;
+    width: 100%;
+    margin: 6% 0 4% 0;
+}
+
+#game_video_img {
+    width: 100%;
+}
+
+.game_video_play_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game_video_img, #gv_play_btn{
+    width: 100%;
+}
+
+#gv_play_btn {
+    width: 10vw;
+    cursor: pointer;
+}
+
+#gv_play_btn:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.part5_store {
+    width: 100%;
+    background-color: #f8f8fa;
+    margin: 10% 0 5% 0;
+}
+
+.p5_box {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p5_store_text_btn {
+    width: 55%;
+    margin: 5% 0 5% 0;
+}
+
+.p5_store_main {
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+
+.p5_store_sub {
+    color: #767676;
+    font-size: 1vw;
+}
+
+.p5_BN, .p5_CERTIK {
+    width: 25%;
+    cursor: pointer;
+}
+
+.p5_BN:hover, .p5_CERTIK:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.p5_BN{
+    margin-right: 2%;
+}
+
+.p5_CERTIK {
+    margin-left: 2%;
+}
+
+.p5_store_img {
+    width: 40%;
+    margin: 7% 0 7% 0;
+}
+
+#p5_img {
+    width: 100%;
+}

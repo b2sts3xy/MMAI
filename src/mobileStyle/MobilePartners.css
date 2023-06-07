@@ -1,0 +1,29 @@
+.mobilePartnersContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mobilePartnersTitle {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10%;
+    color: #191919;
+    text-align: center;
+}
+
+.mobilrPartners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobilePartnersBox {
+    width: 40%;
+    margin: 0 auto 5% auto;
+    box-shadow: 1px 5px 20px 0 #999;
+}
+
+.mobilePartnersBox img {
+    width: 100%;
+}

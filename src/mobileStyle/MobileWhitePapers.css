@@ -1,0 +1,63 @@
+.mobileWhitePapersContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobileWhitePaperContents {
+    width: 90%;
+    margin: 8% auto 0 auto;
+}
+
+.mobileWhitePaperContents1 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #191919;
+}
+
+.mobileWhitePaperContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileWhitePaperContents3 {
+    font-size: 0.9rem;
+    color: #767676;
+    margin-bottom: 7%;
+}
+
+.mobileBlockChain, .mobileMeaverse, .mobileAI {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.mobileBlockChainTitle, .mobileMetaverseTitle, .mobileAITitle{
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+    color: #191919;
+    font-weight: bold;
+}
+
+.mobilePapers {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mobilePapersimg {
+    width: 100%;
+    cursor: pointer;
+}
+
+.mobilePaperMiniTitle {
+    margin: 0 auto;
+    font-weight: bold;
+    color: #202020;
+}
+
+#mobileTHIHIS {
+    font-size: 0.5rem;
+    color: #909090;
+    margin: 5% 0 10% 0;
+}

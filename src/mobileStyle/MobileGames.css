@@ -1,0 +1,73 @@
+.mobile_games_main_container {
+    width: 100%;
+    position: relative;
+}
+
+.mmai_games_img {
+    width: 100%;
+}
+
+.mobile_games_btn_box {
+    position: absolute;
+    width: 40%;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mg_btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 3.2vw;
+    font-weight: bolder;
+    padding: 8%;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.mobileGamesContents {
+    width: 90%;
+    margin: 8% auto 0 auto;
+}
+
+.mobileGamesContents1 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #191919;
+}
+
+.mobileGamesContents2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5% 0 8% 0;
+}
+
+.mobileGamesContents3 {
+    font-size: 0.9rem;
+    color: #767676;
+    margin-bottom: 7%;
+}
+
+.mobileGamesVideo {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+.mobileGamesVideo_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#mobileGamesVideoImg {
+    width: 100%;
+}
+
+#mobileGamesVideoImg_btnImg {
+    width: 50%;
+}

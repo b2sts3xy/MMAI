@@ -1,0 +1,49 @@
+.header {
+  background-image: "../../public/images/imgHeader/mmai_logo.png";
+}
+.BoardContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+
+  .BoardListContainer {
+    width: 65vw;
+
+    .ant-input-search {
+      width: 25%;
+      height: 4vh;
+      margin-bottom: 15px;
+      float: right;
+    }
+
+    .ant-table-thead .ant-table-cell {
+      background-color: #438bff;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .ant-table {
+      width: 100%;
+    }
+
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid #ededed;
+    }
+
+    .ant-table-tbody > tr > td:first-child {
+      border-left: none;
+    }
+
+    .writeBtn {
+      margin-left: auto;
+      margin-top: 1vh;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

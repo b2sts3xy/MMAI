@@ -1,0 +1,41 @@
+.header {
+  background-image: "../../public/images/imgHeader/mmai_logo.png";
+}
+
+.BoardContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+.BoardContainer .BoardListContainer {
+  width: 65vw;
+}
+.BoardContainer .BoardListContainer .ant-input-search {
+  width: 25%;
+  height: 4vh;
+  margin-bottom: 15px;
+  float: right;
+}
+.BoardContainer .BoardListContainer .ant-table-thead .ant-table-cell {
+  background-color: #438bff;
+}
+.BoardContainer .BoardListContainer .table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+.BoardContainer .BoardListContainer .ant-table {
+  width: 100%;
+}
+.BoardContainer .BoardListContainer .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #ededed;
+}
+.BoardContainer .BoardListContainer .ant-table-tbody > tr > td:first-child {
+  border-left: none;
+}
+.BoardContainer .BoardListContainer .writeBtn {
+  margin-left: auto;
+  margin-top: 1vh;
+}
+.BoardContainer .BoardListContainer .writeBtn a {
+  text-decoration: none;
+}

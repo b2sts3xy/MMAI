@@ -2,19 +2,27 @@
 import '../style/KeyModal.css';
 import React, { useEffect, useRef, useState } from "react";
 import NFTOwn from './NFTOwn';
-import {
-    EthereumClient,
-    w3mConnectors,
-    w3mProvider ,
-  } from "@web3modal/ethereum";
+import { EthereumClient,w3mConnectors,w3mProvider } from "@web3modal/ethereum";
 import { Web3Modal, Web3Button as MyWeb3Button, useWeb3Modal  } from "@web3modal/react";
-import { configureChains, createClient, WagmiConfig, useAccount  } from "wagmi";
-import { arbitrum, mainnet, polygon } from "wagmi/chains";
+import { configureChains, createClient, WagmiConfig  } from "wagmi";
+import { arbitrum, mainnet, polygon, sepolia } from "wagmi/chains";
+import { useAccount, useContract, useSigner } from 'wagmi'
 
 let final = false;
 
 
+const chains = [arbitrum, mainnet, polygon, sepolia]
+const projectId = '9def8a39725e00775bbb10058e68b380'
 
+// Wagmi client
+const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
+const wagmiClient = createClient({
+    autoConnect: true,
+    connectors: w3mConnectors({ projectId, version: 2, chains }),
+    provider
+});
+// Web3Modal Ethereum Client
+const ethereumClient = new EthereumClient(wagmiClient, chains);
 
 // 모달의 재사용 필요 시 구조를 바꾸자. (모달 안 내용을 children으로)
 
@@ -109,21 +117,6 @@ const KeyModal = ({setModalState}) => {
         setNfts(data.items)
         setisWalletModalOpen(false)
       }
-    
-      const chains = [arbitrum, mainnet, polygon]
-      const projectId = '2865116d46271676d0052964be11bc6c'
-
-    // Wagmi client
-    const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
-
-
-    const wagmiClient = createClient({
-        autoConnect: true,
-        connectors: w3mConnectors({ projectId, version: 2, chains }),
-        provider,
-    });
-    // Web3Modal Ethereum Client
-    const ethereumClient = new EthereumClient(wagmiClient, chains);
 
     useEffect(() => {
         getNftData()
@@ -183,6 +176,10 @@ const KeyModal = ({setModalState}) => {
     },
     })
 
+    function HomePage() {
+        return <MyWeb3Button />
+      }
+      
     return (
         // 모달 외부
         <div className='modal' onClick={closeModal}>
@@ -213,7 +210,7 @@ const KeyModal = ({setModalState}) => {
                                { !isTryConnectWallet && <img className='connect_form_img'  src='./images/imgModal/walletconnect.webp' alt='Connect Wallet on walletconnect'  />}
                                { !isTryConnectWallet && <div className='connect_form_name' onClick={connect2WalletConect} > WalletConnect </div>}
                                 <WagmiConfig client={wagmiClient}>
-                                    { isTryConnectWallet &&  <MyWeb3Button />}
+                                    { isTryConnectWallet &&  <HomePage />}
                                 </WagmiConfig> 
                                 
                             </div>
